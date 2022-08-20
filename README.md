@@ -1,6 +1,8 @@
 # Goal
 **This all needs to sit on a kubecluster and have terraform**
  - Replication system that real times from pg || msSQL -> snowflake, bigquery, msSQL or pg
+   * add type 1 & type 2 features
+   * performance partitioning features
  - A rebuild of DBT in GoLang
  - An entity store that acts as the glue between pg and snowflake...home made
  - Web server that can access all this
