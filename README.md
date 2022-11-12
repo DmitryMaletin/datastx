@@ -12,3 +12,35 @@
  - Light weight Scheduling Server
  - Snowflake Formatter/Linter...uses antlr4
  - Looker Formatter/Linter...hand rollded in go
+
+
+# SQL Runner
+- mimic basic features of dbt
+- every model must have a schema.yml file to run in prod
+  - there may be some nuance around this
+- offer a build in CI runner
+  - CI runner should also offer a faker dataset
+- Can run the dag at any point in the project and offer runtime
+
+# Scheduling server
+- offer basic runtime over watcher
+
+# Lineage tool
+- this could plug right into the scheduler
+
+# Exporter
+- export basic lookml
+- export a metrics layer
+- export pipelines as dags into airflow
+  - only supports airflow with task mapping
+
+# Linter Engine
+- Enforce basic rules
+
+
+# Replication System
+- replicate from postgres to snowflake as an mvp
+- offer a type 1 & 2 option of a table
+
+# Light weight programming language to reflect python
+- For templating lets make a programming language the mimics python due to our end consumer
