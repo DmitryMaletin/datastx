@@ -5,7 +5,7 @@ import (
 	"os"
 	"os/user"
 
-	"github.com/datastx/datastx/internal/repl"
+	"github.com/datastx/datastx/internal/language/repl"
 )
 
 func main() {
@@ -13,7 +13,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	fmt.Printf("Hello %s! This is the Monkey programming language!\n",
+	fmt.Printf("Hello %s! This is the dstx programming language!\n",
 		user.Username)
 	fmt.Printf("Feel free to type in commands\n")
 	repl.Start(os.Stdin, os.Stdout)

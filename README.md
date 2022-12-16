@@ -44,3 +44,8 @@
 
 # Light weight programming language to reflect python
 - For templating lets make a programming language the mimics python due to our end consumer
+
+
+# Import of data
+
+# Export of data
