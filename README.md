@@ -12,6 +12,7 @@
  - Light weight Scheduling Server
  - Snowflake Formatter/Linter...uses antlr4
  - Looker Formatter/Linter...hand rollded in go
+ - Designed to be setup in github code spaces
 
 
 # SQL Runner
