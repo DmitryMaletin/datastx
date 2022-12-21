@@ -17,6 +17,9 @@ type LookMLListener interface {
 	// EnterDimension is called when entering the dimension production.
 	EnterDimension(c *DimensionContext)
 
+	// EnterDimension_group is called when entering the dimension_group production.
+	EnterDimension_group(c *Dimension_groupContext)
+
 	// EnterMeasure is called when entering the measure production.
 	EnterMeasure(c *MeasureContext)
 
@@ -37,6 +40,9 @@ type LookMLListener interface {
 
 	// ExitDimension is called when exiting the dimension production.
 	ExitDimension(c *DimensionContext)
+
+	// ExitDimension_group is called when exiting the dimension_group production.
+	ExitDimension_group(c *Dimension_groupContext)
 
 	// ExitMeasure is called when exiting the measure production.
 	ExitMeasure(c *MeasureContext)

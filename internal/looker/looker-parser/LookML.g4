@@ -12,6 +12,10 @@ dimension
   : 'dimension:' ID '{' field+ '}'
   ;
 
+dimension_group
+  : 'dimension_group:' ID '{' field+ '}'
+  ;
+  
 measure
   : 'measure:' ID '{' field+ '}'
   ;
