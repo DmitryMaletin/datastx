@@ -1,4 +1,4 @@
-// Code generated from /datastx/internal/databases/snowflake/snowflake-parser/SnowflakeParser.g4 by ANTLR 4.10.1. DO NOT EDIT.
+// Code generated from java-escape by ANTLR 4.11.1. DO NOT EDIT.
 
 package parser // SnowflakeParser
 
@@ -7,7 +7,7 @@ import (
 	"strconv"
   "sync"
 
-	"github.com/antlr/antlr4/runtime/Go/antlr"
+	"github.com/antlr/antlr4/runtime/Go/antlr/v4"
 )
 
 // Suppress unused import errors
@@ -6679,7 +6679,7 @@ func NewSnowflakeParser(input antlr.TokenStream) *SnowflakeParser {
 	this.RuleNames = staticData.ruleNames
 	this.LiteralNames = staticData.literalNames
 	this.SymbolicNames = staticData.symbolicNames
-	this.GrammarFileName = "SnowflakeParser.g4"
+	this.GrammarFileName = "java-escape"
 
 	return this
 }
@@ -8430,7 +8430,7 @@ func (p *SnowflakeParser) Snowflake_file() (localctx ISnowflake_fileContext) {
 	_la = p.GetTokenStream().LA(1)
 
 
-	for _la == SnowflakeParserADD || _la == SnowflakeParserALTER || ((((_la - 155)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 155))) & ((1 << (SnowflakeParserCOMMENT - 155)) | (1 << (SnowflakeParserCOMMIT - 155)) | (1 << (SnowflakeParserCOPY - 155)) | (1 << (SnowflakeParserCREATE - 155)))) != 0) || ((((_la - 223)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 223))) & ((1 << (SnowflakeParserDELETE - 223)) | (1 << (SnowflakeParserDESC - 223)) | (1 << (SnowflakeParserDESCRIBE - 223)) | (1 << (SnowflakeParserDROP - 223)))) != 0) || _la == SnowflakeParserEXECUTE || _la == SnowflakeParserEXPLAIN || _la == SnowflakeParserGET || _la == SnowflakeParserGRANT || _la == SnowflakeParserINSERT || _la == SnowflakeParserLIST || _la == SnowflakeParserMERGE || _la == SnowflakeParserPUT || _la == SnowflakeParserREMOVE || _la == SnowflakeParserREVOKE || _la == SnowflakeParserROLLBACK || ((((_la - 747)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 747))) & ((1 << (SnowflakeParserSELECT - 747)) | (1 << (SnowflakeParserSET - 747)) | (1 << (SnowflakeParserSHOW - 747)))) != 0) || ((((_la - 909)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 909))) & ((1 << (SnowflakeParserTRUNCATE - 909)) | (1 << (SnowflakeParserUNDROP - 909)) | (1 << (SnowflakeParserUNSET - 909)) | (1 << (SnowflakeParserUPDATE - 909)))) != 0) || _la == SnowflakeParserUSE || _la == SnowflakeParserWITH {
+	for _la == SnowflakeParserADD || _la == SnowflakeParserALTER || (int64((_la - 155)) & ^0x3f) == 0 && ((int64(1) << (_la - 155)) & 276824067) != 0 || (int64((_la - 223)) & ^0x3f) == 0 && ((int64(1) << (_la - 223)) & 36310271995740185) != 0 || (int64((_la - 331)) & ^0x3f) == 0 && ((int64(1) << (_la - 331)) & 17592186044449) != 0 || _la == SnowflakeParserLIST || _la == SnowflakeParserMERGE || _la == SnowflakeParserPUT || _la == SnowflakeParserREMOVE || (int64((_la - 690)) & ^0x3f) == 0 && ((int64(1) << (_la - 690)) & 144115188075855905) != 0 || _la == SnowflakeParserSET || _la == SnowflakeParserSHOW || (int64((_la - 909)) & ^0x3f) == 0 && ((int64(1) << (_la - 909)) & 71135526913) != 0 || _la == SnowflakeParserWITH {
 		{
 			p.SetState(1018)
 			p.Batch()
@@ -11172,7 +11172,7 @@ func (p *SnowflakeParser) Merge_update_delete() (localctx IMerge_update_deleteCo
 		_la = p.GetTokenStream().LA(1)
 
 
-		for _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+		for _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 			{
 				p.SetState(1160)
 				p.Column_name()
@@ -13481,7 +13481,7 @@ func (p *SnowflakeParser) Copy_into_table() (localctx ICopy_into_tableContext) {
 				p.SetState(1292)
 				_la = p.GetTokenStream().LA(1)
 
-				if !(((((_la - 682)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 682))) & ((1 << (SnowflakeParserRETURN_ALL_ERRORS - 682)) | (1 << (SnowflakeParserRETURN_ERRORS - 682)) | (1 << (SnowflakeParserRETURN_N_ROWS - 682)))) != 0)) {
+				if !((int64((_la - 682)) & ^0x3f) == 0 && ((int64(1) << (_la - 682)) & 11) != 0) {
 					p.GetErrorHandler().RecoverInline(p)
 				} else {
 					p.GetErrorHandler().ReportMatch(p)
@@ -13700,7 +13700,7 @@ func (p *SnowflakeParser) External_location() (localctx IExternal_locationContex
 		p.SetState(1321)
 		_la = p.GetTokenStream().LA(1)
 
-		if !(((((_la - 1038)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1038))) & ((1 << (SnowflakeParserS3_PATH - 1038)) | (1 << (SnowflakeParserGCS_PATH - 1038)) | (1 << (SnowflakeParserAZURE_PATH - 1038)))) != 0)) {
+		if !((int64((_la - 1038)) & ^0x3f) == 0 && ((int64(1) << (_la - 1038)) & 7) != 0) {
 			p.GetErrorHandler().RecoverInline(p)
 		} else {
 			p.GetErrorHandler().ReportMatch(p)
@@ -13764,7 +13764,7 @@ func (s *FilesContext) LR_BRACKET() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserLR_BRACKET, 0)
 }
 
-func (s *FilesContext) AllString() []IStringContext {
+func (s *FilesContext) AllString_() []IStringContext {
 	children := s.GetChildren()
 	len := 0
 	for _, ctx := range children {
@@ -13785,7 +13785,7 @@ func (s *FilesContext) AllString() []IStringContext {
 	return tst
 }
 
-func (s *FilesContext) String(i int) IStringContext {
+func (s *FilesContext) String_(i int) IStringContext {
 	var t antlr.RuleContext;
 	j := 0
 	for _, ctx := range s.GetChildren() {
@@ -13891,7 +13891,7 @@ func (p *SnowflakeParser) Files() (localctx IFilesContext) {
 	}
 	{
 		p.SetState(1326)
-		p.String()
+		p.String_()
 	}
 	p.SetState(1331)
 	p.GetErrorHandler().Sync(p)
@@ -13905,7 +13905,7 @@ func (p *SnowflakeParser) Files() (localctx IFilesContext) {
 		}
 		{
 			p.SetState(1328)
-			p.String()
+			p.String_()
 		}
 
 
@@ -14159,7 +14159,7 @@ func (s *Format_nameContext) EQ() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserEQ, 0)
 }
 
-func (s *Format_nameContext) String() IStringContext {
+func (s *Format_nameContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -14243,7 +14243,7 @@ func (p *SnowflakeParser) Format_name() (localctx IFormat_nameContext) {
 	}
 	{
 		p.SetState(1347)
-		p.String()
+		p.String_()
 	}
 
 
@@ -14447,7 +14447,7 @@ func (p *SnowflakeParser) Format_type() (localctx IFormat_typeContext) {
 	_la = p.GetTokenStream().LA(1)
 
 
-	for _la == SnowflakeParserALLOW_DUPLICATE || ((((_la - 92)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 92))) & ((1 << (SnowflakeParserBINARY_AS_TEXT - 92)) | (1 << (SnowflakeParserBINARY_FORMAT - 92)) | (1 << (SnowflakeParserBROTLI - 92)) | (1 << (SnowflakeParserBZ2 - 92)))) != 0) || _la == SnowflakeParserCOMPRESSION || ((((_la - 202)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 202))) & ((1 << (SnowflakeParserDATE_FORMAT - 202)) | (1 << (SnowflakeParserDEFLATE - 202)) | (1 << (SnowflakeParserDISABLE_AUTO_CONVERT - 202)) | (1 << (SnowflakeParserDISABLE_SNOWFLAKE_DATA - 202)))) != 0) || ((((_la - 245)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 245))) & ((1 << (SnowflakeParserEMPTY_FIELD_AS_NULL - 245)) | (1 << (SnowflakeParserENABLE_OCTAL - 245)) | (1 << (SnowflakeParserENCODING - 245)) | (1 << (SnowflakeParserERROR_ON_COLUMN_COUNT_MISMATCH - 245)) | (1 << (SnowflakeParserESCAPE - 245)) | (1 << (SnowflakeParserESCAPE_UNENCLOSED_FIELD - 245)))) != 0) || ((((_la - 301)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 301))) & ((1 << (SnowflakeParserFIELD_DELIMITER - 301)) | (1 << (SnowflakeParserFIELD_OPTIONALLY_ENCLOSED_BY - 301)) | (1 << (SnowflakeParserFILE_EXTENSION - 301)))) != 0) || _la == SnowflakeParserGZIP || _la == SnowflakeParserIGNORE_UTF8_ERRORS || _la == SnowflakeParserLZO || _la == SnowflakeParserNONE || _la == SnowflakeParserNULL_IF || _la == SnowflakeParserPRESERVE_SPACE || _la == SnowflakeParserRAW_DEFLATE || _la == SnowflakeParserRECORD_DELIMITER || _la == SnowflakeParserREPLACE_INVALID_CHARACTERS || ((((_la - 777)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 777))) & ((1 << (SnowflakeParserSKIP_BLANK_LINES - 777)) | (1 << (SnowflakeParserSKIP_BYTE_ORDER_MARK - 777)) | (1 << (SnowflakeParserSKIP_HEADER - 777)) | (1 << (SnowflakeParserSNAPPY - 777)) | (1 << (SnowflakeParserSNAPPY_COMPRESSION - 777)))) != 0) || ((((_la - 836)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 836))) & ((1 << (SnowflakeParserSTRIP_NULL_VALUES - 836)) | (1 << (SnowflakeParserSTRIP_OUTER_ARRAY - 836)) | (1 << (SnowflakeParserSTRIP_OUTER_ELEMENT - 836)))) != 0) || _la == SnowflakeParserTIME_FORMAT || _la == SnowflakeParserTIMESTAMP_FORMAT || _la == SnowflakeParserTRIM_SPACE || _la == SnowflakeParserUTF8 || _la == SnowflakeParserZSTD {
+	for _la == SnowflakeParserALLOW_DUPLICATE || (int64((_la - 92)) & ^0x3f) == 0 && ((int64(1) << (_la - 92)) & 9221) != 0 || (int64((_la - 159)) & ^0x3f) == 0 && ((int64(1) << (_la - 159)) & 4611694814520410113) != 0 || (int64((_la - 231)) & ^0x3f) == 0 && ((int64(1) << (_la - 231)) & 214752837635) != 0 || (int64((_la - 301)) & ^0x3f) == 0 && ((int64(1) << (_la - 301)) & 144117387099111435) != 0 || _la == SnowflakeParserLZO || _la == SnowflakeParserNONE || _la == SnowflakeParserNULL_IF || (int64((_la - 591)) & ^0x3f) == 0 && ((int64(1) << (_la - 591)) & 1125917086711809) != 0 || _la == SnowflakeParserREPLACE_INVALID_CHARACTERS || (int64((_la - 777)) & ^0x3f) == 0 && ((int64(1) << (_la - 777)) & 4035225266123964627) != 0 || (int64((_la - 870)) & ^0x3f) == 0 && ((int64(1) << (_la - 870)) & 34359738497) != 0 || _la == SnowflakeParserUTF8 || _la == SnowflakeParserZSTD {
 		{
 			p.SetState(1352)
 			p.Format_type_options()
@@ -14523,7 +14523,7 @@ func (s *Stage_file_formatContext) FORMAT_NAME() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserFORMAT_NAME, 0)
 }
 
-func (s *Stage_file_formatContext) String() IStringContext {
+func (s *Stage_file_formatContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -14700,7 +14700,7 @@ func (p *SnowflakeParser) Stage_file_format() (localctx IStage_file_formatContex
 		}
 		{
 			p.SetState(1363)
-			p.String()
+			p.String_()
 		}
 
 
@@ -14731,7 +14731,7 @@ func (p *SnowflakeParser) Stage_file_format() (localctx IStage_file_formatContex
 		_la = p.GetTokenStream().LA(1)
 
 
-		for ok := true; ok; ok = _la == SnowflakeParserALLOW_DUPLICATE || ((((_la - 92)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 92))) & ((1 << (SnowflakeParserBINARY_AS_TEXT - 92)) | (1 << (SnowflakeParserBINARY_FORMAT - 92)) | (1 << (SnowflakeParserBROTLI - 92)) | (1 << (SnowflakeParserBZ2 - 92)))) != 0) || _la == SnowflakeParserCOMPRESSION || ((((_la - 202)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 202))) & ((1 << (SnowflakeParserDATE_FORMAT - 202)) | (1 << (SnowflakeParserDEFLATE - 202)) | (1 << (SnowflakeParserDISABLE_AUTO_CONVERT - 202)) | (1 << (SnowflakeParserDISABLE_SNOWFLAKE_DATA - 202)))) != 0) || ((((_la - 245)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 245))) & ((1 << (SnowflakeParserEMPTY_FIELD_AS_NULL - 245)) | (1 << (SnowflakeParserENABLE_OCTAL - 245)) | (1 << (SnowflakeParserENCODING - 245)) | (1 << (SnowflakeParserERROR_ON_COLUMN_COUNT_MISMATCH - 245)) | (1 << (SnowflakeParserESCAPE - 245)) | (1 << (SnowflakeParserESCAPE_UNENCLOSED_FIELD - 245)))) != 0) || ((((_la - 301)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 301))) & ((1 << (SnowflakeParserFIELD_DELIMITER - 301)) | (1 << (SnowflakeParserFIELD_OPTIONALLY_ENCLOSED_BY - 301)) | (1 << (SnowflakeParserFILE_EXTENSION - 301)))) != 0) || _la == SnowflakeParserGZIP || _la == SnowflakeParserIGNORE_UTF8_ERRORS || _la == SnowflakeParserLZO || _la == SnowflakeParserNONE || _la == SnowflakeParserNULL_IF || _la == SnowflakeParserPRESERVE_SPACE || _la == SnowflakeParserRAW_DEFLATE || _la == SnowflakeParserRECORD_DELIMITER || _la == SnowflakeParserREPLACE_INVALID_CHARACTERS || ((((_la - 777)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 777))) & ((1 << (SnowflakeParserSKIP_BLANK_LINES - 777)) | (1 << (SnowflakeParserSKIP_BYTE_ORDER_MARK - 777)) | (1 << (SnowflakeParserSKIP_HEADER - 777)) | (1 << (SnowflakeParserSNAPPY - 777)) | (1 << (SnowflakeParserSNAPPY_COMPRESSION - 777)))) != 0) || ((((_la - 836)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 836))) & ((1 << (SnowflakeParserSTRIP_NULL_VALUES - 836)) | (1 << (SnowflakeParserSTRIP_OUTER_ARRAY - 836)) | (1 << (SnowflakeParserSTRIP_OUTER_ELEMENT - 836)))) != 0) || _la == SnowflakeParserTIME_FORMAT || _la == SnowflakeParserTIMESTAMP_FORMAT || _la == SnowflakeParserTRIM_SPACE || _la == SnowflakeParserUTF8 || _la == SnowflakeParserZSTD {
+		for ok := true; ok; ok = _la == SnowflakeParserALLOW_DUPLICATE || (int64((_la - 92)) & ^0x3f) == 0 && ((int64(1) << (_la - 92)) & 9221) != 0 || (int64((_la - 159)) & ^0x3f) == 0 && ((int64(1) << (_la - 159)) & 4611694814520410113) != 0 || (int64((_la - 231)) & ^0x3f) == 0 && ((int64(1) << (_la - 231)) & 214752837635) != 0 || (int64((_la - 301)) & ^0x3f) == 0 && ((int64(1) << (_la - 301)) & 144117387099111435) != 0 || _la == SnowflakeParserLZO || _la == SnowflakeParserNONE || _la == SnowflakeParserNULL_IF || (int64((_la - 591)) & ^0x3f) == 0 && ((int64(1) << (_la - 591)) & 1125917086711809) != 0 || _la == SnowflakeParserREPLACE_INVALID_CHARACTERS || (int64((_la - 777)) & ^0x3f) == 0 && ((int64(1) << (_la - 777)) & 4035225266123964627) != 0 || (int64((_la - 870)) & ^0x3f) == 0 && ((int64(1) << (_la - 870)) & 34359738497) != 0 || _la == SnowflakeParserUTF8 || _la == SnowflakeParserZSTD {
 			{
 				p.SetState(1367)
 				p.Format_type_options()
@@ -15244,7 +15244,7 @@ func (s *CommentContext) IS() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserIS, 0)
 }
 
-func (s *CommentContext) String() IStringContext {
+func (s *CommentContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -15394,7 +15394,7 @@ func (p *SnowflakeParser) Comment() (localctx ICommentContext) {
 		}
 		{
 			p.SetState(1416)
-			p.String()
+			p.String_()
 		}
 
 
@@ -15434,7 +15434,7 @@ func (p *SnowflakeParser) Comment() (localctx ICommentContext) {
 		}
 		{
 			p.SetState(1426)
-			p.String()
+			p.String_()
 		}
 
 	}
@@ -15730,7 +15730,7 @@ func (s *Execute_immediateContext) IMMEDIATE() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserIMMEDIATE, 0)
 }
 
-func (s *Execute_immediateContext) String() IStringContext {
+func (s *Execute_immediateContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -15885,7 +15885,7 @@ func (p *SnowflakeParser) Execute_immediate() (localctx IExecute_immediateContex
 		}
 		{
 			p.SetState(1438)
-			p.String()
+			p.String_()
 		}
 		p.SetState(1451)
 		p.GetErrorHandler().Sync(p)
@@ -21565,7 +21565,7 @@ func (p *SnowflakeParser) Put() (localctx IPutContext) {
 			p.SetState(1867)
 			_la = p.GetTokenStream().LA(1)
 
-			if !(_la == SnowflakeParserAUTO_DETECT || _la == SnowflakeParserBROTLI || _la == SnowflakeParserBZ2 || _la == SnowflakeParserDEFLATE || _la == SnowflakeParserGZIP || _la == SnowflakeParserNONE || _la == SnowflakeParserRAW_DEFLATE || _la == SnowflakeParserZSTD) {
+			if !((int64((_la - 61)) & ^0x3f) == 0 && ((int64(1) << (_la - 61)) & 19791209299969) != 0 || _la == SnowflakeParserDEFLATE || _la == SnowflakeParserGZIP || _la == SnowflakeParserNONE || _la == SnowflakeParserRAW_DEFLATE || _la == SnowflakeParserZSTD) {
 				p.GetErrorHandler().RecoverInline(p)
 			} else {
 				p.GetErrorHandler().ReportMatch(p)
@@ -25349,7 +25349,7 @@ func (s *Account_paramsContext) NETWORK_POLICY() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserNETWORK_POLICY, 0)
 }
 
-func (s *Account_paramsContext) String() IStringContext {
+func (s *Account_paramsContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -25566,7 +25566,7 @@ func (p *SnowflakeParser) Account_params() (localctx IAccount_paramsContext) {
 		}
 		{
 			p.SetState(2151)
-			p.String()
+			p.String_()
 		}
 
 
@@ -25678,7 +25678,7 @@ func (p *SnowflakeParser) Account_params() (localctx IAccount_paramsContext) {
 		}
 		{
 			p.SetState(2172)
-			p.String()
+			p.String_()
 		}
 
 
@@ -25798,7 +25798,7 @@ func (s *Object_paramsContext) NETWORK_POLICY() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserNETWORK_POLICY, 0)
 }
 
-func (s *Object_paramsContext) String() IStringContext {
+func (s *Object_paramsContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -25975,7 +25975,7 @@ func (p *SnowflakeParser) Object_params() (localctx IObject_paramsContext) {
 		}
 		{
 			p.SetState(2190)
-			p.String()
+			p.String_()
 		}
 
 
@@ -26007,7 +26007,7 @@ func (p *SnowflakeParser) Object_params() (localctx IObject_paramsContext) {
 		}
 		{
 			p.SetState(2196)
-			p.String()
+			p.String_()
 		}
 
 
@@ -26099,7 +26099,7 @@ func (s *Default_ddl_collationContext) EQ() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserEQ, 0)
 }
 
-func (s *Default_ddl_collationContext) String() IStringContext {
+func (s *Default_ddl_collationContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -26183,7 +26183,7 @@ func (p *SnowflakeParser) Default_ddl_collation() (localctx IDefault_ddl_collati
 	}
 	{
 		p.SetState(2207)
-		p.String()
+		p.String_()
 	}
 
 
@@ -26238,7 +26238,7 @@ func (s *Object_propertiesContext) EQ() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserEQ, 0)
 }
 
-func (s *Object_propertiesContext) String() IStringContext {
+func (s *Object_propertiesContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -26427,7 +26427,7 @@ func (p *SnowflakeParser) Object_properties() (localctx IObject_propertiesContex
 		}
 		{
 			p.SetState(2211)
-			p.String()
+			p.String_()
 		}
 
 
@@ -26443,7 +26443,7 @@ func (p *SnowflakeParser) Object_properties() (localctx IObject_propertiesContex
 		}
 		{
 			p.SetState(2214)
-			p.String()
+			p.String_()
 		}
 
 
@@ -26459,7 +26459,7 @@ func (p *SnowflakeParser) Object_properties() (localctx IObject_propertiesContex
 		}
 		{
 			p.SetState(2217)
-			p.String()
+			p.String_()
 		}
 
 
@@ -26475,7 +26475,7 @@ func (p *SnowflakeParser) Object_properties() (localctx IObject_propertiesContex
 		}
 		{
 			p.SetState(2220)
-			p.String()
+			p.String_()
 		}
 
 
@@ -26491,7 +26491,7 @@ func (p *SnowflakeParser) Object_properties() (localctx IObject_propertiesContex
 		}
 		{
 			p.SetState(2223)
-			p.String()
+			p.String_()
 		}
 
 
@@ -26507,7 +26507,7 @@ func (p *SnowflakeParser) Object_properties() (localctx IObject_propertiesContex
 		}
 		{
 			p.SetState(2226)
-			p.String()
+			p.String_()
 		}
 
 
@@ -26523,7 +26523,7 @@ func (p *SnowflakeParser) Object_properties() (localctx IObject_propertiesContex
 		}
 		{
 			p.SetState(2229)
-			p.String()
+			p.String_()
 		}
 
 
@@ -26603,7 +26603,7 @@ func (p *SnowflakeParser) Object_properties() (localctx IObject_propertiesContex
 		}
 		{
 			p.SetState(2244)
-			p.String()
+			p.String_()
 		}
 
 
@@ -26619,7 +26619,7 @@ func (p *SnowflakeParser) Object_properties() (localctx IObject_propertiesContex
 		}
 		{
 			p.SetState(2247)
-			p.String()
+			p.String_()
 		}
 
 
@@ -26635,7 +26635,7 @@ func (p *SnowflakeParser) Object_properties() (localctx IObject_propertiesContex
 		}
 		{
 			p.SetState(2250)
-			p.String()
+			p.String_()
 		}
 
 
@@ -26667,7 +26667,7 @@ func (p *SnowflakeParser) Object_properties() (localctx IObject_propertiesContex
 		}
 		{
 			p.SetState(2256)
-			p.String()
+			p.String_()
 		}
 
 
@@ -26683,7 +26683,7 @@ func (p *SnowflakeParser) Object_properties() (localctx IObject_propertiesContex
 		}
 		{
 			p.SetState(2259)
-			p.String()
+			p.String_()
 		}
 
 
@@ -26699,7 +26699,7 @@ func (p *SnowflakeParser) Object_properties() (localctx IObject_propertiesContex
 		}
 		{
 			p.SetState(2262)
-			p.String()
+			p.String_()
 		}
 
 
@@ -26783,7 +26783,7 @@ func (s *Session_paramsContext) BINARY_INPUT_FORMAT() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserBINARY_INPUT_FORMAT, 0)
 }
 
-func (s *Session_paramsContext) String() IStringContext {
+func (s *Session_paramsContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -27032,7 +27032,7 @@ func (p *SnowflakeParser) Session_params() (localctx ISession_paramsContext) {
 		}
 		{
 			p.SetState(2273)
-			p.String()
+			p.String_()
 		}
 
 
@@ -27048,7 +27048,7 @@ func (p *SnowflakeParser) Session_params() (localctx ISession_paramsContext) {
 		}
 		{
 			p.SetState(2276)
-			p.String()
+			p.String_()
 		}
 
 
@@ -27064,7 +27064,7 @@ func (p *SnowflakeParser) Session_params() (localctx ISession_paramsContext) {
 		}
 		{
 			p.SetState(2279)
-			p.String()
+			p.String_()
 		}
 
 
@@ -27080,7 +27080,7 @@ func (p *SnowflakeParser) Session_params() (localctx ISession_paramsContext) {
 		}
 		{
 			p.SetState(2282)
-			p.String()
+			p.String_()
 		}
 
 
@@ -27160,7 +27160,7 @@ func (p *SnowflakeParser) Session_params() (localctx ISession_paramsContext) {
 		}
 		{
 			p.SetState(2297)
-			p.String()
+			p.String_()
 		}
 
 
@@ -27192,7 +27192,7 @@ func (p *SnowflakeParser) Session_params() (localctx ISession_paramsContext) {
 		}
 		{
 			p.SetState(2303)
-			p.String()
+			p.String_()
 		}
 
 
@@ -27256,7 +27256,7 @@ func (p *SnowflakeParser) Session_params() (localctx ISession_paramsContext) {
 		}
 		{
 			p.SetState(2315)
-			p.String()
+			p.String_()
 		}
 
 
@@ -27272,7 +27272,7 @@ func (p *SnowflakeParser) Session_params() (localctx ISession_paramsContext) {
 		}
 		{
 			p.SetState(2318)
-			p.String()
+			p.String_()
 		}
 
 
@@ -27288,7 +27288,7 @@ func (p *SnowflakeParser) Session_params() (localctx ISession_paramsContext) {
 		}
 		{
 			p.SetState(2321)
-			p.String()
+			p.String_()
 		}
 
 
@@ -27304,7 +27304,7 @@ func (p *SnowflakeParser) Session_params() (localctx ISession_paramsContext) {
 		}
 		{
 			p.SetState(2324)
-			p.String()
+			p.String_()
 		}
 
 
@@ -27320,7 +27320,7 @@ func (p *SnowflakeParser) Session_params() (localctx ISession_paramsContext) {
 		}
 		{
 			p.SetState(2327)
-			p.String()
+			p.String_()
 		}
 
 
@@ -27336,7 +27336,7 @@ func (p *SnowflakeParser) Session_params() (localctx ISession_paramsContext) {
 		}
 		{
 			p.SetState(2330)
-			p.String()
+			p.String_()
 		}
 
 
@@ -27352,7 +27352,7 @@ func (p *SnowflakeParser) Session_params() (localctx ISession_paramsContext) {
 		}
 		{
 			p.SetState(2333)
-			p.String()
+			p.String_()
 		}
 
 
@@ -27368,7 +27368,7 @@ func (p *SnowflakeParser) Session_params() (localctx ISession_paramsContext) {
 		}
 		{
 			p.SetState(2336)
-			p.String()
+			p.String_()
 		}
 
 
@@ -27384,7 +27384,7 @@ func (p *SnowflakeParser) Session_params() (localctx ISession_paramsContext) {
 		}
 		{
 			p.SetState(2339)
-			p.String()
+			p.String_()
 		}
 
 
@@ -27400,7 +27400,7 @@ func (p *SnowflakeParser) Session_params() (localctx ISession_paramsContext) {
 		}
 		{
 			p.SetState(2342)
-			p.String()
+			p.String_()
 		}
 
 
@@ -27432,7 +27432,7 @@ func (p *SnowflakeParser) Session_params() (localctx ISession_paramsContext) {
 		}
 		{
 			p.SetState(2348)
-			p.String()
+			p.String_()
 		}
 
 
@@ -27870,7 +27870,7 @@ func (s *Alter_api_integrationContext) EQ(i int) antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserEQ, i)
 }
 
-func (s *Alter_api_integrationContext) AllString() []IStringContext {
+func (s *Alter_api_integrationContext) AllString_() []IStringContext {
 	children := s.GetChildren()
 	len := 0
 	for _, ctx := range children {
@@ -27891,7 +27891,7 @@ func (s *Alter_api_integrationContext) AllString() []IStringContext {
 	return tst
 }
 
-func (s *Alter_api_integrationContext) String(i int) IStringContext {
+func (s *Alter_api_integrationContext) String_(i int) IStringContext {
 	var t antlr.RuleContext;
 	j := 0
 	for _, ctx := range s.GetChildren() {
@@ -28180,7 +28180,7 @@ func (p *SnowflakeParser) Alter_api_integration() (localctx IAlter_api_integrati
 			}
 			{
 				p.SetState(2380)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -28200,7 +28200,7 @@ func (p *SnowflakeParser) Alter_api_integration() (localctx IAlter_api_integrati
 			}
 			{
 				p.SetState(2385)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -28220,7 +28220,7 @@ func (p *SnowflakeParser) Alter_api_integration() (localctx IAlter_api_integrati
 			}
 			{
 				p.SetState(2390)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -28256,7 +28256,7 @@ func (p *SnowflakeParser) Alter_api_integration() (localctx IAlter_api_integrati
 			}
 			{
 				p.SetState(2399)
-				p.String()
+				p.String_()
 			}
 			{
 				p.SetState(2400)
@@ -28284,7 +28284,7 @@ func (p *SnowflakeParser) Alter_api_integration() (localctx IAlter_api_integrati
 			}
 			{
 				p.SetState(2407)
-				p.String()
+				p.String_()
 			}
 			{
 				p.SetState(2408)
@@ -29746,7 +29746,7 @@ func (p *SnowflakeParser) Database_property() (localctx IDatabase_propertyContex
 		p.SetState(2579)
 		_la = p.GetTokenStream().LA(1)
 
-		if !(_la == SnowflakeParserCOMMENT || _la == SnowflakeParserDATA_RETENTION_TIME_IN_DAYS || _la == SnowflakeParserDEFAULT_DDL_COLLATION_ || _la == SnowflakeParserMAX_DATA_EXTENSION_TIME_IN_DAYS) {
+		if !((int64((_la - 155)) & ^0x3f) == 0 && ((int64(1) << (_la - 155)) & 288247968337756161) != 0 || _la == SnowflakeParserMAX_DATA_EXTENSION_TIME_IN_DAYS) {
 			p.GetErrorHandler().RecoverInline(p)
 		} else {
 			p.GetErrorHandler().ReportMatch(p)
@@ -30024,7 +30024,7 @@ func (s *Alter_external_tableContext) If_exists() IIf_existsContext {
 	return t.(IIf_existsContext)
 }
 
-func (s *Alter_external_tableContext) AllString() []IStringContext {
+func (s *Alter_external_tableContext) AllString_() []IStringContext {
 	children := s.GetChildren()
 	len := 0
 	for _, ctx := range children {
@@ -30045,7 +30045,7 @@ func (s *Alter_external_tableContext) AllString() []IStringContext {
 	return tst
 }
 
-func (s *Alter_external_tableContext) String(i int) IStringContext {
+func (s *Alter_external_tableContext) String_(i int) IStringContext {
 	var t antlr.RuleContext;
 	j := 0
 	for _, ctx := range s.GetChildren() {
@@ -30330,7 +30330,7 @@ func (p *SnowflakeParser) Alter_external_table() (localctx IAlter_external_table
 		if _la == SnowflakeParserSTRING {
 			{
 				p.SetState(2597)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -30596,7 +30596,7 @@ func (p *SnowflakeParser) Alter_external_table() (localctx IAlter_external_table
 		}
 		{
 			p.SetState(2663)
-			p.String()
+			p.String_()
 		}
 		p.SetState(2671)
 		p.GetErrorHandler().Sync(p)
@@ -30618,7 +30618,7 @@ func (p *SnowflakeParser) Alter_external_table() (localctx IAlter_external_table
 			}
 			{
 				p.SetState(2667)
-				p.String()
+				p.String_()
 			}
 
 
@@ -30636,7 +30636,7 @@ func (p *SnowflakeParser) Alter_external_table() (localctx IAlter_external_table
 		}
 		{
 			p.SetState(2676)
-			p.String()
+			p.String_()
 		}
 
 
@@ -30684,7 +30684,7 @@ func (p *SnowflakeParser) Alter_external_table() (localctx IAlter_external_table
 		}
 		{
 			p.SetState(2688)
-			p.String()
+			p.String_()
 		}
 
 	}
@@ -30867,7 +30867,7 @@ func (s *Replication_scheduleContext) EQ() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserEQ, 0)
 }
 
-func (s *Replication_scheduleContext) String() IStringContext {
+func (s *Replication_scheduleContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -30951,7 +30951,7 @@ func (p *SnowflakeParser) Replication_schedule() (localctx IReplication_schedule
 	}
 	{
 		p.SetState(2698)
-		p.String()
+		p.String_()
 	}
 
 
@@ -32802,7 +32802,7 @@ func (p *SnowflakeParser) Alter_file_format() (localctx IAlter_file_formatContex
 		_la = p.GetTokenStream().LA(1)
 
 
-		for _la == SnowflakeParserALLOW_DUPLICATE || ((((_la - 92)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 92))) & ((1 << (SnowflakeParserBINARY_AS_TEXT - 92)) | (1 << (SnowflakeParserBINARY_FORMAT - 92)) | (1 << (SnowflakeParserBROTLI - 92)) | (1 << (SnowflakeParserBZ2 - 92)))) != 0) || _la == SnowflakeParserCOMPRESSION || ((((_la - 202)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 202))) & ((1 << (SnowflakeParserDATE_FORMAT - 202)) | (1 << (SnowflakeParserDEFLATE - 202)) | (1 << (SnowflakeParserDISABLE_AUTO_CONVERT - 202)) | (1 << (SnowflakeParserDISABLE_SNOWFLAKE_DATA - 202)))) != 0) || ((((_la - 245)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 245))) & ((1 << (SnowflakeParserEMPTY_FIELD_AS_NULL - 245)) | (1 << (SnowflakeParserENABLE_OCTAL - 245)) | (1 << (SnowflakeParserENCODING - 245)) | (1 << (SnowflakeParserERROR_ON_COLUMN_COUNT_MISMATCH - 245)) | (1 << (SnowflakeParserESCAPE - 245)) | (1 << (SnowflakeParserESCAPE_UNENCLOSED_FIELD - 245)))) != 0) || ((((_la - 301)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 301))) & ((1 << (SnowflakeParserFIELD_DELIMITER - 301)) | (1 << (SnowflakeParserFIELD_OPTIONALLY_ENCLOSED_BY - 301)) | (1 << (SnowflakeParserFILE_EXTENSION - 301)))) != 0) || _la == SnowflakeParserGZIP || _la == SnowflakeParserIGNORE_UTF8_ERRORS || _la == SnowflakeParserLZO || _la == SnowflakeParserNONE || _la == SnowflakeParserNULL_IF || _la == SnowflakeParserPRESERVE_SPACE || _la == SnowflakeParserRAW_DEFLATE || _la == SnowflakeParserRECORD_DELIMITER || _la == SnowflakeParserREPLACE_INVALID_CHARACTERS || ((((_la - 777)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 777))) & ((1 << (SnowflakeParserSKIP_BLANK_LINES - 777)) | (1 << (SnowflakeParserSKIP_BYTE_ORDER_MARK - 777)) | (1 << (SnowflakeParserSKIP_HEADER - 777)) | (1 << (SnowflakeParserSNAPPY - 777)) | (1 << (SnowflakeParserSNAPPY_COMPRESSION - 777)))) != 0) || ((((_la - 836)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 836))) & ((1 << (SnowflakeParserSTRIP_NULL_VALUES - 836)) | (1 << (SnowflakeParserSTRIP_OUTER_ARRAY - 836)) | (1 << (SnowflakeParserSTRIP_OUTER_ELEMENT - 836)))) != 0) || _la == SnowflakeParserTIME_FORMAT || _la == SnowflakeParserTIMESTAMP_FORMAT || _la == SnowflakeParserTRIM_SPACE || _la == SnowflakeParserUTF8 || _la == SnowflakeParserZSTD {
+		for _la == SnowflakeParserALLOW_DUPLICATE || (int64((_la - 92)) & ^0x3f) == 0 && ((int64(1) << (_la - 92)) & 9221) != 0 || (int64((_la - 159)) & ^0x3f) == 0 && ((int64(1) << (_la - 159)) & 4611694814520410113) != 0 || (int64((_la - 231)) & ^0x3f) == 0 && ((int64(1) << (_la - 231)) & 214752837635) != 0 || (int64((_la - 301)) & ^0x3f) == 0 && ((int64(1) << (_la - 301)) & 144117387099111435) != 0 || _la == SnowflakeParserLZO || _la == SnowflakeParserNONE || _la == SnowflakeParserNULL_IF || (int64((_la - 591)) & ^0x3f) == 0 && ((int64(1) << (_la - 591)) & 1125917086711809) != 0 || _la == SnowflakeParserREPLACE_INVALID_CHARACTERS || (int64((_la - 777)) & ^0x3f) == 0 && ((int64(1) << (_la - 777)) & 4035225266123964627) != 0 || (int64((_la - 870)) & ^0x3f) == 0 && ((int64(1) << (_la - 870)) & 34359738497) != 0 || _la == SnowflakeParserUTF8 || _la == SnowflakeParserZSTD {
 			{
 				p.SetState(2899)
 				p.Format_type_options()
@@ -33314,7 +33314,7 @@ func (p *SnowflakeParser) Alter_function() (localctx IAlter_functionContext) {
 		_la = p.GetTokenStream().LA(1)
 
 
-		for _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+		for _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 			{
 				p.SetState(2951)
 				p.Id_()
@@ -33424,7 +33424,7 @@ func (p *SnowflakeParser) Alter_function() (localctx IAlter_functionContext) {
 			p.SetState(2979)
 			_la = p.GetTokenStream().LA(1)
 
-			if !(((((_la - 155)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 155))) & ((1 << (SnowflakeParserCOMMENT - 155)) | (1 << (SnowflakeParserCOMPRESSION - 155)) | (1 << (SnowflakeParserCONTEXT_HEADERS - 155)))) != 0) || _la == SnowflakeParserHEADERS || _la == SnowflakeParserMAX_BATCH_ROWS || _la == SnowflakeParserREQUEST_TRANSLATOR || _la == SnowflakeParserRESPONSE_TRANSLATOR || _la == SnowflakeParserSECURE) {
+			if !((int64((_la - 155)) & ^0x3f) == 0 && ((int64(1) << (_la - 155)) & 131089) != 0 || _la == SnowflakeParserHEADERS || _la == SnowflakeParserMAX_BATCH_ROWS || _la == SnowflakeParserREQUEST_TRANSLATOR || _la == SnowflakeParserRESPONSE_TRANSLATOR || _la == SnowflakeParserSECURE) {
 				p.GetErrorHandler().RecoverInline(p)
 			} else {
 				p.GetErrorHandler().ReportMatch(p)
@@ -33634,7 +33634,7 @@ func (p *SnowflakeParser) Alter_function_signature() (localctx IAlter_function_s
 	_la = p.GetTokenStream().LA(1)
 
 
-	if _la == SnowflakeParserCHAR || _la == SnowflakeParserCHARACTER || _la == SnowflakeParserDOUBLE || _la == SnowflakeParserINT || _la == SnowflakeParserNUMBER || _la == SnowflakeParserOBJECT || ((((_la - 869)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 869))) & ((1 << (SnowflakeParserTIME - 869)) | (1 << (SnowflakeParserTIMESTAMP - 869)) | (1 << (SnowflakeParserTIMESTAMP_LTZ - 869)) | (1 << (SnowflakeParserTIMESTAMP_NTZ - 869)) | (1 << (SnowflakeParserTIMESTAMP_TZ - 869)))) != 0) || ((((_la - 1000)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1000))) & ((1 << (SnowflakeParserARRAY - 1000)) | (1 << (SnowflakeParserBIGINT - 1000)) | (1 << (SnowflakeParserBINARY - 1000)) | (1 << (SnowflakeParserBOOLEAN - 1000)) | (1 << (SnowflakeParserBYTEINT - 1000)) | (1 << (SnowflakeParserDATE - 1000)) | (1 << (SnowflakeParserDATETIME - 1000)) | (1 << (SnowflakeParserDECIMAL_ - 1000)) | (1 << (SnowflakeParserFLOAT4 - 1000)) | (1 << (SnowflakeParserFLOAT8 - 1000)) | (1 << (SnowflakeParserFLOAT_ - 1000)) | (1 << (SnowflakeParserGEOGRAPHY - 1000)) | (1 << (SnowflakeParserGEOMETRY - 1000)) | (1 << (SnowflakeParserINTEGER - 1000)) | (1 << (SnowflakeParserNUMERIC - 1000)) | (1 << (SnowflakeParserREAL_ - 1000)) | (1 << (SnowflakeParserSMALLINT - 1000)) | (1 << (SnowflakeParserSTRING_ - 1000)) | (1 << (SnowflakeParserTEXT - 1000)) | (1 << (SnowflakeParserTINYINT - 1000)) | (1 << (SnowflakeParserVARBINARY - 1000)) | (1 << (SnowflakeParserVARCHAR - 1000)) | (1 << (SnowflakeParserVARIANT - 1000)))) != 0) {
+	if _la == SnowflakeParserCHAR || _la == SnowflakeParserCHARACTER || _la == SnowflakeParserDOUBLE || _la == SnowflakeParserINT || _la == SnowflakeParserNUMBER || _la == SnowflakeParserOBJECT || (int64((_la - 869)) & ^0x3f) == 0 && ((int64(1) << (_la - 869)) & 70721) != 0 || (int64((_la - 1000)) & ^0x3f) == 0 && ((int64(1) << (_la - 1000)) & 133791711) != 0 {
 		{
 			p.SetState(2990)
 			p.Data_type_list()
@@ -35456,7 +35456,7 @@ func (s *Alter_pipeContext) PREFIX() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserPREFIX, 0)
 }
 
-func (s *Alter_pipeContext) AllString() []IStringContext {
+func (s *Alter_pipeContext) AllString_() []IStringContext {
 	children := s.GetChildren()
 	len := 0
 	for _, ctx := range children {
@@ -35477,7 +35477,7 @@ func (s *Alter_pipeContext) AllString() []IStringContext {
 	return tst
 }
 
-func (s *Alter_pipeContext) String(i int) IStringContext {
+func (s *Alter_pipeContext) String_(i int) IStringContext {
 	var t antlr.RuleContext;
 	j := 0
 	for _, ctx := range s.GetChildren() {
@@ -35787,7 +35787,7 @@ func (p *SnowflakeParser) Alter_pipe() (localctx IAlter_pipeContext) {
 			}
 			{
 				p.SetState(3190)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -35807,7 +35807,7 @@ func (p *SnowflakeParser) Alter_pipe() (localctx IAlter_pipeContext) {
 			}
 			{
 				p.SetState(3195)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -35966,7 +35966,7 @@ func (s *Alter_procedureContext) EQ() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserEQ, 0)
 }
 
-func (s *Alter_procedureContext) String() IStringContext {
+func (s *Alter_procedureContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -36107,7 +36107,7 @@ func (p *SnowflakeParser) Alter_procedure() (localctx IAlter_procedureContext) {
 		_la = p.GetTokenStream().LA(1)
 
 
-		if _la == SnowflakeParserCHAR || _la == SnowflakeParserCHARACTER || _la == SnowflakeParserDOUBLE || _la == SnowflakeParserINT || _la == SnowflakeParserNUMBER || _la == SnowflakeParserOBJECT || ((((_la - 869)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 869))) & ((1 << (SnowflakeParserTIME - 869)) | (1 << (SnowflakeParserTIMESTAMP - 869)) | (1 << (SnowflakeParserTIMESTAMP_LTZ - 869)) | (1 << (SnowflakeParserTIMESTAMP_NTZ - 869)) | (1 << (SnowflakeParserTIMESTAMP_TZ - 869)))) != 0) || ((((_la - 1000)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1000))) & ((1 << (SnowflakeParserARRAY - 1000)) | (1 << (SnowflakeParserBIGINT - 1000)) | (1 << (SnowflakeParserBINARY - 1000)) | (1 << (SnowflakeParserBOOLEAN - 1000)) | (1 << (SnowflakeParserBYTEINT - 1000)) | (1 << (SnowflakeParserDATE - 1000)) | (1 << (SnowflakeParserDATETIME - 1000)) | (1 << (SnowflakeParserDECIMAL_ - 1000)) | (1 << (SnowflakeParserFLOAT4 - 1000)) | (1 << (SnowflakeParserFLOAT8 - 1000)) | (1 << (SnowflakeParserFLOAT_ - 1000)) | (1 << (SnowflakeParserGEOGRAPHY - 1000)) | (1 << (SnowflakeParserGEOMETRY - 1000)) | (1 << (SnowflakeParserINTEGER - 1000)) | (1 << (SnowflakeParserNUMERIC - 1000)) | (1 << (SnowflakeParserREAL_ - 1000)) | (1 << (SnowflakeParserSMALLINT - 1000)) | (1 << (SnowflakeParserSTRING_ - 1000)) | (1 << (SnowflakeParserTEXT - 1000)) | (1 << (SnowflakeParserTINYINT - 1000)) | (1 << (SnowflakeParserVARBINARY - 1000)) | (1 << (SnowflakeParserVARCHAR - 1000)) | (1 << (SnowflakeParserVARIANT - 1000)))) != 0) {
+		if _la == SnowflakeParserCHAR || _la == SnowflakeParserCHARACTER || _la == SnowflakeParserDOUBLE || _la == SnowflakeParserINT || _la == SnowflakeParserNUMBER || _la == SnowflakeParserOBJECT || (int64((_la - 869)) & ^0x3f) == 0 && ((int64(1) << (_la - 869)) & 70721) != 0 || (int64((_la - 1000)) & ^0x3f) == 0 && ((int64(1) << (_la - 1000)) & 133791711) != 0 {
 			{
 				p.SetState(3207)
 				p.Data_type_list()
@@ -36167,7 +36167,7 @@ func (p *SnowflakeParser) Alter_procedure() (localctx IAlter_procedureContext) {
 		_la = p.GetTokenStream().LA(1)
 
 
-		if _la == SnowflakeParserCHAR || _la == SnowflakeParserCHARACTER || _la == SnowflakeParserDOUBLE || _la == SnowflakeParserINT || _la == SnowflakeParserNUMBER || _la == SnowflakeParserOBJECT || ((((_la - 869)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 869))) & ((1 << (SnowflakeParserTIME - 869)) | (1 << (SnowflakeParserTIMESTAMP - 869)) | (1 << (SnowflakeParserTIMESTAMP_LTZ - 869)) | (1 << (SnowflakeParserTIMESTAMP_NTZ - 869)) | (1 << (SnowflakeParserTIMESTAMP_TZ - 869)))) != 0) || ((((_la - 1000)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1000))) & ((1 << (SnowflakeParserARRAY - 1000)) | (1 << (SnowflakeParserBIGINT - 1000)) | (1 << (SnowflakeParserBINARY - 1000)) | (1 << (SnowflakeParserBOOLEAN - 1000)) | (1 << (SnowflakeParserBYTEINT - 1000)) | (1 << (SnowflakeParserDATE - 1000)) | (1 << (SnowflakeParserDATETIME - 1000)) | (1 << (SnowflakeParserDECIMAL_ - 1000)) | (1 << (SnowflakeParserFLOAT4 - 1000)) | (1 << (SnowflakeParserFLOAT8 - 1000)) | (1 << (SnowflakeParserFLOAT_ - 1000)) | (1 << (SnowflakeParserGEOGRAPHY - 1000)) | (1 << (SnowflakeParserGEOMETRY - 1000)) | (1 << (SnowflakeParserINTEGER - 1000)) | (1 << (SnowflakeParserNUMERIC - 1000)) | (1 << (SnowflakeParserREAL_ - 1000)) | (1 << (SnowflakeParserSMALLINT - 1000)) | (1 << (SnowflakeParserSTRING_ - 1000)) | (1 << (SnowflakeParserTEXT - 1000)) | (1 << (SnowflakeParserTINYINT - 1000)) | (1 << (SnowflakeParserVARBINARY - 1000)) | (1 << (SnowflakeParserVARCHAR - 1000)) | (1 << (SnowflakeParserVARIANT - 1000)))) != 0) {
+		if _la == SnowflakeParserCHAR || _la == SnowflakeParserCHARACTER || _la == SnowflakeParserDOUBLE || _la == SnowflakeParserINT || _la == SnowflakeParserNUMBER || _la == SnowflakeParserOBJECT || (int64((_la - 869)) & ^0x3f) == 0 && ((int64(1) << (_la - 869)) & 70721) != 0 || (int64((_la - 1000)) & ^0x3f) == 0 && ((int64(1) << (_la - 1000)) & 133791711) != 0 {
 			{
 				p.SetState(3222)
 				p.Data_type_list()
@@ -36192,7 +36192,7 @@ func (p *SnowflakeParser) Alter_procedure() (localctx IAlter_procedureContext) {
 		}
 		{
 			p.SetState(3229)
-			p.String()
+			p.String_()
 		}
 
 
@@ -36231,7 +36231,7 @@ func (p *SnowflakeParser) Alter_procedure() (localctx IAlter_procedureContext) {
 		_la = p.GetTokenStream().LA(1)
 
 
-		if _la == SnowflakeParserCHAR || _la == SnowflakeParserCHARACTER || _la == SnowflakeParserDOUBLE || _la == SnowflakeParserINT || _la == SnowflakeParserNUMBER || _la == SnowflakeParserOBJECT || ((((_la - 869)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 869))) & ((1 << (SnowflakeParserTIME - 869)) | (1 << (SnowflakeParserTIMESTAMP - 869)) | (1 << (SnowflakeParserTIMESTAMP_LTZ - 869)) | (1 << (SnowflakeParserTIMESTAMP_NTZ - 869)) | (1 << (SnowflakeParserTIMESTAMP_TZ - 869)))) != 0) || ((((_la - 1000)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1000))) & ((1 << (SnowflakeParserARRAY - 1000)) | (1 << (SnowflakeParserBIGINT - 1000)) | (1 << (SnowflakeParserBINARY - 1000)) | (1 << (SnowflakeParserBOOLEAN - 1000)) | (1 << (SnowflakeParserBYTEINT - 1000)) | (1 << (SnowflakeParserDATE - 1000)) | (1 << (SnowflakeParserDATETIME - 1000)) | (1 << (SnowflakeParserDECIMAL_ - 1000)) | (1 << (SnowflakeParserFLOAT4 - 1000)) | (1 << (SnowflakeParserFLOAT8 - 1000)) | (1 << (SnowflakeParserFLOAT_ - 1000)) | (1 << (SnowflakeParserGEOGRAPHY - 1000)) | (1 << (SnowflakeParserGEOMETRY - 1000)) | (1 << (SnowflakeParserINTEGER - 1000)) | (1 << (SnowflakeParserNUMERIC - 1000)) | (1 << (SnowflakeParserREAL_ - 1000)) | (1 << (SnowflakeParserSMALLINT - 1000)) | (1 << (SnowflakeParserSTRING_ - 1000)) | (1 << (SnowflakeParserTEXT - 1000)) | (1 << (SnowflakeParserTINYINT - 1000)) | (1 << (SnowflakeParserVARBINARY - 1000)) | (1 << (SnowflakeParserVARCHAR - 1000)) | (1 << (SnowflakeParserVARIANT - 1000)))) != 0) {
+		if _la == SnowflakeParserCHAR || _la == SnowflakeParserCHARACTER || _la == SnowflakeParserDOUBLE || _la == SnowflakeParserINT || _la == SnowflakeParserNUMBER || _la == SnowflakeParserOBJECT || (int64((_la - 869)) & ^0x3f) == 0 && ((int64(1) << (_la - 869)) & 70721) != 0 || (int64((_la - 1000)) & ^0x3f) == 0 && ((int64(1) << (_la - 1000)) & 133791711) != 0 {
 			{
 				p.SetState(3238)
 				p.Data_type_list()
@@ -36287,7 +36287,7 @@ func (p *SnowflakeParser) Alter_procedure() (localctx IAlter_procedureContext) {
 		_la = p.GetTokenStream().LA(1)
 
 
-		if _la == SnowflakeParserCHAR || _la == SnowflakeParserCHARACTER || _la == SnowflakeParserDOUBLE || _la == SnowflakeParserINT || _la == SnowflakeParserNUMBER || _la == SnowflakeParserOBJECT || ((((_la - 869)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 869))) & ((1 << (SnowflakeParserTIME - 869)) | (1 << (SnowflakeParserTIMESTAMP - 869)) | (1 << (SnowflakeParserTIMESTAMP_LTZ - 869)) | (1 << (SnowflakeParserTIMESTAMP_NTZ - 869)) | (1 << (SnowflakeParserTIMESTAMP_TZ - 869)))) != 0) || ((((_la - 1000)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1000))) & ((1 << (SnowflakeParserARRAY - 1000)) | (1 << (SnowflakeParserBIGINT - 1000)) | (1 << (SnowflakeParserBINARY - 1000)) | (1 << (SnowflakeParserBOOLEAN - 1000)) | (1 << (SnowflakeParserBYTEINT - 1000)) | (1 << (SnowflakeParserDATE - 1000)) | (1 << (SnowflakeParserDATETIME - 1000)) | (1 << (SnowflakeParserDECIMAL_ - 1000)) | (1 << (SnowflakeParserFLOAT4 - 1000)) | (1 << (SnowflakeParserFLOAT8 - 1000)) | (1 << (SnowflakeParserFLOAT_ - 1000)) | (1 << (SnowflakeParserGEOGRAPHY - 1000)) | (1 << (SnowflakeParserGEOMETRY - 1000)) | (1 << (SnowflakeParserINTEGER - 1000)) | (1 << (SnowflakeParserNUMERIC - 1000)) | (1 << (SnowflakeParserREAL_ - 1000)) | (1 << (SnowflakeParserSMALLINT - 1000)) | (1 << (SnowflakeParserSTRING_ - 1000)) | (1 << (SnowflakeParserTEXT - 1000)) | (1 << (SnowflakeParserTINYINT - 1000)) | (1 << (SnowflakeParserVARBINARY - 1000)) | (1 << (SnowflakeParserVARCHAR - 1000)) | (1 << (SnowflakeParserVARIANT - 1000)))) != 0) {
+		if _la == SnowflakeParserCHAR || _la == SnowflakeParserCHARACTER || _la == SnowflakeParserDOUBLE || _la == SnowflakeParserINT || _la == SnowflakeParserNUMBER || _la == SnowflakeParserOBJECT || (int64((_la - 869)) & ^0x3f) == 0 && ((int64(1) << (_la - 869)) & 70721) != 0 || (int64((_la - 1000)) & ^0x3f) == 0 && ((int64(1) << (_la - 1000)) & 133791711) != 0 {
 			{
 				p.SetState(3252)
 				p.Data_type_list()
@@ -36477,7 +36477,7 @@ func (s *Alter_replication_groupContext) REPLICATION_SCHEDULE() antlr.TerminalNo
 	return s.GetToken(SnowflakeParserREPLICATION_SCHEDULE, 0)
 }
 
-func (s *Alter_replication_groupContext) String() IStringContext {
+func (s *Alter_replication_groupContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -36834,7 +36834,7 @@ func (p *SnowflakeParser) Alter_replication_group() (localctx IAlter_replication
 			}
 			{
 				p.SetState(3288)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -36934,7 +36934,7 @@ func (p *SnowflakeParser) Alter_replication_group() (localctx IAlter_replication
 			}
 			{
 				p.SetState(3314)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -38297,7 +38297,7 @@ func (s *Alter_resource_monitorContext) LR_BRACKET() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserLR_BRACKET, 0)
 }
 
-func (s *Alter_resource_monitorContext) AllString() []IStringContext {
+func (s *Alter_resource_monitorContext) AllString_() []IStringContext {
 	children := s.GetChildren()
 	len := 0
 	for _, ctx := range children {
@@ -38318,7 +38318,7 @@ func (s *Alter_resource_monitorContext) AllString() []IStringContext {
 	return tst
 }
 
-func (s *Alter_resource_monitorContext) String(i int) IStringContext {
+func (s *Alter_resource_monitorContext) String_(i int) IStringContext {
 	var t antlr.RuleContext;
 	j := 0
 	for _, ctx := range s.GetChildren() {
@@ -38543,7 +38543,7 @@ func (p *SnowflakeParser) Alter_resource_monitor() (localctx IAlter_resource_mon
 			}
 			{
 				p.SetState(3494)
-				p.String()
+				p.String_()
 			}
 
 
@@ -38580,7 +38580,7 @@ func (p *SnowflakeParser) Alter_resource_monitor() (localctx IAlter_resource_mon
 			}
 			{
 				p.SetState(3501)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -40276,7 +40276,7 @@ func (p *SnowflakeParser) Schema_property() (localctx ISchema_propertyContext) {
 		p.SetState(3690)
 		_la = p.GetTokenStream().LA(1)
 
-		if !(_la == SnowflakeParserCOMMENT || _la == SnowflakeParserDATA_RETENTION_TIME_IN_DAYS || _la == SnowflakeParserDEFAULT_DDL_COLLATION_ || _la == SnowflakeParserMAX_DATA_EXTENSION_TIME_IN_DAYS) {
+		if !((int64((_la - 155)) & ^0x3f) == 0 && ((int64(1) << (_la - 155)) & 288247968337756161) != 0 || _la == SnowflakeParserMAX_DATA_EXTENSION_TIME_IN_DAYS) {
 			p.GetErrorHandler().RecoverInline(p)
 		} else {
 			p.GetErrorHandler().ReportMatch(p)
@@ -40847,7 +40847,7 @@ func (s *Alter_security_integration_external_oauthContext) EXTERNAL_OAUTH_ISSUER
 	return s.GetToken(SnowflakeParserEXTERNAL_OAUTH_ISSUER, 0)
 }
 
-func (s *Alter_security_integration_external_oauthContext) AllString() []IStringContext {
+func (s *Alter_security_integration_external_oauthContext) AllString_() []IStringContext {
 	children := s.GetChildren()
 	len := 0
 	for _, ctx := range children {
@@ -40868,7 +40868,7 @@ func (s *Alter_security_integration_external_oauthContext) AllString() []IString
 	return tst
 }
 
-func (s *Alter_security_integration_external_oauthContext) String(i int) IStringContext {
+func (s *Alter_security_integration_external_oauthContext) String_(i int) IStringContext {
 	var t antlr.RuleContext;
 	j := 0
 	for _, ctx := range s.GetChildren() {
@@ -41281,7 +41281,7 @@ func (p *SnowflakeParser) Alter_security_integration_external_oauth() (localctx 
 			}
 			{
 				p.SetState(3766)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -41306,7 +41306,7 @@ func (p *SnowflakeParser) Alter_security_integration_external_oauth() (localctx 
 			case SnowflakeParserSTRING:
 				{
 					p.SetState(3771)
-					p.String()
+					p.String_()
 				}
 
 
@@ -41347,7 +41347,7 @@ func (p *SnowflakeParser) Alter_security_integration_external_oauth() (localctx 
 			}
 			{
 				p.SetState(3782)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -41366,7 +41366,7 @@ func (p *SnowflakeParser) Alter_security_integration_external_oauth() (localctx 
 			}
 			{
 				p.SetState(3787)
-				p.String()
+				p.String_()
 			}
 
 
@@ -41392,7 +41392,7 @@ func (p *SnowflakeParser) Alter_security_integration_external_oauth() (localctx 
 			case SnowflakeParserSTRING:
 				{
 					p.SetState(3792)
-					p.String()
+					p.String_()
 				}
 
 
@@ -41433,7 +41433,7 @@ func (p *SnowflakeParser) Alter_security_integration_external_oauth() (localctx 
 			}
 			{
 				p.SetState(3803)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -41453,7 +41453,7 @@ func (p *SnowflakeParser) Alter_security_integration_external_oauth() (localctx 
 			}
 			{
 				p.SetState(3808)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -41533,7 +41533,7 @@ func (p *SnowflakeParser) Alter_security_integration_external_oauth() (localctx 
 			}
 			{
 				p.SetState(3830)
-				p.String()
+				p.String_()
 			}
 			{
 				p.SetState(3831)
@@ -41558,7 +41558,7 @@ func (p *SnowflakeParser) Alter_security_integration_external_oauth() (localctx 
 				p.SetState(3837)
 				_la = p.GetTokenStream().LA(1)
 
-				if !(((((_la - 230)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 230))) & ((1 << (SnowflakeParserDISABLE - 230)) | (1 << (SnowflakeParserENABLE - 230)) | (1 << (SnowflakeParserENABLE_FOR_PRIVILEGE - 230)))) != 0)) {
+				if !((int64((_la - 230)) & ^0x3f) == 0 && ((int64(1) << (_la - 230)) & 196609) != 0) {
 					p.GetErrorHandler().RecoverInline(p)
 				} else {
 					p.GetErrorHandler().ReportMatch(p)
@@ -41584,7 +41584,7 @@ func (p *SnowflakeParser) Alter_security_integration_external_oauth() (localctx 
 			}
 			{
 				p.SetState(3842)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -42016,7 +42016,7 @@ func (s *Alter_security_integration_snowflake_oauthContext) EQ(i int) antlr.Term
 	return s.GetToken(SnowflakeParserEQ, i)
 }
 
-func (s *Alter_security_integration_snowflake_oauthContext) AllString() []IStringContext {
+func (s *Alter_security_integration_snowflake_oauthContext) AllString_() []IStringContext {
 	children := s.GetChildren()
 	len := 0
 	for _, ctx := range children {
@@ -42037,7 +42037,7 @@ func (s *Alter_security_integration_snowflake_oauthContext) AllString() []IStrin
 	return tst
 }
 
-func (s *Alter_security_integration_snowflake_oauthContext) String(i int) IStringContext {
+func (s *Alter_security_integration_snowflake_oauthContext) String_(i int) IStringContext {
 	var t antlr.RuleContext;
 	j := 0
 	for _, ctx := range s.GetChildren() {
@@ -42498,7 +42498,7 @@ func (p *SnowflakeParser) Alter_security_integration_snowflake_oauth() (localctx
 			}
 			{
 				p.SetState(3916)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -42523,7 +42523,7 @@ func (p *SnowflakeParser) Alter_security_integration_snowflake_oauth() (localctx
 			case SnowflakeParserSTRING:
 				{
 					p.SetState(3921)
-					p.String()
+					p.String_()
 				}
 
 
@@ -42564,7 +42564,7 @@ func (p *SnowflakeParser) Alter_security_integration_snowflake_oauth() (localctx
 			}
 			{
 				p.SetState(3932)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -42583,7 +42583,7 @@ func (p *SnowflakeParser) Alter_security_integration_snowflake_oauth() (localctx
 			}
 			{
 				p.SetState(3937)
-				p.String()
+				p.String_()
 			}
 
 
@@ -42609,7 +42609,7 @@ func (p *SnowflakeParser) Alter_security_integration_snowflake_oauth() (localctx
 			case SnowflakeParserSTRING:
 				{
 					p.SetState(3942)
-					p.String()
+					p.String_()
 				}
 
 
@@ -42650,7 +42650,7 @@ func (p *SnowflakeParser) Alter_security_integration_snowflake_oauth() (localctx
 			}
 			{
 				p.SetState(3953)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -42670,7 +42670,7 @@ func (p *SnowflakeParser) Alter_security_integration_snowflake_oauth() (localctx
 			}
 			{
 				p.SetState(3958)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -42750,7 +42750,7 @@ func (p *SnowflakeParser) Alter_security_integration_snowflake_oauth() (localctx
 			}
 			{
 				p.SetState(3980)
-				p.String()
+				p.String_()
 			}
 			{
 				p.SetState(3981)
@@ -42808,7 +42808,7 @@ func (p *SnowflakeParser) Alter_security_integration_snowflake_oauth() (localctx
 		}
 		{
 			p.SetState(3994)
-			p.String()
+			p.String_()
 		}
 
 
@@ -43197,7 +43197,7 @@ func (s *Alter_security_integration_saml2Context) SAML2_ISSUER() antlr.TerminalN
 	return s.GetToken(SnowflakeParserSAML2_ISSUER, 0)
 }
 
-func (s *Alter_security_integration_saml2Context) AllString() []IStringContext {
+func (s *Alter_security_integration_saml2Context) AllString_() []IStringContext {
 	children := s.GetChildren()
 	len := 0
 	for _, ctx := range children {
@@ -43218,7 +43218,7 @@ func (s *Alter_security_integration_saml2Context) AllString() []IStringContext {
 	return tst
 }
 
-func (s *Alter_security_integration_saml2Context) String(i int) IStringContext {
+func (s *Alter_security_integration_saml2Context) String_(i int) IStringContext {
 	var t antlr.RuleContext;
 	j := 0
 	for _, ctx := range s.GetChildren() {
@@ -43519,7 +43519,7 @@ func (p *SnowflakeParser) Alter_security_integration_saml2() (localctx IAlter_se
 			}
 			{
 				p.SetState(4054)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -43539,7 +43539,7 @@ func (p *SnowflakeParser) Alter_security_integration_saml2() (localctx IAlter_se
 			}
 			{
 				p.SetState(4059)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -43559,7 +43559,7 @@ func (p *SnowflakeParser) Alter_security_integration_saml2() (localctx IAlter_se
 			}
 			{
 				p.SetState(4064)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -43579,7 +43579,7 @@ func (p *SnowflakeParser) Alter_security_integration_saml2() (localctx IAlter_se
 			}
 			{
 				p.SetState(4069)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -43599,7 +43599,7 @@ func (p *SnowflakeParser) Alter_security_integration_saml2() (localctx IAlter_se
 			}
 			{
 				p.SetState(4074)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -43639,7 +43639,7 @@ func (p *SnowflakeParser) Alter_security_integration_saml2() (localctx IAlter_se
 			}
 			{
 				p.SetState(4084)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -43679,7 +43679,7 @@ func (p *SnowflakeParser) Alter_security_integration_saml2() (localctx IAlter_se
 			}
 			{
 				p.SetState(4094)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -43699,7 +43699,7 @@ func (p *SnowflakeParser) Alter_security_integration_saml2() (localctx IAlter_se
 			}
 			{
 				p.SetState(4099)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -43739,7 +43739,7 @@ func (p *SnowflakeParser) Alter_security_integration_saml2() (localctx IAlter_se
 			}
 			{
 				p.SetState(4109)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -43759,7 +43759,7 @@ func (p *SnowflakeParser) Alter_security_integration_saml2() (localctx IAlter_se
 			}
 			{
 				p.SetState(4114)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -43981,7 +43981,7 @@ func (s *Alter_security_integration_scimContext) EQ(i int) antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserEQ, i)
 }
 
-func (s *Alter_security_integration_scimContext) String() IStringContext {
+func (s *Alter_security_integration_scimContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -44238,7 +44238,7 @@ func (p *SnowflakeParser) Alter_security_integration_scim() (localctx IAlter_sec
 			}
 			{
 				p.SetState(4159)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -54896,7 +54896,7 @@ func (s *Alter_taskContext) EQ(i int) antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserEQ, i)
 }
 
-func (s *Alter_taskContext) AllString() []IStringContext {
+func (s *Alter_taskContext) AllString_() []IStringContext {
 	children := s.GetChildren()
 	len := 0
 	for _, ctx := range children {
@@ -54917,7 +54917,7 @@ func (s *Alter_taskContext) AllString() []IStringContext {
 	return tst
 }
 
-func (s *Alter_taskContext) String(i int) IStringContext {
+func (s *Alter_taskContext) String_(i int) IStringContext {
 	var t antlr.RuleContext;
 	j := 0
 	for _, ctx := range s.GetChildren() {
@@ -55345,7 +55345,7 @@ func (p *SnowflakeParser) Alter_task() (localctx IAlter_taskContext) {
 			}
 			{
 				p.SetState(5304)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -55365,7 +55365,7 @@ func (p *SnowflakeParser) Alter_task() (localctx IAlter_taskContext) {
 			}
 			{
 				p.SetState(5309)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -55446,7 +55446,7 @@ func (p *SnowflakeParser) Alter_task() (localctx IAlter_taskContext) {
 		_la = p.GetTokenStream().LA(1)
 
 
-		if (((_la) & -(0x1f+1)) == 0 && ((1 << uint(_la)) & ((1 << SnowflakeParserABORT_DETACHED_QUERY) | (1 << SnowflakeParserALLOW_CLIENT_MFA_CACHING) | (1 << SnowflakeParserALLOW_ID_TOKEN))) != 0) || ((((_la - 66)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 66))) & ((1 << (SnowflakeParserAUTOCOMMIT - 66)) | (1 << (SnowflakeParserAUTOCOMMIT_API_SUPPORTED - 66)) | (1 << (SnowflakeParserBINARY_INPUT_FORMAT - 66)) | (1 << (SnowflakeParserBINARY_OUTPUT_FORMAT - 66)))) != 0) || ((((_la - 132)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 132))) & ((1 << (SnowflakeParserCLIENT_ENABLE_LOG_INFO_STATEMENT_PARAMETERS - 132)) | (1 << (SnowflakeParserCLIENT_ENCRYPTION_KEY_SIZE - 132)) | (1 << (SnowflakeParserCLIENT_MEMORY_LIMIT - 132)) | (1 << (SnowflakeParserCLIENT_METADATA_REQUEST_USE_CONNECTION_CTX - 132)) | (1 << (SnowflakeParserCLIENT_METADATA_USE_SESSION_DATABASE - 132)) | (1 << (SnowflakeParserCLIENT_PREFETCH_THREADS - 132)) | (1 << (SnowflakeParserCLIENT_RESULT_CHUNK_SIZE - 132)) | (1 << (SnowflakeParserCLIENT_RESULT_COLUMN_CASE_INSENSITIVE - 132)) | (1 << (SnowflakeParserCLIENT_SESSION_KEEP_ALIVE - 132)) | (1 << (SnowflakeParserCLIENT_SESSION_KEEP_ALIVE_HEARTBEAT_FREQUENCY - 132)) | (1 << (SnowflakeParserCLIENT_TIMESTAMP_TYPE_MAPPING - 132)))) != 0) || ((((_la - 199)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 199))) & ((1 << (SnowflakeParserDATA_RETENTION_TIME_IN_DAYS - 199)) | (1 << (SnowflakeParserDATE_INPUT_FORMAT - 199)) | (1 << (SnowflakeParserDATE_OUTPUT_FORMAT - 199)))) != 0) || ((((_la - 248)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 248))) & ((1 << (SnowflakeParserENABLE_INTERNAL_STAGES_PRIVATELINK - 248)) | (1 << (SnowflakeParserENABLE_UNLOAD_PHYSICAL_TYPE_OPTIMIZATION - 248)) | (1 << (SnowflakeParserENFORCE_SESSION_POLICY - 248)) | (1 << (SnowflakeParserERROR_ON_NONDETERMINISTIC_MERGE - 248)) | (1 << (SnowflakeParserERROR_ON_NONDETERMINISTIC_UPDATE - 248)))) != 0) || _la == SnowflakeParserEXTERNAL_OAUTH_ADD_PRIVILEGED_ROLES_TO_BLOCKED_LIST || _la == SnowflakeParserGEOGRAPHY_OUTPUT_FORMAT || _la == SnowflakeParserGEOMETRY_OUTPUT_FORMAT || ((((_la - 370)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 370))) & ((1 << (SnowflakeParserINITIAL_REPLICATION_SIZE_LIMIT_IN_TB - 370)) | (1 << (SnowflakeParserJDBC_TREAT_DECIMAL_AS_INT - 370)) | (1 << (SnowflakeParserJDBC_TREAT_TIMESTAMP_NTZ_AS_UTC - 370)) | (1 << (SnowflakeParserJDBC_USE_SESSION_TIMEZONE - 370)) | (1 << (SnowflakeParserJS_TREAT_INTEGER_AS_BIGINT - 370)) | (1 << (SnowflakeParserJSON_INDENT - 370)))) != 0) || ((((_la - 423)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 423))) & ((1 << (SnowflakeParserLOCK_TIMEOUT - 423)) | (1 << (SnowflakeParserMAX_CONCURRENCY_LEVEL - 423)) | (1 << (SnowflakeParserMAX_DATA_EXTENSION_TIME_IN_DAYS - 423)))) != 0) || ((((_la - 457)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 457))) & ((1 << (SnowflakeParserMIN_DATA_RETENTION_TIME_IN_DAYS - 457)) | (1 << (SnowflakeParserMULTI_STATEMENT_COUNT - 457)) | (1 << (SnowflakeParserNETWORK_POLICY - 457)))) != 0) || ((((_la - 571)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 571))) & ((1 << (SnowflakeParserPERIODIC_DATA_REKEYING - 571)) | (1 << (SnowflakeParserPIPE_EXECUTION_PAUSED - 571)) | (1 << (SnowflakeParserPREVENT_UNLOAD_TO_INLINE_URL - 571)) | (1 << (SnowflakeParserPREVENT_UNLOAD_TO_INTERNAL_STAGES - 571)))) != 0) || _la == SnowflakeParserQUERY_TAG || _la == SnowflakeParserQUOTED_IDENTIFIERS_IGNORE_CASE || _la == SnowflakeParserREQUIRE_STORAGE_INTEGRATION_FOR_STAGE_CREATION || _la == SnowflakeParserREQUIRE_STORAGE_INTEGRATION_FOR_STAGE_OPERATION || _la == SnowflakeParserROWS_PER_RESULTSET || _la == SnowflakeParserSAML_IDENTITY_PROVIDER || _la == SnowflakeParserSHARE_RESTRICTIONS || _la == SnowflakeParserSIMULATED_DATA_SHARING_CONSUMER || ((((_la - 794)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 794))) & ((1 << (SnowflakeParserSSO_LOGIN_PAGE - 794)) | (1 << (SnowflakeParserSTATEMENT_QUEUED_TIMEOUT_IN_SECONDS - 794)) | (1 << (SnowflakeParserSTATEMENT_TIMEOUT_IN_SECONDS - 794)))) != 0) || _la == SnowflakeParserSTRICT_JSON_OUTPUT || _la == SnowflakeParserSUSPEND_TASK_AFTER_NUM_FAILURES || ((((_la - 871)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 871))) & ((1 << (SnowflakeParserTIME_INPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIME_OUTPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMESTAMP_DAY_IS_ALWAYS_24H - 871)) | (1 << (SnowflakeParserTIMESTAMP_INPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMESTAMP_LTZ_OUTPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMESTAMP_NTZ_OUTPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMESTAMP_OUTPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMESTAMP_TYPE_MAPPING - 871)) | (1 << (SnowflakeParserTIMESTAMP_TZ_OUTPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMEZONE - 871)) | (1 << (SnowflakeParserTRANSACTION_ABORT_ON_ERROR - 871)) | (1 << (SnowflakeParserTRANSACTION_DEFAULT_ISOLATION_LEVEL - 871)))) != 0) || _la == SnowflakeParserTWO_DIGIT_CENTURY_START || _la == SnowflakeParserUNSUPPORTED_DDL_ACTION || ((((_la - 947)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 947))) & ((1 << (SnowflakeParserUSE_CACHED_RESULT - 947)) | (1 << (SnowflakeParserUSER_TASK_MANAGED_INITIAL_WAREHOUSE_SIZE - 947)) | (1 << (SnowflakeParserUSER_TASK_TIMEOUT_MS - 947)) | (1 << (SnowflakeParserWEEK_OF_YEAR_POLICY - 947)) | (1 << (SnowflakeParserWEEK_START - 947)))) != 0) || _la == SnowflakeParserDEFAULT_DDL_COLLATION {
+		if (int64((_la - 4)) & ^0x3f) == 0 && ((int64(1) << (_la - 4)) & -4611686018426208255) != 0 || (int64((_la - 95)) & ^0x3f) == 0 && ((int64(1) << (_la - 95)) & 281337537757187) != 0 || (int64((_la - 199)) & ^0x3f) == 0 && ((int64(1) << (_la - 199)) & 1157988054187638833) != 0 || (int64((_la - 265)) & ^0x3f) == 0 && ((int64(1) << (_la - 265)) & 131075) != 0 || (int64((_la - 329)) & ^0x3f) == 0 && ((int64(1) << (_la - 329)) & 6629300850512625667) != 0 || (int64((_la - 393)) & ^0x3f) == 0 && ((int64(1) << (_la - 393)) & 108086392130633729) != 0 || (int64((_la - 457)) & ^0x3f) == 0 && ((int64(1) << (_la - 457)) & 2101249) != 0 || (int64((_la - 571)) & ^0x3f) == 0 && ((int64(1) << (_la - 571)) & 1407374889844801) != 0 || (int64((_la - 666)) & ^0x3f) == 0 && ((int64(1) << (_la - 666)) & 1152921779484753923) != 0 || (int64((_la - 761)) & ^0x3f) == 0 && ((int64(1) << (_la - 761)) & 422221055002625) != 0 || (int64((_la - 833)) & ^0x3f) == 0 && ((int64(1) << (_la - 833)) & -4580538228402026495) != 0 || (int64((_la - 915)) & ^0x3f) == 0 && ((int64(1) << (_la - 915)) & 6917529238102867969) != 0 || _la == SnowflakeParserDEFAULT_DDL_COLLATION {
 			{
 				p.SetState(5330)
 				p.Session_parameter_init_list()
@@ -55562,7 +55562,7 @@ func (p *SnowflakeParser) Alter_task() (localctx IAlter_taskContext) {
 		_la = p.GetTokenStream().LA(1)
 
 
-		if (((_la) & -(0x1f+1)) == 0 && ((1 << uint(_la)) & ((1 << SnowflakeParserABORT_DETACHED_QUERY) | (1 << SnowflakeParserALLOW_CLIENT_MFA_CACHING) | (1 << SnowflakeParserALLOW_ID_TOKEN))) != 0) || ((((_la - 66)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 66))) & ((1 << (SnowflakeParserAUTOCOMMIT - 66)) | (1 << (SnowflakeParserAUTOCOMMIT_API_SUPPORTED - 66)) | (1 << (SnowflakeParserBINARY_INPUT_FORMAT - 66)) | (1 << (SnowflakeParserBINARY_OUTPUT_FORMAT - 66)))) != 0) || ((((_la - 132)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 132))) & ((1 << (SnowflakeParserCLIENT_ENABLE_LOG_INFO_STATEMENT_PARAMETERS - 132)) | (1 << (SnowflakeParserCLIENT_ENCRYPTION_KEY_SIZE - 132)) | (1 << (SnowflakeParserCLIENT_MEMORY_LIMIT - 132)) | (1 << (SnowflakeParserCLIENT_METADATA_REQUEST_USE_CONNECTION_CTX - 132)) | (1 << (SnowflakeParserCLIENT_METADATA_USE_SESSION_DATABASE - 132)) | (1 << (SnowflakeParserCLIENT_PREFETCH_THREADS - 132)) | (1 << (SnowflakeParserCLIENT_RESULT_CHUNK_SIZE - 132)) | (1 << (SnowflakeParserCLIENT_RESULT_COLUMN_CASE_INSENSITIVE - 132)) | (1 << (SnowflakeParserCLIENT_SESSION_KEEP_ALIVE - 132)) | (1 << (SnowflakeParserCLIENT_SESSION_KEEP_ALIVE_HEARTBEAT_FREQUENCY - 132)) | (1 << (SnowflakeParserCLIENT_TIMESTAMP_TYPE_MAPPING - 132)))) != 0) || ((((_la - 199)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 199))) & ((1 << (SnowflakeParserDATA_RETENTION_TIME_IN_DAYS - 199)) | (1 << (SnowflakeParserDATE_INPUT_FORMAT - 199)) | (1 << (SnowflakeParserDATE_OUTPUT_FORMAT - 199)))) != 0) || ((((_la - 248)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 248))) & ((1 << (SnowflakeParserENABLE_INTERNAL_STAGES_PRIVATELINK - 248)) | (1 << (SnowflakeParserENABLE_UNLOAD_PHYSICAL_TYPE_OPTIMIZATION - 248)) | (1 << (SnowflakeParserENFORCE_SESSION_POLICY - 248)) | (1 << (SnowflakeParserERROR_ON_NONDETERMINISTIC_MERGE - 248)) | (1 << (SnowflakeParserERROR_ON_NONDETERMINISTIC_UPDATE - 248)))) != 0) || _la == SnowflakeParserEXTERNAL_OAUTH_ADD_PRIVILEGED_ROLES_TO_BLOCKED_LIST || _la == SnowflakeParserGEOGRAPHY_OUTPUT_FORMAT || _la == SnowflakeParserGEOMETRY_OUTPUT_FORMAT || ((((_la - 370)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 370))) & ((1 << (SnowflakeParserINITIAL_REPLICATION_SIZE_LIMIT_IN_TB - 370)) | (1 << (SnowflakeParserJDBC_TREAT_DECIMAL_AS_INT - 370)) | (1 << (SnowflakeParserJDBC_TREAT_TIMESTAMP_NTZ_AS_UTC - 370)) | (1 << (SnowflakeParserJDBC_USE_SESSION_TIMEZONE - 370)) | (1 << (SnowflakeParserJS_TREAT_INTEGER_AS_BIGINT - 370)) | (1 << (SnowflakeParserJSON_INDENT - 370)))) != 0) || ((((_la - 423)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 423))) & ((1 << (SnowflakeParserLOCK_TIMEOUT - 423)) | (1 << (SnowflakeParserMAX_CONCURRENCY_LEVEL - 423)) | (1 << (SnowflakeParserMAX_DATA_EXTENSION_TIME_IN_DAYS - 423)))) != 0) || ((((_la - 457)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 457))) & ((1 << (SnowflakeParserMIN_DATA_RETENTION_TIME_IN_DAYS - 457)) | (1 << (SnowflakeParserMULTI_STATEMENT_COUNT - 457)) | (1 << (SnowflakeParserNETWORK_POLICY - 457)))) != 0) || ((((_la - 571)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 571))) & ((1 << (SnowflakeParserPERIODIC_DATA_REKEYING - 571)) | (1 << (SnowflakeParserPIPE_EXECUTION_PAUSED - 571)) | (1 << (SnowflakeParserPREVENT_UNLOAD_TO_INLINE_URL - 571)) | (1 << (SnowflakeParserPREVENT_UNLOAD_TO_INTERNAL_STAGES - 571)))) != 0) || _la == SnowflakeParserQUERY_TAG || _la == SnowflakeParserQUOTED_IDENTIFIERS_IGNORE_CASE || _la == SnowflakeParserREQUIRE_STORAGE_INTEGRATION_FOR_STAGE_CREATION || _la == SnowflakeParserREQUIRE_STORAGE_INTEGRATION_FOR_STAGE_OPERATION || _la == SnowflakeParserROWS_PER_RESULTSET || _la == SnowflakeParserSAML_IDENTITY_PROVIDER || _la == SnowflakeParserSHARE_RESTRICTIONS || _la == SnowflakeParserSIMULATED_DATA_SHARING_CONSUMER || ((((_la - 794)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 794))) & ((1 << (SnowflakeParserSSO_LOGIN_PAGE - 794)) | (1 << (SnowflakeParserSTATEMENT_QUEUED_TIMEOUT_IN_SECONDS - 794)) | (1 << (SnowflakeParserSTATEMENT_TIMEOUT_IN_SECONDS - 794)))) != 0) || _la == SnowflakeParserSTRICT_JSON_OUTPUT || _la == SnowflakeParserSUSPEND_TASK_AFTER_NUM_FAILURES || ((((_la - 871)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 871))) & ((1 << (SnowflakeParserTIME_INPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIME_OUTPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMESTAMP_DAY_IS_ALWAYS_24H - 871)) | (1 << (SnowflakeParserTIMESTAMP_INPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMESTAMP_LTZ_OUTPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMESTAMP_NTZ_OUTPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMESTAMP_OUTPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMESTAMP_TYPE_MAPPING - 871)) | (1 << (SnowflakeParserTIMESTAMP_TZ_OUTPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMEZONE - 871)) | (1 << (SnowflakeParserTRANSACTION_ABORT_ON_ERROR - 871)) | (1 << (SnowflakeParserTRANSACTION_DEFAULT_ISOLATION_LEVEL - 871)))) != 0) || _la == SnowflakeParserTWO_DIGIT_CENTURY_START || _la == SnowflakeParserUNSUPPORTED_DDL_ACTION || ((((_la - 947)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 947))) & ((1 << (SnowflakeParserUSE_CACHED_RESULT - 947)) | (1 << (SnowflakeParserUSER_TASK_MANAGED_INITIAL_WAREHOUSE_SIZE - 947)) | (1 << (SnowflakeParserUSER_TASK_TIMEOUT_MS - 947)) | (1 << (SnowflakeParserWEEK_OF_YEAR_POLICY - 947)) | (1 << (SnowflakeParserWEEK_START - 947)))) != 0) || _la == SnowflakeParserDEFAULT_DDL_COLLATION {
+		if (int64((_la - 4)) & ^0x3f) == 0 && ((int64(1) << (_la - 4)) & -4611686018426208255) != 0 || (int64((_la - 95)) & ^0x3f) == 0 && ((int64(1) << (_la - 95)) & 281337537757187) != 0 || (int64((_la - 199)) & ^0x3f) == 0 && ((int64(1) << (_la - 199)) & 1157988054187638833) != 0 || (int64((_la - 265)) & ^0x3f) == 0 && ((int64(1) << (_la - 265)) & 131075) != 0 || (int64((_la - 329)) & ^0x3f) == 0 && ((int64(1) << (_la - 329)) & 6629300850512625667) != 0 || (int64((_la - 393)) & ^0x3f) == 0 && ((int64(1) << (_la - 393)) & 108086392130633729) != 0 || (int64((_la - 457)) & ^0x3f) == 0 && ((int64(1) << (_la - 457)) & 2101249) != 0 || (int64((_la - 571)) & ^0x3f) == 0 && ((int64(1) << (_la - 571)) & 1407374889844801) != 0 || (int64((_la - 666)) & ^0x3f) == 0 && ((int64(1) << (_la - 666)) & 1152921779484753923) != 0 || (int64((_la - 761)) & ^0x3f) == 0 && ((int64(1) << (_la - 761)) & 422221055002625) != 0 || (int64((_la - 833)) & ^0x3f) == 0 && ((int64(1) << (_la - 833)) & -4580538228402026495) != 0 || (int64((_la - 915)) & ^0x3f) == 0 && ((int64(1) << (_la - 915)) & 6917529238102867969) != 0 || _la == SnowflakeParserDEFAULT_DDL_COLLATION {
 			{
 				p.SetState(5358)
 				p.Session_parameter_list()
@@ -58230,7 +58230,7 @@ func (s *Alter_tag_optsContext) ALLOWED_VALUES() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserALLOWED_VALUES, 0)
 }
 
-func (s *Alter_tag_optsContext) AllString() []IStringContext {
+func (s *Alter_tag_optsContext) AllString_() []IStringContext {
 	children := s.GetChildren()
 	len := 0
 	for _, ctx := range children {
@@ -58251,7 +58251,7 @@ func (s *Alter_tag_optsContext) AllString() []IStringContext {
 	return tst
 }
 
-func (s *Alter_tag_optsContext) String(i int) IStringContext {
+func (s *Alter_tag_optsContext) String_(i int) IStringContext {
 	var t antlr.RuleContext;
 	j := 0
 	for _, ctx := range s.GetChildren() {
@@ -58460,7 +58460,7 @@ func (p *SnowflakeParser) Alter_tag_opts() (localctx IAlter_tag_optsContext) {
 		}
 		{
 			p.SetState(5691)
-			p.String()
+			p.String_()
 		}
 		p.SetState(5696)
 		p.GetErrorHandler().Sync(p)
@@ -58474,7 +58474,7 @@ func (p *SnowflakeParser) Alter_tag_opts() (localctx IAlter_tag_optsContext) {
 			}
 			{
 				p.SetState(5693)
-				p.String()
+				p.String_()
 			}
 
 
@@ -59314,7 +59314,7 @@ func (p *SnowflakeParser) Alter_warehouse_opts() (localctx IAlter_warehouse_opts
 		_la = p.GetTokenStream().LA(1)
 
 
-		if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+		if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 			{
 				p.SetState(5785)
 				p.Id_()
@@ -59364,7 +59364,7 @@ func (p *SnowflakeParser) Alter_warehouse_opts() (localctx IAlter_warehouse_opts
 		_la = p.GetTokenStream().LA(1)
 
 
-		if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+		if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 			{
 				p.SetState(5795)
 				p.Id_()
@@ -59828,7 +59828,7 @@ func (p *SnowflakeParser) Alter_account_opts() (localctx IAlter_account_optsCont
 		_la = p.GetTokenStream().LA(1)
 
 
-		if _la == SnowflakeParserABORT_DETACHED_QUERY || ((((_la - 66)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 66))) & ((1 << (SnowflakeParserAUTOCOMMIT - 66)) | (1 << (SnowflakeParserBINARY_INPUT_FORMAT - 66)) | (1 << (SnowflakeParserBINARY_OUTPUT_FORMAT - 66)))) != 0) || _la == SnowflakeParserDATE_INPUT_FORMAT || _la == SnowflakeParserDATE_OUTPUT_FORMAT || _la == SnowflakeParserERROR_ON_NONDETERMINISTIC_MERGE || _la == SnowflakeParserERROR_ON_NONDETERMINISTIC_UPDATE || _la == SnowflakeParserJSON_INDENT || _la == SnowflakeParserLOCK_TIMEOUT || _la == SnowflakeParserQUERY_TAG || _la == SnowflakeParserROWS_PER_RESULTSET || _la == SnowflakeParserSIMULATED_DATA_SHARING_CONSUMER || _la == SnowflakeParserSTATEMENT_TIMEOUT_IN_SECONDS || _la == SnowflakeParserSTRICT_JSON_OUTPUT || ((((_la - 871)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 871))) & ((1 << (SnowflakeParserTIME_INPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIME_OUTPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMESTAMP_DAY_IS_ALWAYS_24H - 871)) | (1 << (SnowflakeParserTIMESTAMP_INPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMESTAMP_LTZ_OUTPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMESTAMP_NTZ_OUTPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMESTAMP_OUTPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMESTAMP_TYPE_MAPPING - 871)) | (1 << (SnowflakeParserTIMESTAMP_TZ_OUTPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMEZONE - 871)) | (1 << (SnowflakeParserTRANSACTION_DEFAULT_ISOLATION_LEVEL - 871)))) != 0) || _la == SnowflakeParserTWO_DIGIT_CENTURY_START || _la == SnowflakeParserUNSUPPORTED_DDL_ACTION || ((((_la - 947)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 947))) & ((1 << (SnowflakeParserUSE_CACHED_RESULT - 947)) | (1 << (SnowflakeParserWEEK_OF_YEAR_POLICY - 947)) | (1 << (SnowflakeParserWEEK_START - 947)))) != 0) {
+		if _la == SnowflakeParserABORT_DETACHED_QUERY || (int64((_la - 66)) & ^0x3f) == 0 && ((int64(1) << (_la - 66)) & 1610612737) != 0 || (int64((_la - 203)) & ^0x3f) == 0 && ((int64(1) << (_la - 203)) & -4611686018427387901) != 0 || _la == SnowflakeParserJSON_INDENT || _la == SnowflakeParserLOCK_TIMEOUT || _la == SnowflakeParserQUERY_TAG || _la == SnowflakeParserROWS_PER_RESULTSET || (int64((_la - 772)) & ^0x3f) == 0 && ((int64(1) << (_la - 772)) & 2305843146652647425) != 0 || (int64((_la - 871)) & ^0x3f) == 0 && ((int64(1) << (_la - 871)) & 17592219712163) != 0 || (int64((_la - 938)) & ^0x3f) == 0 && ((int64(1) << (_la - 938)) & 824633721345) != 0 {
 			{
 				p.SetState(5831)
 				p.Session_params()
@@ -61664,7 +61664,7 @@ func (s *Create_accountContext) ADMIN_PASSWORD() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserADMIN_PASSWORD, 0)
 }
 
-func (s *Create_accountContext) AllString() []IStringContext {
+func (s *Create_accountContext) AllString_() []IStringContext {
 	children := s.GetChildren()
 	len := 0
 	for _, ctx := range children {
@@ -61685,7 +61685,7 @@ func (s *Create_accountContext) AllString() []IStringContext {
 	return tst
 }
 
-func (s *Create_accountContext) String(i int) IStringContext {
+func (s *Create_accountContext) String_(i int) IStringContext {
 	var t antlr.RuleContext;
 	j := 0
 	for _, ctx := range s.GetChildren() {
@@ -61903,7 +61903,7 @@ func (p *SnowflakeParser) Create_account() (localctx ICreate_accountContext) {
 	}
 	{
 		p.SetState(5937)
-		p.String()
+		p.String_()
 	}
 	p.SetState(5941)
 	p.GetErrorHandler().Sync(p)
@@ -61955,7 +61955,7 @@ func (p *SnowflakeParser) Create_account() (localctx ICreate_accountContext) {
 	}
 	{
 		p.SetState(5950)
-		p.String()
+		p.String_()
 	}
 	p.SetState(5954)
 	p.GetErrorHandler().Sync(p)
@@ -62162,7 +62162,7 @@ func (s *Create_api_integrationContext) API_AWS_ROLE_ARN() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserAPI_AWS_ROLE_ARN, 0)
 }
 
-func (s *Create_api_integrationContext) AllString() []IStringContext {
+func (s *Create_api_integrationContext) AllString_() []IStringContext {
 	children := s.GetChildren()
 	len := 0
 	for _, ctx := range children {
@@ -62183,7 +62183,7 @@ func (s *Create_api_integrationContext) AllString() []IStringContext {
 	return tst
 }
 
-func (s *Create_api_integrationContext) String(i int) IStringContext {
+func (s *Create_api_integrationContext) String_(i int) IStringContext {
 	var t antlr.RuleContext;
 	j := 0
 	for _, ctx := range s.GetChildren() {
@@ -62439,7 +62439,7 @@ func (p *SnowflakeParser) Create_api_integration() (localctx ICreate_api_integra
 		}
 		{
 			p.SetState(5987)
-			p.String()
+			p.String_()
 		}
 		p.SetState(5991)
 		p.GetErrorHandler().Sync(p)
@@ -62457,7 +62457,7 @@ func (p *SnowflakeParser) Create_api_integration() (localctx ICreate_api_integra
 			}
 			{
 				p.SetState(5990)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -62475,7 +62475,7 @@ func (p *SnowflakeParser) Create_api_integration() (localctx ICreate_api_integra
 		}
 		{
 			p.SetState(5996)
-			p.String()
+			p.String_()
 		}
 		{
 			p.SetState(5997)
@@ -62501,7 +62501,7 @@ func (p *SnowflakeParser) Create_api_integration() (localctx ICreate_api_integra
 			}
 			{
 				p.SetState(6001)
-				p.String()
+				p.String_()
 			}
 			{
 				p.SetState(6002)
@@ -62599,7 +62599,7 @@ func (p *SnowflakeParser) Create_api_integration() (localctx ICreate_api_integra
 		}
 		{
 			p.SetState(6027)
-			p.String()
+			p.String_()
 		}
 		{
 			p.SetState(6028)
@@ -62611,7 +62611,7 @@ func (p *SnowflakeParser) Create_api_integration() (localctx ICreate_api_integra
 		}
 		{
 			p.SetState(6030)
-			p.String()
+			p.String_()
 		}
 		p.SetState(6034)
 		p.GetErrorHandler().Sync(p)
@@ -62629,7 +62629,7 @@ func (p *SnowflakeParser) Create_api_integration() (localctx ICreate_api_integra
 			}
 			{
 				p.SetState(6033)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -62647,7 +62647,7 @@ func (p *SnowflakeParser) Create_api_integration() (localctx ICreate_api_integra
 		}
 		{
 			p.SetState(6039)
-			p.String()
+			p.String_()
 		}
 		{
 			p.SetState(6040)
@@ -62673,7 +62673,7 @@ func (p *SnowflakeParser) Create_api_integration() (localctx ICreate_api_integra
 			}
 			{
 				p.SetState(6044)
-				p.String()
+				p.String_()
 			}
 			{
 				p.SetState(6045)
@@ -62755,7 +62755,7 @@ func (p *SnowflakeParser) Create_api_integration() (localctx ICreate_api_integra
 		}
 		{
 			p.SetState(6066)
-			p.String()
+			p.String_()
 		}
 		{
 			p.SetState(6067)
@@ -62771,7 +62771,7 @@ func (p *SnowflakeParser) Create_api_integration() (localctx ICreate_api_integra
 		}
 		{
 			p.SetState(6070)
-			p.String()
+			p.String_()
 		}
 		{
 			p.SetState(6071)
@@ -62797,7 +62797,7 @@ func (p *SnowflakeParser) Create_api_integration() (localctx ICreate_api_integra
 			}
 			{
 				p.SetState(6075)
-				p.String()
+				p.String_()
 			}
 			{
 				p.SetState(6076)
@@ -63041,7 +63041,7 @@ func (s *Create_object_cloneContext) ASSOC() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserASSOC, 0)
 }
 
-func (s *Create_object_cloneContext) String() IStringContext {
+func (s *Create_object_cloneContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -63233,7 +63233,7 @@ func (p *SnowflakeParser) Create_object_clone() (localctx ICreate_object_cloneCo
 				}
 				{
 					p.SetState(6103)
-					p.String()
+					p.String_()
 				}
 
 
@@ -63248,7 +63248,7 @@ func (p *SnowflakeParser) Create_object_clone() (localctx ICreate_object_cloneCo
 				}
 				{
 					p.SetState(6106)
-					p.String()
+					p.String_()
 				}
 
 
@@ -63507,7 +63507,7 @@ func (s *Create_connectionContext) EQ() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserEQ, 0)
 }
 
-func (s *Create_connectionContext) String() IStringContext {
+func (s *Create_connectionContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -63627,7 +63627,7 @@ func (p *SnowflakeParser) Create_connection() (localctx ICreate_connectionContex
 			}
 			{
 				p.SetState(6145)
-				p.String()
+				p.String_()
 			}
 
 
@@ -63682,7 +63682,7 @@ func (p *SnowflakeParser) Create_connection() (localctx ICreate_connectionContex
 			}
 			{
 				p.SetState(6158)
-				p.String()
+				p.String_()
 			}
 
 
@@ -64238,7 +64238,7 @@ func (s *Clone_at_beforeContext) ASSOC() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserASSOC, 0)
 }
 
-func (s *Clone_at_beforeContext) String() IStringContext {
+func (s *Clone_at_beforeContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -64359,7 +64359,7 @@ func (p *SnowflakeParser) Clone_at_before() (localctx IClone_at_beforeContext) {
 			}
 			{
 				p.SetState(6203)
-				p.String()
+				p.String_()
 			}
 
 
@@ -64374,7 +64374,7 @@ func (p *SnowflakeParser) Clone_at_before() (localctx IClone_at_beforeContext) {
 			}
 			{
 				p.SetState(6206)
-				p.String()
+				p.String_()
 			}
 
 
@@ -64572,7 +64572,7 @@ func NewHeader_declContext(parser antlr.Parser, parent antlr.ParserRuleContext, 
 
 func (s *Header_declContext) GetParser() antlr.Parser { return s.parser }
 
-func (s *Header_declContext) AllString() []IStringContext {
+func (s *Header_declContext) AllString_() []IStringContext {
 	children := s.GetChildren()
 	len := 0
 	for _, ctx := range children {
@@ -64593,7 +64593,7 @@ func (s *Header_declContext) AllString() []IStringContext {
 	return tst
 }
 
-func (s *Header_declContext) String(i int) IStringContext {
+func (s *Header_declContext) String_(i int) IStringContext {
 	var t antlr.RuleContext;
 	j := 0
 	for _, ctx := range s.GetChildren() {
@@ -64677,7 +64677,7 @@ func (p *SnowflakeParser) Header_decl() (localctx IHeader_declContext) {
 	p.EnterOuterAlt(localctx, 1)
 	{
 		p.SetState(6218)
-		p.String()
+		p.String_()
 	}
 	{
 		p.SetState(6219)
@@ -64685,7 +64685,7 @@ func (p *SnowflakeParser) Header_decl() (localctx IHeader_declContext) {
 	}
 	{
 		p.SetState(6220)
-		p.String()
+		p.String_()
 	}
 
 
@@ -65128,7 +65128,7 @@ func (s *Create_external_functionContext) AS() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserAS, 0)
 }
 
-func (s *Create_external_functionContext) String() IStringContext {
+func (s *Create_external_functionContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -65508,7 +65508,7 @@ func (p *SnowflakeParser) Create_external_function() (localctx ICreate_external_
 	_la = p.GetTokenStream().LA(1)
 
 
-	if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+	if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 		{
 			p.SetState(6239)
 			p.Arg_name()
@@ -65868,7 +65868,7 @@ func (p *SnowflakeParser) Create_external_function() (localctx ICreate_external_
 	}
 	{
 		p.SetState(6333)
-		p.String()
+		p.String_()
 	}
 
 
@@ -66148,7 +66148,7 @@ func (s *Create_external_tableContext) AWS_SNS_TOPIC() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserAWS_SNS_TOPIC, 0)
 }
 
-func (s *Create_external_tableContext) String() IStringContext {
+func (s *Create_external_tableContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -66480,7 +66480,7 @@ func (p *SnowflakeParser) Create_external_table() (localctx ICreate_external_tab
 			}
 			{
 				p.SetState(6376)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -67891,7 +67891,7 @@ func (s *Create_failover_groupContext) REPLICATION_SCHEDULE() antlr.TerminalNode
 	return s.GetToken(SnowflakeParserREPLICATION_SCHEDULE, 0)
 }
 
-func (s *Create_failover_groupContext) String() IStringContext {
+func (s *Create_failover_groupContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -68239,7 +68239,7 @@ func (p *SnowflakeParser) Create_failover_group() (localctx ICreate_failover_gro
 			}
 			{
 				p.SetState(6578)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -68601,7 +68601,7 @@ func (p *SnowflakeParser) Create_file_format() (localctx ICreate_file_formatCont
 	_la = p.GetTokenStream().LA(1)
 
 
-	if _la == SnowflakeParserALLOW_DUPLICATE || ((((_la - 92)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 92))) & ((1 << (SnowflakeParserBINARY_AS_TEXT - 92)) | (1 << (SnowflakeParserBINARY_FORMAT - 92)) | (1 << (SnowflakeParserBROTLI - 92)) | (1 << (SnowflakeParserBZ2 - 92)))) != 0) || _la == SnowflakeParserCOMPRESSION || ((((_la - 202)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 202))) & ((1 << (SnowflakeParserDATE_FORMAT - 202)) | (1 << (SnowflakeParserDEFLATE - 202)) | (1 << (SnowflakeParserDISABLE_AUTO_CONVERT - 202)) | (1 << (SnowflakeParserDISABLE_SNOWFLAKE_DATA - 202)))) != 0) || ((((_la - 245)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 245))) & ((1 << (SnowflakeParserEMPTY_FIELD_AS_NULL - 245)) | (1 << (SnowflakeParserENABLE_OCTAL - 245)) | (1 << (SnowflakeParserENCODING - 245)) | (1 << (SnowflakeParserERROR_ON_COLUMN_COUNT_MISMATCH - 245)) | (1 << (SnowflakeParserESCAPE - 245)) | (1 << (SnowflakeParserESCAPE_UNENCLOSED_FIELD - 245)))) != 0) || ((((_la - 301)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 301))) & ((1 << (SnowflakeParserFIELD_DELIMITER - 301)) | (1 << (SnowflakeParserFIELD_OPTIONALLY_ENCLOSED_BY - 301)) | (1 << (SnowflakeParserFILE_EXTENSION - 301)))) != 0) || _la == SnowflakeParserGZIP || _la == SnowflakeParserIGNORE_UTF8_ERRORS || _la == SnowflakeParserLZO || _la == SnowflakeParserNONE || _la == SnowflakeParserNULL_IF || _la == SnowflakeParserPRESERVE_SPACE || _la == SnowflakeParserRAW_DEFLATE || _la == SnowflakeParserRECORD_DELIMITER || _la == SnowflakeParserREPLACE_INVALID_CHARACTERS || ((((_la - 777)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 777))) & ((1 << (SnowflakeParserSKIP_BLANK_LINES - 777)) | (1 << (SnowflakeParserSKIP_BYTE_ORDER_MARK - 777)) | (1 << (SnowflakeParserSKIP_HEADER - 777)) | (1 << (SnowflakeParserSNAPPY - 777)) | (1 << (SnowflakeParserSNAPPY_COMPRESSION - 777)))) != 0) || ((((_la - 836)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 836))) & ((1 << (SnowflakeParserSTRIP_NULL_VALUES - 836)) | (1 << (SnowflakeParserSTRIP_OUTER_ARRAY - 836)) | (1 << (SnowflakeParserSTRIP_OUTER_ELEMENT - 836)))) != 0) || _la == SnowflakeParserTIME_FORMAT || _la == SnowflakeParserTIMESTAMP_FORMAT || _la == SnowflakeParserTRIM_SPACE || _la == SnowflakeParserUTF8 || _la == SnowflakeParserZSTD {
+	if _la == SnowflakeParserALLOW_DUPLICATE || (int64((_la - 92)) & ^0x3f) == 0 && ((int64(1) << (_la - 92)) & 9221) != 0 || (int64((_la - 159)) & ^0x3f) == 0 && ((int64(1) << (_la - 159)) & 4611694814520410113) != 0 || (int64((_la - 231)) & ^0x3f) == 0 && ((int64(1) << (_la - 231)) & 214752837635) != 0 || (int64((_la - 301)) & ^0x3f) == 0 && ((int64(1) << (_la - 301)) & 144117387099111435) != 0 || _la == SnowflakeParserLZO || _la == SnowflakeParserNONE || _la == SnowflakeParserNULL_IF || (int64((_la - 591)) & ^0x3f) == 0 && ((int64(1) << (_la - 591)) & 1125917086711809) != 0 || _la == SnowflakeParserREPLACE_INVALID_CHARACTERS || (int64((_la - 777)) & ^0x3f) == 0 && ((int64(1) << (_la - 777)) & 4035225266123964627) != 0 || (int64((_la - 870)) & ^0x3f) == 0 && ((int64(1) << (_la - 870)) & 34359738497) != 0 || _la == SnowflakeParserUTF8 || _la == SnowflakeParserZSTD {
 		{
 			p.SetState(6612)
 			p.Format_type_options()
@@ -68951,7 +68951,7 @@ func NewFunction_definitionContext(parser antlr.Parser, parent antlr.ParserRuleC
 
 func (s *Function_definitionContext) GetParser() antlr.Parser { return s.parser }
 
-func (s *Function_definitionContext) String() IStringContext {
+func (s *Function_definitionContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -69036,7 +69036,7 @@ func (p *SnowflakeParser) Function_definition() (localctx IFunction_definitionCo
 		p.EnterOuterAlt(localctx, 1)
 		{
 			p.SetState(6624)
-			p.String()
+			p.String_()
 		}
 
 
@@ -69451,7 +69451,7 @@ func (p *SnowflakeParser) Create_function() (localctx ICreate_functionContext) {
 	_la = p.GetTokenStream().LA(1)
 
 
-	if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+	if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 		{
 			p.SetState(6638)
 			p.Arg_decl()
@@ -69511,7 +69511,7 @@ func (p *SnowflakeParser) Create_function() (localctx ICreate_functionContext) {
 		_la = p.GetTokenStream().LA(1)
 
 
-		if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+		if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 			{
 				p.SetState(6653)
 				p.Col_decl()
@@ -69792,7 +69792,7 @@ func (s *Create_managed_accountContext) ADMIN_PASSWORD() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserADMIN_PASSWORD, 0)
 }
 
-func (s *Create_managed_accountContext) AllString() []IStringContext {
+func (s *Create_managed_accountContext) AllString_() []IStringContext {
 	children := s.GetChildren()
 	len := 0
 	for _, ctx := range children {
@@ -69813,7 +69813,7 @@ func (s *Create_managed_accountContext) AllString() []IStringContext {
 	return tst
 }
 
-func (s *Create_managed_accountContext) String(i int) IStringContext {
+func (s *Create_managed_accountContext) String_(i int) IStringContext {
 	var t antlr.RuleContext;
 	j := 0
 	for _, ctx := range s.GetChildren() {
@@ -69947,7 +69947,7 @@ func (p *SnowflakeParser) Create_managed_account() (localctx ICreate_managed_acc
 	}
 	{
 		p.SetState(6703)
-		p.String()
+		p.String_()
 	}
 	{
 		p.SetState(6704)
@@ -69985,7 +69985,7 @@ func (p *SnowflakeParser) Create_managed_account() (localctx ICreate_managed_acc
 		}
 		{
 			p.SetState(6711)
-			p.String()
+			p.String_()
 		}
 
 	}
@@ -70465,7 +70465,7 @@ func (s *Tag_declContext) EQ() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserEQ, 0)
 }
 
-func (s *Tag_declContext) String() IStringContext {
+func (s *Tag_declContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -70549,7 +70549,7 @@ func (p *SnowflakeParser) Tag_decl() (localctx ITag_declContext) {
 	}
 	{
 		p.SetState(6744)
-		p.String()
+		p.String_()
 	}
 
 
@@ -71514,7 +71514,7 @@ func (s *Cloud_provider_params_autoContext) GCP_PUBSUB_SUBSCRIPTION_NAME() antlr
 	return s.GetToken(SnowflakeParserGCP_PUBSUB_SUBSCRIPTION_NAME, 0)
 }
 
-func (s *Cloud_provider_params_autoContext) AllString() []IStringContext {
+func (s *Cloud_provider_params_autoContext) AllString_() []IStringContext {
 	children := s.GetChildren()
 	len := 0
 	for _, ctx := range children {
@@ -71535,7 +71535,7 @@ func (s *Cloud_provider_params_autoContext) AllString() []IStringContext {
 	return tst
 }
 
-func (s *Cloud_provider_params_autoContext) String(i int) IStringContext {
+func (s *Cloud_provider_params_autoContext) String_(i int) IStringContext {
 	var t antlr.RuleContext;
 	j := 0
 	for _, ctx := range s.GetChildren() {
@@ -71651,7 +71651,7 @@ func (p *SnowflakeParser) Cloud_provider_params_auto() (localctx ICloud_provider
 		}
 		{
 			p.SetState(6815)
-			p.String()
+			p.String_()
 		}
 
 
@@ -71679,7 +71679,7 @@ func (p *SnowflakeParser) Cloud_provider_params_auto() (localctx ICloud_provider
 		}
 		{
 			p.SetState(6821)
-			p.String()
+			p.String_()
 		}
 		{
 			p.SetState(6822)
@@ -71691,7 +71691,7 @@ func (p *SnowflakeParser) Cloud_provider_params_auto() (localctx ICloud_provider
 		}
 		{
 			p.SetState(6824)
-			p.String()
+			p.String_()
 		}
 
 	}
@@ -71759,7 +71759,7 @@ func (s *Cloud_provider_params_pushContext) AWS_SNS_TOPIC_ARN() antlr.TerminalNo
 	return s.GetToken(SnowflakeParserAWS_SNS_TOPIC_ARN, 0)
 }
 
-func (s *Cloud_provider_params_pushContext) AllString() []IStringContext {
+func (s *Cloud_provider_params_pushContext) AllString_() []IStringContext {
 	children := s.GetChildren()
 	len := 0
 	for _, ctx := range children {
@@ -71780,7 +71780,7 @@ func (s *Cloud_provider_params_pushContext) AllString() []IStringContext {
 	return tst
 }
 
-func (s *Cloud_provider_params_pushContext) String(i int) IStringContext {
+func (s *Cloud_provider_params_pushContext) String_(i int) IStringContext {
 	var t antlr.RuleContext;
 	j := 0
 	for _, ctx := range s.GetChildren() {
@@ -71908,7 +71908,7 @@ func (p *SnowflakeParser) Cloud_provider_params_push() (localctx ICloud_provider
 		}
 		{
 			p.SetState(6833)
-			p.String()
+			p.String_()
 		}
 		{
 			p.SetState(6834)
@@ -71920,7 +71920,7 @@ func (p *SnowflakeParser) Cloud_provider_params_push() (localctx ICloud_provider
 		}
 		{
 			p.SetState(6836)
-			p.String()
+			p.String_()
 		}
 
 
@@ -71948,7 +71948,7 @@ func (p *SnowflakeParser) Cloud_provider_params_push() (localctx ICloud_provider
 		}
 		{
 			p.SetState(6843)
-			p.String()
+			p.String_()
 		}
 
 
@@ -71976,7 +71976,7 @@ func (p *SnowflakeParser) Cloud_provider_params_push() (localctx ICloud_provider
 		}
 		{
 			p.SetState(6849)
-			p.String()
+			p.String_()
 		}
 		{
 			p.SetState(6850)
@@ -71988,7 +71988,7 @@ func (p *SnowflakeParser) Cloud_provider_params_push() (localctx ICloud_provider
 		}
 		{
 			p.SetState(6852)
-			p.String()
+			p.String_()
 		}
 
 	}
@@ -72602,7 +72602,7 @@ func (s *Create_pipeContext) AWS_SNS_TOPIC() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserAWS_SNS_TOPIC, 0)
 }
 
-func (s *Create_pipeContext) AllString() []IStringContext {
+func (s *Create_pipeContext) AllString_() []IStringContext {
 	children := s.GetChildren()
 	len := 0
 	for _, ctx := range children {
@@ -72623,7 +72623,7 @@ func (s *Create_pipeContext) AllString() []IStringContext {
 	return tst
 }
 
-func (s *Create_pipeContext) String(i int) IStringContext {
+func (s *Create_pipeContext) String_(i int) IStringContext {
 	var t antlr.RuleContext;
 	j := 0
 	for _, ctx := range s.GetChildren() {
@@ -72815,7 +72815,7 @@ func (p *SnowflakeParser) Create_pipe() (localctx ICreate_pipeContext) {
 		}
 		{
 			p.SetState(6922)
-			p.String()
+			p.String_()
 		}
 
 	}
@@ -72835,7 +72835,7 @@ func (p *SnowflakeParser) Create_pipe() (localctx ICreate_pipeContext) {
 		}
 		{
 			p.SetState(6927)
-			p.String()
+			p.String_()
 		}
 
 	}
@@ -73167,7 +73167,7 @@ func NewProcedure_definitionContext(parser antlr.Parser, parent antlr.ParserRule
 
 func (s *Procedure_definitionContext) GetParser() antlr.Parser { return s.parser }
 
-func (s *Procedure_definitionContext) String() IStringContext {
+func (s *Procedure_definitionContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -73252,7 +73252,7 @@ func (p *SnowflakeParser) Procedure_definition() (localctx IProcedure_definition
 		p.EnterOuterAlt(localctx, 1)
 		{
 			p.SetState(6942)
-			p.String()
+			p.String_()
 		}
 
 
@@ -73675,7 +73675,7 @@ func (p *SnowflakeParser) Create_procedure() (localctx ICreate_procedureContext)
 	_la = p.GetTokenStream().LA(1)
 
 
-	if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+	if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 		{
 			p.SetState(6953)
 			p.Arg_decl()
@@ -73735,7 +73735,7 @@ func (p *SnowflakeParser) Create_procedure() (localctx ICreate_procedureContext)
 		_la = p.GetTokenStream().LA(1)
 
 
-		if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+		if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 			{
 				p.SetState(6968)
 				p.Col_decl()
@@ -74195,7 +74195,7 @@ func (s *Create_replication_groupContext) REPLICATION_SCHEDULE() antlr.TerminalN
 	return s.GetToken(SnowflakeParserREPLICATION_SCHEDULE, 0)
 }
 
-func (s *Create_replication_groupContext) String() IStringContext {
+func (s *Create_replication_groupContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -74543,7 +74543,7 @@ func (p *SnowflakeParser) Create_replication_group() (localctx ICreate_replicati
 			}
 			{
 				p.SetState(7081)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -74753,7 +74753,7 @@ func (s *Create_resource_monitorContext) END_TIMESTAMP() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserEND_TIMESTAMP, 0)
 }
 
-func (s *Create_resource_monitorContext) AllString() []IStringContext {
+func (s *Create_resource_monitorContext) AllString_() []IStringContext {
 	children := s.GetChildren()
 	len := 0
 	for _, ctx := range children {
@@ -74774,7 +74774,7 @@ func (s *Create_resource_monitorContext) AllString() []IStringContext {
 	return tst
 }
 
-func (s *Create_resource_monitorContext) String(i int) IStringContext {
+func (s *Create_resource_monitorContext) String_(i int) IStringContext {
 	var t antlr.RuleContext;
 	j := 0
 	for _, ctx := range s.GetChildren() {
@@ -74996,7 +74996,7 @@ func (p *SnowflakeParser) Create_resource_monitor() (localctx ICreate_resource_m
 		case SnowflakeParserSTRING:
 			{
 				p.SetState(7118)
-				p.String()
+				p.String_()
 			}
 
 
@@ -75029,7 +75029,7 @@ func (p *SnowflakeParser) Create_resource_monitor() (localctx ICreate_resource_m
 		}
 		{
 			p.SetState(7126)
-			p.String()
+			p.String_()
 		}
 
 	}
@@ -76384,7 +76384,7 @@ func (s *Create_security_integration_external_oauthContext) EXTERNAL_OAUTH_ISSUE
 	return s.GetToken(SnowflakeParserEXTERNAL_OAUTH_ISSUER, 0)
 }
 
-func (s *Create_security_integration_external_oauthContext) AllString() []IStringContext {
+func (s *Create_security_integration_external_oauthContext) AllString_() []IStringContext {
 	children := s.GetChildren()
 	len := 0
 	for _, ctx := range children {
@@ -76405,7 +76405,7 @@ func (s *Create_security_integration_external_oauthContext) AllString() []IStrin
 	return tst
 }
 
-func (s *Create_security_integration_external_oauthContext) String(i int) IStringContext {
+func (s *Create_security_integration_external_oauthContext) String_(i int) IStringContext {
 	var t antlr.RuleContext;
 	j := 0
 	for _, ctx := range s.GetChildren() {
@@ -76739,7 +76739,7 @@ func (p *SnowflakeParser) Create_security_integration_external_oauth() (localctx
 	}
 	{
 		p.SetState(7265)
-		p.String()
+		p.String_()
 	}
 	{
 		p.SetState(7266)
@@ -76756,7 +76756,7 @@ func (p *SnowflakeParser) Create_security_integration_external_oauth() (localctx
 	case SnowflakeParserSTRING:
 		{
 			p.SetState(7268)
-			p.String()
+			p.String_()
 		}
 
 
@@ -76789,7 +76789,7 @@ func (p *SnowflakeParser) Create_security_integration_external_oauth() (localctx
 	}
 	{
 		p.SetState(7277)
-		p.String()
+		p.String_()
 	}
 	p.SetState(7281)
 	p.GetErrorHandler().Sync(p)
@@ -76806,7 +76806,7 @@ func (p *SnowflakeParser) Create_security_integration_external_oauth() (localctx
 		}
 		{
 			p.SetState(7280)
-			p.String()
+			p.String_()
 		}
 
 
@@ -76832,7 +76832,7 @@ func (p *SnowflakeParser) Create_security_integration_external_oauth() (localctx
 		case SnowflakeParserSTRING:
 			{
 				p.SetState(7285)
-				p.String()
+				p.String_()
 			}
 
 
@@ -76929,7 +76929,7 @@ func (p *SnowflakeParser) Create_security_integration_external_oauth() (localctx
 		}
 		{
 			p.SetState(7312)
-			p.String()
+			p.String_()
 		}
 
 	}
@@ -76949,7 +76949,7 @@ func (p *SnowflakeParser) Create_security_integration_external_oauth() (localctx
 		}
 		{
 			p.SetState(7317)
-			p.String()
+			p.String_()
 		}
 
 	}
@@ -76973,7 +76973,7 @@ func (p *SnowflakeParser) Create_security_integration_external_oauth() (localctx
 		}
 		{
 			p.SetState(7323)
-			p.String()
+			p.String_()
 		}
 		{
 			p.SetState(7324)
@@ -76999,7 +76999,7 @@ func (p *SnowflakeParser) Create_security_integration_external_oauth() (localctx
 			p.SetState(7330)
 			_la = p.GetTokenStream().LA(1)
 
-			if !(((((_la - 230)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 230))) & ((1 << (SnowflakeParserDISABLE - 230)) | (1 << (SnowflakeParserENABLE - 230)) | (1 << (SnowflakeParserENABLE_FOR_PRIVILEGE - 230)))) != 0)) {
+			if !((int64((_la - 230)) & ^0x3f) == 0 && ((int64(1) << (_la - 230)) & 196609) != 0) {
 				p.GetErrorHandler().RecoverInline(p)
 			} else {
 				p.GetErrorHandler().ReportMatch(p)
@@ -77024,7 +77024,7 @@ func (p *SnowflakeParser) Create_security_integration_external_oauth() (localctx
 		}
 		{
 			p.SetState(7335)
-			p.String()
+			p.String_()
 		}
 
 	}
@@ -77265,7 +77265,7 @@ func (s *Create_security_integration_snowflake_oauthContext) OAUTH_REDIRECT_URI(
 	return s.GetToken(SnowflakeParserOAUTH_REDIRECT_URI, 0)
 }
 
-func (s *Create_security_integration_snowflake_oauthContext) AllString() []IStringContext {
+func (s *Create_security_integration_snowflake_oauthContext) AllString_() []IStringContext {
 	children := s.GetChildren()
 	len := 0
 	for _, ctx := range children {
@@ -77286,7 +77286,7 @@ func (s *Create_security_integration_snowflake_oauthContext) AllString() []IStri
 	return tst
 }
 
-func (s *Create_security_integration_snowflake_oauthContext) String(i int) IStringContext {
+func (s *Create_security_integration_snowflake_oauthContext) String_(i int) IStringContext {
 	var t antlr.RuleContext;
 	j := 0
 	for _, ctx := range s.GetChildren() {
@@ -77694,7 +77694,7 @@ func (p *SnowflakeParser) Create_security_integration_snowflake_oauth() (localct
 		}
 		{
 			p.SetState(7358)
-			p.String()
+			p.String_()
 		}
 		p.SetState(7360)
 		p.GetErrorHandler().Sync(p)
@@ -77886,7 +77886,7 @@ func (p *SnowflakeParser) Create_security_integration_snowflake_oauth() (localct
 		}
 		{
 			p.SetState(7406)
-			p.String()
+			p.String_()
 		}
 		p.SetState(7408)
 		p.GetErrorHandler().Sync(p)
@@ -78084,7 +78084,7 @@ func (p *SnowflakeParser) Create_security_integration_snowflake_oauth() (localct
 			}
 			{
 				p.SetState(7456)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -78104,7 +78104,7 @@ func (p *SnowflakeParser) Create_security_integration_snowflake_oauth() (localct
 			}
 			{
 				p.SetState(7461)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -78214,7 +78214,7 @@ func (s *Create_security_integration_saml2Context) SAML2_ISSUER() antlr.Terminal
 	return s.GetToken(SnowflakeParserSAML2_ISSUER, 0)
 }
 
-func (s *Create_security_integration_saml2Context) AllString() []IStringContext {
+func (s *Create_security_integration_saml2Context) AllString_() []IStringContext {
 	children := s.GetChildren()
 	len := 0
 	for _, ctx := range children {
@@ -78235,7 +78235,7 @@ func (s *Create_security_integration_saml2Context) AllString() []IStringContext 
 	return tst
 }
 
-func (s *Create_security_integration_saml2Context) String(i int) IStringContext {
+func (s *Create_security_integration_saml2Context) String_(i int) IStringContext {
 	var t antlr.RuleContext;
 	j := 0
 	for _, ctx := range s.GetChildren() {
@@ -78498,7 +78498,7 @@ func (p *SnowflakeParser) Create_security_integration_saml2() (localctx ICreate_
 	}
 	{
 		p.SetState(7484)
-		p.String()
+		p.String_()
 	}
 	{
 		p.SetState(7485)
@@ -78510,7 +78510,7 @@ func (p *SnowflakeParser) Create_security_integration_saml2() (localctx ICreate_
 	}
 	{
 		p.SetState(7487)
-		p.String()
+		p.String_()
 	}
 	{
 		p.SetState(7488)
@@ -78522,7 +78522,7 @@ func (p *SnowflakeParser) Create_security_integration_saml2() (localctx ICreate_
 	}
 	{
 		p.SetState(7490)
-		p.String()
+		p.String_()
 	}
 	{
 		p.SetState(7491)
@@ -78534,7 +78534,7 @@ func (p *SnowflakeParser) Create_security_integration_saml2() (localctx ICreate_
 	}
 	{
 		p.SetState(7493)
-		p.String()
+		p.String_()
 	}
 	p.SetState(7497)
 	p.GetErrorHandler().Sync(p)
@@ -78552,7 +78552,7 @@ func (p *SnowflakeParser) Create_security_integration_saml2() (localctx ICreate_
 		}
 		{
 			p.SetState(7496)
-			p.String()
+			p.String_()
 		}
 
 	}
@@ -78592,7 +78592,7 @@ func (p *SnowflakeParser) Create_security_integration_saml2() (localctx ICreate_
 		}
 		{
 			p.SetState(7506)
-			p.String()
+			p.String_()
 		}
 
 	}
@@ -78632,7 +78632,7 @@ func (p *SnowflakeParser) Create_security_integration_saml2() (localctx ICreate_
 		}
 		{
 			p.SetState(7516)
-			p.String()
+			p.String_()
 		}
 
 	}
@@ -78652,7 +78652,7 @@ func (p *SnowflakeParser) Create_security_integration_saml2() (localctx ICreate_
 		}
 		{
 			p.SetState(7521)
-			p.String()
+			p.String_()
 		}
 
 	}
@@ -78692,7 +78692,7 @@ func (p *SnowflakeParser) Create_security_integration_saml2() (localctx ICreate_
 		}
 		{
 			p.SetState(7531)
-			p.String()
+			p.String_()
 		}
 
 	}
@@ -78712,7 +78712,7 @@ func (p *SnowflakeParser) Create_security_integration_saml2() (localctx ICreate_
 		}
 		{
 			p.SetState(7536)
-			p.String()
+			p.String_()
 		}
 
 	}
@@ -79168,7 +79168,7 @@ func (s *Network_policyContext) EQ() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserEQ, 0)
 }
 
-func (s *Network_policyContext) String() IStringContext {
+func (s *Network_policyContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -79252,7 +79252,7 @@ func (p *SnowflakeParser) Network_policy() (localctx INetwork_policyContext) {
 	}
 	{
 		p.SetState(7571)
-		p.String()
+		p.String_()
 	}
 
 
@@ -80760,7 +80760,7 @@ func (s *Format_type_optionsContext) FILE_EXTENSION() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserFILE_EXTENSION, 0)
 }
 
-func (s *Format_type_optionsContext) String() IStringContext {
+func (s *Format_type_optionsContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -81036,7 +81036,7 @@ func (p *SnowflakeParser) Format_type_options() (localctx IFormat_type_optionsCo
 			p.SetState(7650)
 			_la = p.GetTokenStream().LA(1)
 
-			if !(_la == SnowflakeParserAUTO || _la == SnowflakeParserBROTLI || _la == SnowflakeParserBZ2 || _la == SnowflakeParserDEFLATE || _la == SnowflakeParserGZIP || _la == SnowflakeParserNONE || _la == SnowflakeParserRAW_DEFLATE || _la == SnowflakeParserZSTD) {
+			if !((int64((_la - 59)) & ^0x3f) == 0 && ((int64(1) << (_la - 59)) & 79164837199873) != 0 || _la == SnowflakeParserDEFLATE || _la == SnowflakeParserGZIP || _la == SnowflakeParserNONE || _la == SnowflakeParserRAW_DEFLATE || _la == SnowflakeParserZSTD) {
 				p.GetErrorHandler().RecoverInline(p)
 			} else {
 				p.GetErrorHandler().ReportMatch(p)
@@ -81125,7 +81125,7 @@ func (p *SnowflakeParser) Format_type_options() (localctx IFormat_type_optionsCo
 		}
 		{
 			p.SetState(7665)
-			p.String()
+			p.String_()
 		}
 
 
@@ -81178,7 +81178,7 @@ func (p *SnowflakeParser) Format_type_options() (localctx IFormat_type_optionsCo
 		case SnowflakeParserSTRING:
 			{
 				p.SetState(7674)
-				p.String()
+				p.String_()
 			}
 
 
@@ -81212,7 +81212,7 @@ func (p *SnowflakeParser) Format_type_options() (localctx IFormat_type_optionsCo
 		case SnowflakeParserSTRING:
 			{
 				p.SetState(7680)
-				p.String()
+				p.String_()
 			}
 
 
@@ -81246,7 +81246,7 @@ func (p *SnowflakeParser) Format_type_options() (localctx IFormat_type_optionsCo
 		case SnowflakeParserSTRING:
 			{
 				p.SetState(7686)
-				p.String()
+				p.String_()
 			}
 
 
@@ -81504,7 +81504,7 @@ func (p *SnowflakeParser) Format_type_options() (localctx IFormat_type_optionsCo
 		}
 		{
 			p.SetState(7734)
-			p.String()
+			p.String_()
 		}
 
 
@@ -82409,7 +82409,7 @@ func (s *Stage_typeContext) EQ() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserEQ, 0)
 }
 
-func (s *Stage_typeContext) String() IStringContext {
+func (s *Stage_typeContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -82493,7 +82493,7 @@ func (p *SnowflakeParser) Stage_type() (localctx IStage_typeContext) {
 	}
 	{
 		p.SetState(7833)
-		p.String()
+		p.String_()
 	}
 
 
@@ -82548,7 +82548,7 @@ func (s *Stage_master_keyContext) EQ() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserEQ, 0)
 }
 
-func (s *Stage_master_keyContext) String() IStringContext {
+func (s *Stage_master_keyContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -82632,7 +82632,7 @@ func (p *SnowflakeParser) Stage_master_key() (localctx IStage_master_keyContext)
 	}
 	{
 		p.SetState(7837)
-		p.String()
+		p.String_()
 	}
 
 
@@ -82687,7 +82687,7 @@ func (s *Stage_kms_keyContext) EQ() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserEQ, 0)
 }
 
-func (s *Stage_kms_keyContext) String() IStringContext {
+func (s *Stage_kms_keyContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -82771,7 +82771,7 @@ func (p *SnowflakeParser) Stage_kms_key() (localctx IStage_kms_keyContext) {
 	}
 	{
 		p.SetState(7841)
-		p.String()
+		p.String_()
 	}
 
 
@@ -83090,7 +83090,7 @@ func (s *Aws_tokenContext) EQ() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserEQ, 0)
 }
 
-func (s *Aws_tokenContext) String() IStringContext {
+func (s *Aws_tokenContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -83174,7 +83174,7 @@ func (p *SnowflakeParser) Aws_token() (localctx IAws_tokenContext) {
 	}
 	{
 		p.SetState(7868)
-		p.String()
+		p.String_()
 	}
 
 
@@ -83229,7 +83229,7 @@ func (s *Aws_key_idContext) EQ() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserEQ, 0)
 }
 
-func (s *Aws_key_idContext) String() IStringContext {
+func (s *Aws_key_idContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -83313,7 +83313,7 @@ func (p *SnowflakeParser) Aws_key_id() (localctx IAws_key_idContext) {
 	}
 	{
 		p.SetState(7872)
-		p.String()
+		p.String_()
 	}
 
 
@@ -83368,7 +83368,7 @@ func (s *Aws_secret_keyContext) EQ() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserEQ, 0)
 }
 
-func (s *Aws_secret_keyContext) String() IStringContext {
+func (s *Aws_secret_keyContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -83452,7 +83452,7 @@ func (p *SnowflakeParser) Aws_secret_key() (localctx IAws_secret_keyContext) {
 	}
 	{
 		p.SetState(7876)
-		p.String()
+		p.String_()
 	}
 
 
@@ -83507,7 +83507,7 @@ func (s *Aws_roleContext) EQ() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserEQ, 0)
 }
 
-func (s *Aws_roleContext) String() IStringContext {
+func (s *Aws_roleContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -83591,7 +83591,7 @@ func (p *SnowflakeParser) Aws_role() (localctx IAws_roleContext) {
 	}
 	{
 		p.SetState(7880)
-		p.String()
+		p.String_()
 	}
 
 
@@ -83786,7 +83786,7 @@ func (s *External_stage_paramsContext) Aws_token() IAws_tokenContext {
 	return t.(IAws_tokenContext)
 }
 
-func (s *External_stage_paramsContext) AllString() []IStringContext {
+func (s *External_stage_paramsContext) AllString_() []IStringContext {
 	children := s.GetChildren()
 	len := 0
 	for _, ctx := range children {
@@ -83807,7 +83807,7 @@ func (s *External_stage_paramsContext) AllString() []IStringContext {
 	return tst
 }
 
-func (s *External_stage_paramsContext) String(i int) IStringContext {
+func (s *External_stage_paramsContext) String_(i int) IStringContext {
 	var t antlr.RuleContext;
 	j := 0
 	for _, ctx := range s.GetChildren() {
@@ -84038,7 +84038,7 @@ func (p *SnowflakeParser) External_stage_params() (localctx IExternal_stage_para
 		}
 		{
 			p.SetState(7908)
-			p.String()
+			p.String_()
 		}
 		p.SetState(7912)
 		p.GetErrorHandler().Sync(p)
@@ -84110,7 +84110,7 @@ func (p *SnowflakeParser) External_stage_params() (localctx IExternal_stage_para
 					}
 					{
 						p.SetState(7922)
-						p.String()
+						p.String_()
 					}
 
 				}
@@ -84155,7 +84155,7 @@ func (p *SnowflakeParser) External_stage_params() (localctx IExternal_stage_para
 		}
 		{
 			p.SetState(7936)
-			p.String()
+			p.String_()
 		}
 		p.SetState(7949)
 		p.GetErrorHandler().Sync(p)
@@ -84206,7 +84206,7 @@ func (p *SnowflakeParser) External_stage_params() (localctx IExternal_stage_para
 				}
 				{
 					p.SetState(7945)
-					p.String()
+					p.String_()
 				}
 
 			}
@@ -84272,7 +84272,7 @@ func (p *SnowflakeParser) External_stage_params() (localctx IExternal_stage_para
 				}
 				{
 					p.SetState(7960)
-					p.String()
+					p.String_()
 				}
 
 			}
@@ -84906,7 +84906,7 @@ func (s *Notification_integrationContext) EQ() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserEQ, 0)
 }
 
-func (s *Notification_integrationContext) String() IStringContext {
+func (s *Notification_integrationContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -84990,7 +84990,7 @@ func (p *SnowflakeParser) Notification_integration() (localctx INotification_int
 	}
 	{
 		p.SetState(7989)
-		p.String()
+		p.String_()
 	}
 
 
@@ -85603,7 +85603,7 @@ func (s *Create_stageContext) FORMAT_NAME() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserFORMAT_NAME, 0)
 }
 
-func (s *Create_stageContext) String() IStringContext {
+func (s *Create_stageContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -85873,7 +85873,7 @@ func (p *SnowflakeParser) Create_stage() (localctx ICreate_stageContext) {
 				}
 				{
 					p.SetState(8067)
-					p.String()
+					p.String_()
 				}
 
 
@@ -85902,7 +85902,7 @@ func (p *SnowflakeParser) Create_stage() (localctx ICreate_stageContext) {
 				_la = p.GetTokenStream().LA(1)
 
 
-				for _la == SnowflakeParserALLOW_DUPLICATE || ((((_la - 92)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 92))) & ((1 << (SnowflakeParserBINARY_AS_TEXT - 92)) | (1 << (SnowflakeParserBINARY_FORMAT - 92)) | (1 << (SnowflakeParserBROTLI - 92)) | (1 << (SnowflakeParserBZ2 - 92)))) != 0) || _la == SnowflakeParserCOMPRESSION || ((((_la - 202)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 202))) & ((1 << (SnowflakeParserDATE_FORMAT - 202)) | (1 << (SnowflakeParserDEFLATE - 202)) | (1 << (SnowflakeParserDISABLE_AUTO_CONVERT - 202)) | (1 << (SnowflakeParserDISABLE_SNOWFLAKE_DATA - 202)))) != 0) || ((((_la - 245)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 245))) & ((1 << (SnowflakeParserEMPTY_FIELD_AS_NULL - 245)) | (1 << (SnowflakeParserENABLE_OCTAL - 245)) | (1 << (SnowflakeParserENCODING - 245)) | (1 << (SnowflakeParserERROR_ON_COLUMN_COUNT_MISMATCH - 245)) | (1 << (SnowflakeParserESCAPE - 245)) | (1 << (SnowflakeParserESCAPE_UNENCLOSED_FIELD - 245)))) != 0) || ((((_la - 301)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 301))) & ((1 << (SnowflakeParserFIELD_DELIMITER - 301)) | (1 << (SnowflakeParserFIELD_OPTIONALLY_ENCLOSED_BY - 301)) | (1 << (SnowflakeParserFILE_EXTENSION - 301)))) != 0) || _la == SnowflakeParserGZIP || _la == SnowflakeParserIGNORE_UTF8_ERRORS || _la == SnowflakeParserLZO || _la == SnowflakeParserNONE || _la == SnowflakeParserNULL_IF || _la == SnowflakeParserPRESERVE_SPACE || _la == SnowflakeParserRAW_DEFLATE || _la == SnowflakeParserRECORD_DELIMITER || _la == SnowflakeParserREPLACE_INVALID_CHARACTERS || ((((_la - 777)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 777))) & ((1 << (SnowflakeParserSKIP_BLANK_LINES - 777)) | (1 << (SnowflakeParserSKIP_BYTE_ORDER_MARK - 777)) | (1 << (SnowflakeParserSKIP_HEADER - 777)) | (1 << (SnowflakeParserSNAPPY - 777)) | (1 << (SnowflakeParserSNAPPY_COMPRESSION - 777)))) != 0) || ((((_la - 836)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 836))) & ((1 << (SnowflakeParserSTRIP_NULL_VALUES - 836)) | (1 << (SnowflakeParserSTRIP_OUTER_ARRAY - 836)) | (1 << (SnowflakeParserSTRIP_OUTER_ELEMENT - 836)))) != 0) || _la == SnowflakeParserTIME_FORMAT || _la == SnowflakeParserTIMESTAMP_FORMAT || _la == SnowflakeParserTRIM_SPACE || _la == SnowflakeParserUTF8 || _la == SnowflakeParserZSTD {
+				for _la == SnowflakeParserALLOW_DUPLICATE || (int64((_la - 92)) & ^0x3f) == 0 && ((int64(1) << (_la - 92)) & 9221) != 0 || (int64((_la - 159)) & ^0x3f) == 0 && ((int64(1) << (_la - 159)) & 4611694814520410113) != 0 || (int64((_la - 231)) & ^0x3f) == 0 && ((int64(1) << (_la - 231)) & 214752837635) != 0 || (int64((_la - 301)) & ^0x3f) == 0 && ((int64(1) << (_la - 301)) & 144117387099111435) != 0 || _la == SnowflakeParserLZO || _la == SnowflakeParserNONE || _la == SnowflakeParserNULL_IF || (int64((_la - 591)) & ^0x3f) == 0 && ((int64(1) << (_la - 591)) & 1125917086711809) != 0 || _la == SnowflakeParserREPLACE_INVALID_CHARACTERS || (int64((_la - 777)) & ^0x3f) == 0 && ((int64(1) << (_la - 777)) & 4035225266123964627) != 0 || (int64((_la - 870)) & ^0x3f) == 0 && ((int64(1) << (_la - 870)) & 34359738497) != 0 || _la == SnowflakeParserUTF8 || _la == SnowflakeParserZSTD {
 					{
 						p.SetState(8071)
 						p.Format_type_options()
@@ -86078,7 +86078,7 @@ func (p *SnowflakeParser) Create_stage() (localctx ICreate_stageContext) {
 				}
 				{
 					p.SetState(8117)
-					p.String()
+					p.String_()
 				}
 
 
@@ -86107,7 +86107,7 @@ func (p *SnowflakeParser) Create_stage() (localctx ICreate_stageContext) {
 				_la = p.GetTokenStream().LA(1)
 
 
-				for _la == SnowflakeParserALLOW_DUPLICATE || ((((_la - 92)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 92))) & ((1 << (SnowflakeParserBINARY_AS_TEXT - 92)) | (1 << (SnowflakeParserBINARY_FORMAT - 92)) | (1 << (SnowflakeParserBROTLI - 92)) | (1 << (SnowflakeParserBZ2 - 92)))) != 0) || _la == SnowflakeParserCOMPRESSION || ((((_la - 202)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 202))) & ((1 << (SnowflakeParserDATE_FORMAT - 202)) | (1 << (SnowflakeParserDEFLATE - 202)) | (1 << (SnowflakeParserDISABLE_AUTO_CONVERT - 202)) | (1 << (SnowflakeParserDISABLE_SNOWFLAKE_DATA - 202)))) != 0) || ((((_la - 245)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 245))) & ((1 << (SnowflakeParserEMPTY_FIELD_AS_NULL - 245)) | (1 << (SnowflakeParserENABLE_OCTAL - 245)) | (1 << (SnowflakeParserENCODING - 245)) | (1 << (SnowflakeParserERROR_ON_COLUMN_COUNT_MISMATCH - 245)) | (1 << (SnowflakeParserESCAPE - 245)) | (1 << (SnowflakeParserESCAPE_UNENCLOSED_FIELD - 245)))) != 0) || ((((_la - 301)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 301))) & ((1 << (SnowflakeParserFIELD_DELIMITER - 301)) | (1 << (SnowflakeParserFIELD_OPTIONALLY_ENCLOSED_BY - 301)) | (1 << (SnowflakeParserFILE_EXTENSION - 301)))) != 0) || _la == SnowflakeParserGZIP || _la == SnowflakeParserIGNORE_UTF8_ERRORS || _la == SnowflakeParserLZO || _la == SnowflakeParserNONE || _la == SnowflakeParserNULL_IF || _la == SnowflakeParserPRESERVE_SPACE || _la == SnowflakeParserRAW_DEFLATE || _la == SnowflakeParserRECORD_DELIMITER || _la == SnowflakeParserREPLACE_INVALID_CHARACTERS || ((((_la - 777)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 777))) & ((1 << (SnowflakeParserSKIP_BLANK_LINES - 777)) | (1 << (SnowflakeParserSKIP_BYTE_ORDER_MARK - 777)) | (1 << (SnowflakeParserSKIP_HEADER - 777)) | (1 << (SnowflakeParserSNAPPY - 777)) | (1 << (SnowflakeParserSNAPPY_COMPRESSION - 777)))) != 0) || ((((_la - 836)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 836))) & ((1 << (SnowflakeParserSTRIP_NULL_VALUES - 836)) | (1 << (SnowflakeParserSTRIP_OUTER_ARRAY - 836)) | (1 << (SnowflakeParserSTRIP_OUTER_ELEMENT - 836)))) != 0) || _la == SnowflakeParserTIME_FORMAT || _la == SnowflakeParserTIMESTAMP_FORMAT || _la == SnowflakeParserTRIM_SPACE || _la == SnowflakeParserUTF8 || _la == SnowflakeParserZSTD {
+				for _la == SnowflakeParserALLOW_DUPLICATE || (int64((_la - 92)) & ^0x3f) == 0 && ((int64(1) << (_la - 92)) & 9221) != 0 || (int64((_la - 159)) & ^0x3f) == 0 && ((int64(1) << (_la - 159)) & 4611694814520410113) != 0 || (int64((_la - 231)) & ^0x3f) == 0 && ((int64(1) << (_la - 231)) & 214752837635) != 0 || (int64((_la - 301)) & ^0x3f) == 0 && ((int64(1) << (_la - 301)) & 144117387099111435) != 0 || _la == SnowflakeParserLZO || _la == SnowflakeParserNONE || _la == SnowflakeParserNULL_IF || (int64((_la - 591)) & ^0x3f) == 0 && ((int64(1) << (_la - 591)) & 1125917086711809) != 0 || _la == SnowflakeParserREPLACE_INVALID_CHARACTERS || (int64((_la - 777)) & ^0x3f) == 0 && ((int64(1) << (_la - 777)) & 4035225266123964627) != 0 || (int64((_la - 870)) & ^0x3f) == 0 && ((int64(1) << (_la - 870)) & 34359738497) != 0 || _la == SnowflakeParserUTF8 || _la == SnowflakeParserZSTD {
 					{
 						p.SetState(8121)
 						p.Format_type_options()
@@ -86248,7 +86248,7 @@ func (s *Cloud_provider_paramsContext) STORAGE_AWS_ROLE_ARN() antlr.TerminalNode
 	return s.GetToken(SnowflakeParserSTORAGE_AWS_ROLE_ARN, 0)
 }
 
-func (s *Cloud_provider_paramsContext) AllString() []IStringContext {
+func (s *Cloud_provider_paramsContext) AllString_() []IStringContext {
 	children := s.GetChildren()
 	len := 0
 	for _, ctx := range children {
@@ -86269,7 +86269,7 @@ func (s *Cloud_provider_paramsContext) AllString() []IStringContext {
 	return tst
 }
 
-func (s *Cloud_provider_paramsContext) String(i int) IStringContext {
+func (s *Cloud_provider_paramsContext) String_(i int) IStringContext {
 	var t antlr.RuleContext;
 	j := 0
 	for _, ctx := range s.GetChildren() {
@@ -86391,7 +86391,7 @@ func (p *SnowflakeParser) Cloud_provider_params() (localctx ICloud_provider_para
 		}
 		{
 			p.SetState(8153)
-			p.String()
+			p.String_()
 		}
 		p.SetState(8157)
 		p.GetErrorHandler().Sync(p)
@@ -86409,7 +86409,7 @@ func (p *SnowflakeParser) Cloud_provider_params() (localctx ICloud_provider_para
 			}
 			{
 				p.SetState(8156)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -86455,7 +86455,7 @@ func (p *SnowflakeParser) Cloud_provider_params() (localctx ICloud_provider_para
 		}
 		{
 			p.SetState(8167)
-			p.String()
+			p.String_()
 		}
 
 	}
@@ -86515,7 +86515,7 @@ func (s *Cloud_provider_params2Context) EQ(i int) antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserEQ, i)
 }
 
-func (s *Cloud_provider_params2Context) AllString() []IStringContext {
+func (s *Cloud_provider_params2Context) AllString_() []IStringContext {
 	children := s.GetChildren()
 	len := 0
 	for _, ctx := range children {
@@ -86536,7 +86536,7 @@ func (s *Cloud_provider_params2Context) AllString() []IStringContext {
 	return tst
 }
 
-func (s *Cloud_provider_params2Context) String(i int) IStringContext {
+func (s *Cloud_provider_params2Context) String_(i int) IStringContext {
 	var t antlr.RuleContext;
 	j := 0
 	for _, ctx := range s.GetChildren() {
@@ -86639,7 +86639,7 @@ func (p *SnowflakeParser) Cloud_provider_params2() (localctx ICloud_provider_par
 		}
 		{
 			p.SetState(8172)
-			p.String()
+			p.String_()
 		}
 		p.SetState(8176)
 		p.GetErrorHandler().Sync(p)
@@ -86657,7 +86657,7 @@ func (p *SnowflakeParser) Cloud_provider_params2() (localctx ICloud_provider_par
 			}
 			{
 				p.SetState(8175)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -86675,7 +86675,7 @@ func (p *SnowflakeParser) Cloud_provider_params2() (localctx ICloud_provider_par
 		}
 		{
 			p.SetState(8180)
-			p.String()
+			p.String_()
 		}
 
 
@@ -86735,7 +86735,7 @@ func (s *Cloud_provider_params3Context) EQ() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserEQ, 0)
 }
 
-func (s *Cloud_provider_params3Context) String() IStringContext {
+func (s *Cloud_provider_params3Context) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -86819,7 +86819,7 @@ func (p *SnowflakeParser) Cloud_provider_params3() (localctx ICloud_provider_par
 	}
 	{
 		p.SetState(8185)
-		p.String()
+		p.String_()
 	}
 
 
@@ -87848,7 +87848,7 @@ func (s *Stream_timeContext) ASSOC() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserASSOC, 0)
 }
 
-func (s *Stream_timeContext) String() IStringContext {
+func (s *Stream_timeContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -87973,7 +87973,7 @@ func (p *SnowflakeParser) Stream_time() (localctx IStream_timeContext) {
 		}
 		{
 			p.SetState(8239)
-			p.String()
+			p.String_()
 		}
 
 
@@ -87988,7 +87988,7 @@ func (p *SnowflakeParser) Stream_time() (localctx IStream_timeContext) {
 		}
 		{
 			p.SetState(8242)
-			p.String()
+			p.String_()
 		}
 
 
@@ -88018,7 +88018,7 @@ func (p *SnowflakeParser) Stream_time() (localctx IStream_timeContext) {
 		}
 		{
 			p.SetState(8248)
-			p.String()
+			p.String_()
 		}
 
 
@@ -90025,7 +90025,7 @@ func (s *CollateContext) COLLATE() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserCOLLATE, 0)
 }
 
-func (s *CollateContext) String() IStringContext {
+func (s *CollateContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -90105,7 +90105,7 @@ func (p *SnowflakeParser) Collate() (localctx ICollateContext) {
 	}
 	{
 		p.SetState(8409)
-		p.String()
+		p.String_()
 	}
 
 
@@ -90972,7 +90972,7 @@ func (p *SnowflakeParser) Out_of_line_constraint() (localctx IOut_of_line_constr
 	_la = p.GetTokenStream().LA(1)
 
 
-	if ((((_la - 217)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 217))) & ((1 << (SnowflakeParserDEFERRABLE - 217)) | (1 << (SnowflakeParserDELETE - 217)) | (1 << (SnowflakeParserDISABLE - 217)) | (1 << (SnowflakeParserENABLE - 217)))) != 0) || _la == SnowflakeParserENFORCED || _la == SnowflakeParserINITIALLY || _la == SnowflakeParserMATCH || ((((_la - 490)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 490))) & ((1 << (SnowflakeParserNORELY - 490)) | (1 << (SnowflakeParserNOT - 490)) | (1 << (SnowflakeParserNOVALIDATE - 490)))) != 0) || _la == SnowflakeParserRELY || _la == SnowflakeParserUPDATE || _la == SnowflakeParserVALIDATE {
+	if (int64((_la - 217)) & ^0x3f) == 0 && ((int64(1) << (_la - 217)) & 8796629901377) != 0 || _la == SnowflakeParserINITIALLY || (int64((_la - 440)) & ^0x3f) == 0 && ((int64(1) << (_la - 440)) & 291608075872239617) != 0 || _la == SnowflakeParserRELY || _la == SnowflakeParserUPDATE || _la == SnowflakeParserVALIDATE {
 		{
 			p.SetState(8461)
 			p.Constraint_properties()
@@ -92382,7 +92382,7 @@ func (s *Create_tagContext) EQ() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserEQ, 0)
 }
 
-func (s *Create_tagContext) AllString() []IStringContext {
+func (s *Create_tagContext) AllString_() []IStringContext {
 	children := s.GetChildren()
 	len := 0
 	for _, ctx := range children {
@@ -92403,7 +92403,7 @@ func (s *Create_tagContext) AllString() []IStringContext {
 	return tst
 }
 
-func (s *Create_tagContext) String(i int) IStringContext {
+func (s *Create_tagContext) String_(i int) IStringContext {
 	var t antlr.RuleContext;
 	j := 0
 	for _, ctx := range s.GetChildren() {
@@ -92550,7 +92550,7 @@ func (p *SnowflakeParser) Create_tag() (localctx ICreate_tagContext) {
 			}
 			{
 				p.SetState(8566)
-				p.String()
+				p.String_()
 			}
 
 
@@ -92607,7 +92607,7 @@ func (p *SnowflakeParser) Create_tag() (localctx ICreate_tagContext) {
 			}
 			{
 				p.SetState(8579)
-				p.String()
+				p.String_()
 			}
 			p.SetState(8584)
 			p.GetErrorHandler().Sync(p)
@@ -92621,7 +92621,7 @@ func (p *SnowflakeParser) Create_tag() (localctx ICreate_tagContext) {
 				}
 				{
 					p.SetState(8581)
-					p.String()
+					p.String_()
 				}
 
 
@@ -93053,7 +93053,7 @@ func (p *SnowflakeParser) Session_parameter() (localctx ISession_parameterContex
 		p.SetState(8591)
 		_la = p.GetTokenStream().LA(1)
 
-		if !((((_la) & -(0x1f+1)) == 0 && ((1 << uint(_la)) & ((1 << SnowflakeParserABORT_DETACHED_QUERY) | (1 << SnowflakeParserALLOW_CLIENT_MFA_CACHING) | (1 << SnowflakeParserALLOW_ID_TOKEN))) != 0) || ((((_la - 66)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 66))) & ((1 << (SnowflakeParserAUTOCOMMIT - 66)) | (1 << (SnowflakeParserAUTOCOMMIT_API_SUPPORTED - 66)) | (1 << (SnowflakeParserBINARY_INPUT_FORMAT - 66)) | (1 << (SnowflakeParserBINARY_OUTPUT_FORMAT - 66)))) != 0) || ((((_la - 132)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 132))) & ((1 << (SnowflakeParserCLIENT_ENABLE_LOG_INFO_STATEMENT_PARAMETERS - 132)) | (1 << (SnowflakeParserCLIENT_ENCRYPTION_KEY_SIZE - 132)) | (1 << (SnowflakeParserCLIENT_MEMORY_LIMIT - 132)) | (1 << (SnowflakeParserCLIENT_METADATA_REQUEST_USE_CONNECTION_CTX - 132)) | (1 << (SnowflakeParserCLIENT_METADATA_USE_SESSION_DATABASE - 132)) | (1 << (SnowflakeParserCLIENT_PREFETCH_THREADS - 132)) | (1 << (SnowflakeParserCLIENT_RESULT_CHUNK_SIZE - 132)) | (1 << (SnowflakeParserCLIENT_RESULT_COLUMN_CASE_INSENSITIVE - 132)) | (1 << (SnowflakeParserCLIENT_SESSION_KEEP_ALIVE - 132)) | (1 << (SnowflakeParserCLIENT_SESSION_KEEP_ALIVE_HEARTBEAT_FREQUENCY - 132)) | (1 << (SnowflakeParserCLIENT_TIMESTAMP_TYPE_MAPPING - 132)))) != 0) || ((((_la - 199)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 199))) & ((1 << (SnowflakeParserDATA_RETENTION_TIME_IN_DAYS - 199)) | (1 << (SnowflakeParserDATE_INPUT_FORMAT - 199)) | (1 << (SnowflakeParserDATE_OUTPUT_FORMAT - 199)))) != 0) || ((((_la - 248)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 248))) & ((1 << (SnowflakeParserENABLE_INTERNAL_STAGES_PRIVATELINK - 248)) | (1 << (SnowflakeParserENABLE_UNLOAD_PHYSICAL_TYPE_OPTIMIZATION - 248)) | (1 << (SnowflakeParserENFORCE_SESSION_POLICY - 248)) | (1 << (SnowflakeParserERROR_ON_NONDETERMINISTIC_MERGE - 248)) | (1 << (SnowflakeParserERROR_ON_NONDETERMINISTIC_UPDATE - 248)))) != 0) || _la == SnowflakeParserEXTERNAL_OAUTH_ADD_PRIVILEGED_ROLES_TO_BLOCKED_LIST || _la == SnowflakeParserGEOGRAPHY_OUTPUT_FORMAT || _la == SnowflakeParserGEOMETRY_OUTPUT_FORMAT || ((((_la - 370)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 370))) & ((1 << (SnowflakeParserINITIAL_REPLICATION_SIZE_LIMIT_IN_TB - 370)) | (1 << (SnowflakeParserJDBC_TREAT_DECIMAL_AS_INT - 370)) | (1 << (SnowflakeParserJDBC_TREAT_TIMESTAMP_NTZ_AS_UTC - 370)) | (1 << (SnowflakeParserJDBC_USE_SESSION_TIMEZONE - 370)) | (1 << (SnowflakeParserJS_TREAT_INTEGER_AS_BIGINT - 370)) | (1 << (SnowflakeParserJSON_INDENT - 370)))) != 0) || ((((_la - 423)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 423))) & ((1 << (SnowflakeParserLOCK_TIMEOUT - 423)) | (1 << (SnowflakeParserMAX_CONCURRENCY_LEVEL - 423)) | (1 << (SnowflakeParserMAX_DATA_EXTENSION_TIME_IN_DAYS - 423)))) != 0) || ((((_la - 457)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 457))) & ((1 << (SnowflakeParserMIN_DATA_RETENTION_TIME_IN_DAYS - 457)) | (1 << (SnowflakeParserMULTI_STATEMENT_COUNT - 457)) | (1 << (SnowflakeParserNETWORK_POLICY - 457)))) != 0) || ((((_la - 571)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 571))) & ((1 << (SnowflakeParserPERIODIC_DATA_REKEYING - 571)) | (1 << (SnowflakeParserPIPE_EXECUTION_PAUSED - 571)) | (1 << (SnowflakeParserPREVENT_UNLOAD_TO_INLINE_URL - 571)) | (1 << (SnowflakeParserPREVENT_UNLOAD_TO_INTERNAL_STAGES - 571)))) != 0) || _la == SnowflakeParserQUERY_TAG || _la == SnowflakeParserQUOTED_IDENTIFIERS_IGNORE_CASE || _la == SnowflakeParserREQUIRE_STORAGE_INTEGRATION_FOR_STAGE_CREATION || _la == SnowflakeParserREQUIRE_STORAGE_INTEGRATION_FOR_STAGE_OPERATION || _la == SnowflakeParserROWS_PER_RESULTSET || _la == SnowflakeParserSAML_IDENTITY_PROVIDER || _la == SnowflakeParserSHARE_RESTRICTIONS || _la == SnowflakeParserSIMULATED_DATA_SHARING_CONSUMER || ((((_la - 794)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 794))) & ((1 << (SnowflakeParserSSO_LOGIN_PAGE - 794)) | (1 << (SnowflakeParserSTATEMENT_QUEUED_TIMEOUT_IN_SECONDS - 794)) | (1 << (SnowflakeParserSTATEMENT_TIMEOUT_IN_SECONDS - 794)))) != 0) || _la == SnowflakeParserSTRICT_JSON_OUTPUT || _la == SnowflakeParserSUSPEND_TASK_AFTER_NUM_FAILURES || ((((_la - 871)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 871))) & ((1 << (SnowflakeParserTIME_INPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIME_OUTPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMESTAMP_DAY_IS_ALWAYS_24H - 871)) | (1 << (SnowflakeParserTIMESTAMP_INPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMESTAMP_LTZ_OUTPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMESTAMP_NTZ_OUTPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMESTAMP_OUTPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMESTAMP_TYPE_MAPPING - 871)) | (1 << (SnowflakeParserTIMESTAMP_TZ_OUTPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMEZONE - 871)) | (1 << (SnowflakeParserTRANSACTION_ABORT_ON_ERROR - 871)) | (1 << (SnowflakeParserTRANSACTION_DEFAULT_ISOLATION_LEVEL - 871)))) != 0) || _la == SnowflakeParserTWO_DIGIT_CENTURY_START || _la == SnowflakeParserUNSUPPORTED_DDL_ACTION || ((((_la - 947)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 947))) & ((1 << (SnowflakeParserUSE_CACHED_RESULT - 947)) | (1 << (SnowflakeParserUSER_TASK_MANAGED_INITIAL_WAREHOUSE_SIZE - 947)) | (1 << (SnowflakeParserUSER_TASK_TIMEOUT_MS - 947)) | (1 << (SnowflakeParserWEEK_OF_YEAR_POLICY - 947)) | (1 << (SnowflakeParserWEEK_START - 947)))) != 0) || _la == SnowflakeParserDEFAULT_DDL_COLLATION) {
+		if !((int64((_la - 4)) & ^0x3f) == 0 && ((int64(1) << (_la - 4)) & -4611686018426208255) != 0 || (int64((_la - 95)) & ^0x3f) == 0 && ((int64(1) << (_la - 95)) & 281337537757187) != 0 || (int64((_la - 199)) & ^0x3f) == 0 && ((int64(1) << (_la - 199)) & 1157988054187638833) != 0 || (int64((_la - 265)) & ^0x3f) == 0 && ((int64(1) << (_la - 265)) & 131075) != 0 || (int64((_la - 329)) & ^0x3f) == 0 && ((int64(1) << (_la - 329)) & 6629300850512625667) != 0 || (int64((_la - 393)) & ^0x3f) == 0 && ((int64(1) << (_la - 393)) & 108086392130633729) != 0 || (int64((_la - 457)) & ^0x3f) == 0 && ((int64(1) << (_la - 457)) & 2101249) != 0 || (int64((_la - 571)) & ^0x3f) == 0 && ((int64(1) << (_la - 571)) & 1407374889844801) != 0 || (int64((_la - 666)) & ^0x3f) == 0 && ((int64(1) << (_la - 666)) & 1152921779484753923) != 0 || (int64((_la - 761)) & ^0x3f) == 0 && ((int64(1) << (_la - 761)) & 422221055002625) != 0 || (int64((_la - 833)) & ^0x3f) == 0 && ((int64(1) << (_la - 833)) & -4580538228402026495) != 0 || (int64((_la - 915)) & ^0x3f) == 0 && ((int64(1) << (_la - 915)) & 6917529238102867969) != 0 || _la == SnowflakeParserDEFAULT_DDL_COLLATION) {
 			p.GetErrorHandler().RecoverInline(p)
 		} else {
 			p.GetErrorHandler().ReportMatch(p)
@@ -93700,7 +93700,7 @@ func (s *Create_taskContext) EQ(i int) antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserEQ, i)
 }
 
-func (s *Create_taskContext) AllString() []IStringContext {
+func (s *Create_taskContext) AllString_() []IStringContext {
 	children := s.GetChildren()
 	len := 0
 	for _, ctx := range children {
@@ -93721,7 +93721,7 @@ func (s *Create_taskContext) AllString() []IStringContext {
 	return tst
 }
 
-func (s *Create_taskContext) String(i int) IStringContext {
+func (s *Create_taskContext) String_(i int) IStringContext {
 	var t antlr.RuleContext;
 	j := 0
 	for _, ctx := range s.GetChildren() {
@@ -94029,7 +94029,7 @@ func (p *SnowflakeParser) Create_task() (localctx ICreate_taskContext) {
 		}
 		{
 			p.SetState(8624)
-			p.String()
+			p.String_()
 		}
 
 
@@ -94044,7 +94044,7 @@ func (p *SnowflakeParser) Create_task() (localctx ICreate_taskContext) {
 		}
 		{
 			p.SetState(8627)
-			p.String()
+			p.String_()
 		}
 
 
@@ -94066,7 +94066,7 @@ func (p *SnowflakeParser) Create_task() (localctx ICreate_taskContext) {
 		}
 		{
 			p.SetState(8632)
-			p.String()
+			p.String_()
 		}
 
 	}
@@ -94198,7 +94198,7 @@ func (p *SnowflakeParser) Create_task() (localctx ICreate_taskContext) {
 		}
 		{
 			p.SetState(8665)
-			p.String()
+			p.String_()
 		}
 		p.SetState(8670)
 		p.GetErrorHandler().Sync(p)
@@ -94212,7 +94212,7 @@ func (p *SnowflakeParser) Create_task() (localctx ICreate_taskContext) {
 			}
 			{
 				p.SetState(8667)
-				p.String()
+				p.String_()
 			}
 
 
@@ -94581,7 +94581,7 @@ func (p *SnowflakeParser) Call() (localctx ICallContext) {
 	_la = p.GetTokenStream().LA(1)
 
 
-	if _la == SnowflakeParserCASE || _la == SnowflakeParserCAST || _la == SnowflakeParserDEFAULT || _la == SnowflakeParserDENSE_RANK || _la == SnowflakeParserFALSE || _la == SnowflakeParserINT || _la == SnowflakeParserNTILE || _la == SnowflakeParserNULL_ || _la == SnowflakeParserOVER || _la == SnowflakeParserRANK || _la == SnowflakeParserROW_NUMBER || _la == SnowflakeParserSTAGE || _la == SnowflakeParserTRUE || _la == SnowflakeParserBIGINT || _la == SnowflakeParserLISTAGG || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)) | (1 << (SnowflakeParserSTRING - 1033)) | (1 << (SnowflakeParserDECIMAL - 1033)) | (1 << (SnowflakeParserFLOAT - 1033)) | (1 << (SnowflakeParserREAL - 1033)) | (1 << (SnowflakeParserDOT - 1033)) | (1 << (SnowflakeParserLR_BRACKET - 1033)))) != 0) || ((((_la - 1065)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1065))) & ((1 << (SnowflakeParserLSB - 1065)) | (1 << (SnowflakeParserLCB - 1065)) | (1 << (SnowflakeParserPLUS - 1065)) | (1 << (SnowflakeParserMINUS - 1065)))) != 0) {
+	if _la == SnowflakeParserCASE || _la == SnowflakeParserCAST || _la == SnowflakeParserDEFAULT || _la == SnowflakeParserDENSE_RANK || _la == SnowflakeParserFALSE || _la == SnowflakeParserINT || (int64((_la - 499)) & ^0x3f) == 0 && ((int64(1) << (_la - 499)) & 562949953421315) != 0 || _la == SnowflakeParserRANK || _la == SnowflakeParserROW_NUMBER || _la == SnowflakeParserSTAGE || _la == SnowflakeParserTRUE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 4899982412588515329) != 0 || (int64((_la - 1065)) & ^0x3f) == 0 && ((int64(1) << (_la - 1065)) & 6149) != 0 {
 		{
 			p.SetState(8690)
 			p.Expr_list()
@@ -94866,7 +94866,7 @@ func (p *SnowflakeParser) Create_user() (localctx ICreate_userContext) {
 	_la = p.GetTokenStream().LA(1)
 
 
-	if _la == SnowflakeParserABORT_DETACHED_QUERY || ((((_la - 66)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 66))) & ((1 << (SnowflakeParserAUTOCOMMIT - 66)) | (1 << (SnowflakeParserBINARY_INPUT_FORMAT - 66)) | (1 << (SnowflakeParserBINARY_OUTPUT_FORMAT - 66)))) != 0) || _la == SnowflakeParserDATE_INPUT_FORMAT || _la == SnowflakeParserDATE_OUTPUT_FORMAT || _la == SnowflakeParserERROR_ON_NONDETERMINISTIC_MERGE || _la == SnowflakeParserERROR_ON_NONDETERMINISTIC_UPDATE || _la == SnowflakeParserJSON_INDENT || _la == SnowflakeParserLOCK_TIMEOUT || _la == SnowflakeParserQUERY_TAG || _la == SnowflakeParserROWS_PER_RESULTSET || _la == SnowflakeParserSIMULATED_DATA_SHARING_CONSUMER || _la == SnowflakeParserSTATEMENT_TIMEOUT_IN_SECONDS || _la == SnowflakeParserSTRICT_JSON_OUTPUT || ((((_la - 871)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 871))) & ((1 << (SnowflakeParserTIME_INPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIME_OUTPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMESTAMP_DAY_IS_ALWAYS_24H - 871)) | (1 << (SnowflakeParserTIMESTAMP_INPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMESTAMP_LTZ_OUTPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMESTAMP_NTZ_OUTPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMESTAMP_OUTPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMESTAMP_TYPE_MAPPING - 871)) | (1 << (SnowflakeParserTIMESTAMP_TZ_OUTPUT_FORMAT - 871)) | (1 << (SnowflakeParserTIMEZONE - 871)) | (1 << (SnowflakeParserTRANSACTION_DEFAULT_ISOLATION_LEVEL - 871)))) != 0) || _la == SnowflakeParserTWO_DIGIT_CENTURY_START || _la == SnowflakeParserUNSUPPORTED_DDL_ACTION || ((((_la - 947)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 947))) & ((1 << (SnowflakeParserUSE_CACHED_RESULT - 947)) | (1 << (SnowflakeParserWEEK_OF_YEAR_POLICY - 947)) | (1 << (SnowflakeParserWEEK_START - 947)))) != 0) {
+	if _la == SnowflakeParserABORT_DETACHED_QUERY || (int64((_la - 66)) & ^0x3f) == 0 && ((int64(1) << (_la - 66)) & 1610612737) != 0 || (int64((_la - 203)) & ^0x3f) == 0 && ((int64(1) << (_la - 203)) & -4611686018427387901) != 0 || _la == SnowflakeParserJSON_INDENT || _la == SnowflakeParserLOCK_TIMEOUT || _la == SnowflakeParserQUERY_TAG || _la == SnowflakeParserROWS_PER_RESULTSET || (int64((_la - 772)) & ^0x3f) == 0 && ((int64(1) << (_la - 772)) & 2305843146652647425) != 0 || (int64((_la - 871)) & ^0x3f) == 0 && ((int64(1) << (_la - 871)) & 17592219712163) != 0 || (int64((_la - 938)) & ^0x3f) == 0 && ((int64(1) << (_la - 938)) & 824633721345) != 0 {
 		{
 			p.SetState(8710)
 			p.Session_params()
@@ -95439,7 +95439,7 @@ func (p *SnowflakeParser) Create_view() (localctx ICreate_viewContext) {
 	_la = p.GetTokenStream().LA(1)
 
 
-	for _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+	for _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 		{
 			p.SetState(8738)
 			p.View_col()
@@ -96131,7 +96131,7 @@ func (p *SnowflakeParser) Wh_properties() (localctx IWh_propertiesContext) {
 			p.SetState(8786)
 			_la = p.GetTokenStream().LA(1)
 
-			if !(_la == SnowflakeParserLARGE || _la == SnowflakeParserMEDIUM || _la == SnowflakeParserSMALL || ((((_la - 989)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 989))) & ((1 << (SnowflakeParserX4LARGE - 989)) | (1 << (SnowflakeParserX5LARGE - 989)) | (1 << (SnowflakeParserX6LARGE - 989)) | (1 << (SnowflakeParserXLARGE - 989)) | (1 << (SnowflakeParserXSMALL - 989)) | (1 << (SnowflakeParserXXLARGE - 989)) | (1 << (SnowflakeParserXXXLARGE - 989)))) != 0)) {
+			if !(_la == SnowflakeParserLARGE || _la == SnowflakeParserMEDIUM || _la == SnowflakeParserSMALL || (int64((_la - 989)) & ^0x3f) == 0 && ((int64(1) << (_la - 989)) & 463) != 0) {
 				p.GetErrorHandler().RecoverInline(p)
 			} else {
 				p.GetErrorHandler().ReportMatch(p)
@@ -97260,7 +97260,7 @@ func (p *SnowflakeParser) Object_type_plural() (localctx IObject_type_pluralCont
 		p.SetState(8870)
 		_la = p.GetTokenStream().LA(1)
 
-		if !(_la == SnowflakeParserDATABASES || _la == SnowflakeParserINTEGRATIONS || _la == SnowflakeParserROLES || _la == SnowflakeParserSCHEMAS || _la == SnowflakeParserSTAGES || ((((_la - 831)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 831))) & ((1 << (SnowflakeParserSTREAMS - 831)) | (1 << (SnowflakeParserTABLES - 831)) | (1 << (SnowflakeParserTASKS - 831)))) != 0) || ((((_la - 953)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 953))) & ((1 << (SnowflakeParserUSERS - 953)) | (1 << (SnowflakeParserVIEWS - 953)) | (1 << (SnowflakeParserWAREHOUSES - 953)))) != 0)) {
+		if !(_la == SnowflakeParserDATABASES || _la == SnowflakeParserINTEGRATIONS || _la == SnowflakeParserROLES || _la == SnowflakeParserSCHEMAS || (int64((_la - 798)) & ^0x3f) == 0 && ((int64(1) << (_la - 798)) & 144115196665790465) != 0 || _la == SnowflakeParserTASKS || (int64((_la - 953)) & ^0x3f) == 0 && ((int64(1) << (_la - 953)) & 4259841) != 0) {
 			p.GetErrorHandler().RecoverInline(p)
 		} else {
 			p.GetErrorHandler().ReportMatch(p)
@@ -103646,7 +103646,7 @@ func (p *SnowflakeParser) Arg_types() (localctx IArg_typesContext) {
 	_la = p.GetTokenStream().LA(1)
 
 
-	if _la == SnowflakeParserCHAR || _la == SnowflakeParserCHARACTER || _la == SnowflakeParserDOUBLE || _la == SnowflakeParserINT || _la == SnowflakeParserNUMBER || _la == SnowflakeParserOBJECT || ((((_la - 869)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 869))) & ((1 << (SnowflakeParserTIME - 869)) | (1 << (SnowflakeParserTIMESTAMP - 869)) | (1 << (SnowflakeParserTIMESTAMP_LTZ - 869)) | (1 << (SnowflakeParserTIMESTAMP_NTZ - 869)) | (1 << (SnowflakeParserTIMESTAMP_TZ - 869)))) != 0) || ((((_la - 1000)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1000))) & ((1 << (SnowflakeParserARRAY - 1000)) | (1 << (SnowflakeParserBIGINT - 1000)) | (1 << (SnowflakeParserBINARY - 1000)) | (1 << (SnowflakeParserBOOLEAN - 1000)) | (1 << (SnowflakeParserBYTEINT - 1000)) | (1 << (SnowflakeParserDATE - 1000)) | (1 << (SnowflakeParserDATETIME - 1000)) | (1 << (SnowflakeParserDECIMAL_ - 1000)) | (1 << (SnowflakeParserFLOAT4 - 1000)) | (1 << (SnowflakeParserFLOAT8 - 1000)) | (1 << (SnowflakeParserFLOAT_ - 1000)) | (1 << (SnowflakeParserGEOGRAPHY - 1000)) | (1 << (SnowflakeParserGEOMETRY - 1000)) | (1 << (SnowflakeParserINTEGER - 1000)) | (1 << (SnowflakeParserNUMERIC - 1000)) | (1 << (SnowflakeParserREAL_ - 1000)) | (1 << (SnowflakeParserSMALLINT - 1000)) | (1 << (SnowflakeParserSTRING_ - 1000)) | (1 << (SnowflakeParserTEXT - 1000)) | (1 << (SnowflakeParserTINYINT - 1000)) | (1 << (SnowflakeParserVARBINARY - 1000)) | (1 << (SnowflakeParserVARCHAR - 1000)) | (1 << (SnowflakeParserVARIANT - 1000)))) != 0) {
+	if _la == SnowflakeParserCHAR || _la == SnowflakeParserCHARACTER || _la == SnowflakeParserDOUBLE || _la == SnowflakeParserINT || _la == SnowflakeParserNUMBER || _la == SnowflakeParserOBJECT || (int64((_la - 869)) & ^0x3f) == 0 && ((int64(1) << (_la - 869)) & 70721) != 0 || (int64((_la - 1000)) & ^0x3f) == 0 && ((int64(1) << (_la - 1000)) & 133791711) != 0 {
 		{
 			p.SetState(9132)
 			p.Data_type_list()
@@ -105449,7 +105449,7 @@ func (s *Comment_clauseContext) EQ() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserEQ, 0)
 }
 
-func (s *Comment_clauseContext) String() IStringContext {
+func (s *Comment_clauseContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -105533,7 +105533,7 @@ func (p *SnowflakeParser) Comment_clause() (localctx IComment_clauseContext) {
 	}
 	{
 		p.SetState(9196)
-		p.String()
+		p.String_()
 	}
 
 
@@ -112434,7 +112434,7 @@ func (p *SnowflakeParser) Show_columns() (localctx IShow_columnsContext) {
 			_la = p.GetTokenStream().LA(1)
 
 
-			if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+			if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 				{
 					p.SetState(9428)
 					p.Id_()
@@ -112453,7 +112453,7 @@ func (p *SnowflakeParser) Show_columns() (localctx IShow_columnsContext) {
 			_la = p.GetTokenStream().LA(1)
 
 
-			if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+			if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 				{
 					p.SetState(9432)
 					p.Schema_name()
@@ -112718,7 +112718,7 @@ func (s *Starts_withContext) WITH() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserWITH, 0)
 }
 
-func (s *Starts_withContext) String() IStringContext {
+func (s *Starts_withContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -112802,7 +112802,7 @@ func (p *SnowflakeParser) Starts_with() (localctx IStarts_withContext) {
 	}
 	{
 		p.SetState(9456)
-		p.String()
+		p.String_()
 	}
 
 
@@ -112873,7 +112873,7 @@ func (s *Limit_rowsContext) FROM() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserFROM, 0)
 }
 
-func (s *Limit_rowsContext) String() IStringContext {
+func (s *Limit_rowsContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -112969,7 +112969,7 @@ func (p *SnowflakeParser) Limit_rows() (localctx ILimit_rowsContext) {
 		}
 		{
 			p.SetState(9461)
-			p.String()
+			p.String_()
 		}
 
 	}
@@ -114205,7 +114205,7 @@ func (p *SnowflakeParser) Show_external_tables() (localctx IShow_external_tables
 			_la = p.GetTokenStream().LA(1)
 
 
-			if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+			if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 				{
 					p.SetState(9531)
 					p.Id_()
@@ -114232,7 +114232,7 @@ func (p *SnowflakeParser) Show_external_tables() (localctx IShow_external_tables
 			_la = p.GetTokenStream().LA(1)
 
 
-			if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+			if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 				{
 					p.SetState(9537)
 					p.Schema_name()
@@ -116740,7 +116740,7 @@ func (p *SnowflakeParser) In_obj_2() (localctx IIn_obj_2Context) {
 		_la = p.GetTokenStream().LA(1)
 
 
-		if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+		if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 			{
 				p.SetState(9686)
 				p.Id_()
@@ -116759,7 +116759,7 @@ func (p *SnowflakeParser) In_obj_2() (localctx IIn_obj_2Context) {
 		_la = p.GetTokenStream().LA(1)
 
 
-		if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+		if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 			{
 				p.SetState(9690)
 				p.Schema_name()
@@ -117823,7 +117823,7 @@ func (p *SnowflakeParser) Show_parameters() (localctx IShow_parametersContext) {
 			_la = p.GetTokenStream().LA(1)
 
 
-			if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+			if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 				{
 					p.SetState(9736)
 					p.Id_()
@@ -117849,7 +117849,7 @@ func (p *SnowflakeParser) Show_parameters() (localctx IShow_parametersContext) {
 			_la = p.GetTokenStream().LA(1)
 
 
-			if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+			if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 				{
 					p.SetState(9740)
 					p.Id_()
@@ -119881,7 +119881,7 @@ func (p *SnowflakeParser) Show_schemas() (localctx IShow_schemasContext) {
 			_la = p.GetTokenStream().LA(1)
 
 
-			if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+			if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 				{
 					p.SetState(9842)
 					p.Id_()
@@ -121757,7 +121757,7 @@ func (p *SnowflakeParser) Show_tasks() (localctx IShow_tasksContext) {
 			_la = p.GetTokenStream().LA(1)
 
 
-			if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+			if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 				{
 					p.SetState(9937)
 					p.Id_()
@@ -121784,7 +121784,7 @@ func (p *SnowflakeParser) Show_tasks() (localctx IShow_tasksContext) {
 			_la = p.GetTokenStream().LA(1)
 
 
-			if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+			if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 				{
 					p.SetState(9943)
 					p.Schema_name()
@@ -122234,7 +122234,7 @@ func (s *Show_usersContext) WITH() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserWITH, 0)
 }
 
-func (s *Show_usersContext) AllString() []IStringContext {
+func (s *Show_usersContext) AllString_() []IStringContext {
 	children := s.GetChildren()
 	len := 0
 	for _, ctx := range children {
@@ -122255,7 +122255,7 @@ func (s *Show_usersContext) AllString() []IStringContext {
 	return tst
 }
 
-func (s *Show_usersContext) String(i int) IStringContext {
+func (s *Show_usersContext) String_(i int) IStringContext {
 	var t antlr.RuleContext;
 	j := 0
 	for _, ctx := range s.GetChildren() {
@@ -122407,7 +122407,7 @@ func (p *SnowflakeParser) Show_users() (localctx IShow_usersContext) {
 		}
 		{
 			p.SetState(9981)
-			p.String()
+			p.String_()
 		}
 
 	}
@@ -122439,7 +122439,7 @@ func (p *SnowflakeParser) Show_users() (localctx IShow_usersContext) {
 		}
 		{
 			p.SetState(9989)
-			p.String()
+			p.String_()
 		}
 
 	}
@@ -122868,7 +122868,7 @@ func (p *SnowflakeParser) Show_views() (localctx IShow_viewsContext) {
 			_la = p.GetTokenStream().LA(1)
 
 
-			if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+			if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 				{
 					p.SetState(10008)
 					p.Id_()
@@ -122895,7 +122895,7 @@ func (p *SnowflakeParser) Show_views() (localctx IShow_viewsContext) {
 			_la = p.GetTokenStream().LA(1)
 
 
-			if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+			if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 				{
 					p.SetState(10014)
 					p.Schema_name()
@@ -123132,7 +123132,7 @@ func (s *Like_patternContext) LIKE() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserLIKE, 0)
 }
 
-func (s *Like_patternContext) String() IStringContext {
+func (s *Like_patternContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -123212,7 +123212,7 @@ func (p *SnowflakeParser) Like_pattern() (localctx ILike_patternContext) {
 	}
 	{
 		p.SetState(10033)
-		p.String()
+		p.String_()
 	}
 
 
@@ -123974,7 +123974,7 @@ func NewTag_valueContext(parser antlr.Parser, parent antlr.ParserRuleContext, in
 
 func (s *Tag_valueContext) GetParser() antlr.Parser { return s.parser }
 
-func (s *Tag_valueContext) String() IStringContext {
+func (s *Tag_valueContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -124050,7 +124050,7 @@ func (p *SnowflakeParser) Tag_value() (localctx ITag_valueContext) {
 	p.EnterOuterAlt(localctx, 1)
 	{
 		p.SetState(10066)
-		p.String()
+		p.String_()
 	}
 
 
@@ -124750,7 +124750,7 @@ func (s *StringContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 
 
 
-func (p *SnowflakeParser) String() (localctx IStringContext) {
+func (p *SnowflakeParser) String_() (localctx IStringContext) {
 	this := p
 	_ = this
 
@@ -124823,7 +124823,7 @@ func NewString_listContext(parser antlr.Parser, parent antlr.ParserRuleContext, 
 
 func (s *String_listContext) GetParser() antlr.Parser { return s.parser }
 
-func (s *String_listContext) AllString() []IStringContext {
+func (s *String_listContext) AllString_() []IStringContext {
 	children := s.GetChildren()
 	len := 0
 	for _, ctx := range children {
@@ -124844,7 +124844,7 @@ func (s *String_listContext) AllString() []IStringContext {
 	return tst
 }
 
-func (s *String_listContext) String(i int) IStringContext {
+func (s *String_listContext) String_(i int) IStringContext {
 	var t antlr.RuleContext;
 	j := 0
 	for _, ctx := range s.GetChildren() {
@@ -124934,7 +124934,7 @@ func (p *SnowflakeParser) String_list() (localctx IString_listContext) {
 	p.EnterOuterAlt(localctx, 1)
 	{
 		p.SetState(10080)
-		p.String()
+		p.String_()
 	}
 	p.SetState(10085)
 	p.GetErrorHandler().Sync(p)
@@ -124948,7 +124948,7 @@ func (p *SnowflakeParser) String_list() (localctx IString_listContext) {
 		}
 		{
 			p.SetState(10082)
-			p.String()
+			p.String_()
 		}
 
 
@@ -125306,7 +125306,7 @@ func (s *PatternContext) EQ() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserEQ, 0)
 }
 
-func (s *PatternContext) String() IStringContext {
+func (s *PatternContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -125390,7 +125390,7 @@ func (p *SnowflakeParser) Pattern() (localctx IPatternContext) {
 	}
 	{
 		p.SetState(10098)
-		p.String()
+		p.String_()
 	}
 
 
@@ -126541,7 +126541,7 @@ func (s *ExprContext) COLLATE() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserCOLLATE, 0)
 }
 
-func (s *ExprContext) String() IStringContext {
+func (s *ExprContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -126783,7 +126783,7 @@ func (p *SnowflakeParser) expr(_p int) (localctx IExprContext) {
 
 					_la = p.GetTokenStream().LA(1)
 
-					if !(((((_la - 1073)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1073))) & ((1 << (SnowflakeParserSTAR - 1073)) | (1 << (SnowflakeParserDIVIDE - 1073)) | (1 << (SnowflakeParserMODULE - 1073)))) != 0)) {
+					if !((int64((_la - 1073)) & ^0x3f) == 0 && ((int64(1) << (_la - 1073)) & 7) != 0) {
 						var _ri = p.GetErrorHandler().RecoverInline(p)
 
 						localctx.(*ExprContext).op = _ri
@@ -126815,7 +126815,7 @@ func (p *SnowflakeParser) expr(_p int) (localctx IExprContext) {
 
 					_la = p.GetTokenStream().LA(1)
 
-					if !(((((_la - 1058)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1058))) & ((1 << (SnowflakeParserPIPE_PIPE - 1058)) | (1 << (SnowflakeParserPLUS - 1058)) | (1 << (SnowflakeParserMINUS - 1058)))) != 0)) {
+					if !((int64((_la - 1058)) & ^0x3f) == 0 && ((int64(1) << (_la - 1058)) & 786433) != 0) {
 						var _ri = p.GetErrorHandler().RecoverInline(p)
 
 						localctx.(*ExprContext).op = _ri
@@ -126880,7 +126880,7 @@ func (p *SnowflakeParser) expr(_p int) (localctx IExprContext) {
 				}
 				{
 					p.SetState(10167)
-					p.String()
+					p.String_()
 				}
 
 
@@ -129101,7 +129101,7 @@ func (p *SnowflakeParser) Function_call() (localctx IFunction_callContext) {
 		_la = p.GetTokenStream().LA(1)
 
 
-		if _la == SnowflakeParserCASE || _la == SnowflakeParserCAST || _la == SnowflakeParserDEFAULT || _la == SnowflakeParserDENSE_RANK || _la == SnowflakeParserFALSE || _la == SnowflakeParserINT || _la == SnowflakeParserNTILE || _la == SnowflakeParserNULL_ || _la == SnowflakeParserOVER || _la == SnowflakeParserRANK || _la == SnowflakeParserROW_NUMBER || _la == SnowflakeParserSTAGE || _la == SnowflakeParserTRUE || _la == SnowflakeParserBIGINT || _la == SnowflakeParserLISTAGG || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)) | (1 << (SnowflakeParserSTRING - 1033)) | (1 << (SnowflakeParserDECIMAL - 1033)) | (1 << (SnowflakeParserFLOAT - 1033)) | (1 << (SnowflakeParserREAL - 1033)) | (1 << (SnowflakeParserDOT - 1033)) | (1 << (SnowflakeParserLR_BRACKET - 1033)))) != 0) || ((((_la - 1065)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1065))) & ((1 << (SnowflakeParserLSB - 1065)) | (1 << (SnowflakeParserLCB - 1065)) | (1 << (SnowflakeParserPLUS - 1065)) | (1 << (SnowflakeParserMINUS - 1065)))) != 0) {
+		if _la == SnowflakeParserCASE || _la == SnowflakeParserCAST || _la == SnowflakeParserDEFAULT || _la == SnowflakeParserDENSE_RANK || _la == SnowflakeParserFALSE || _la == SnowflakeParserINT || (int64((_la - 499)) & ^0x3f) == 0 && ((int64(1) << (_la - 499)) & 562949953421315) != 0 || _la == SnowflakeParserRANK || _la == SnowflakeParserROW_NUMBER || _la == SnowflakeParserSTAGE || _la == SnowflakeParserTRUE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 4899982412588515329) != 0 || (int64((_la - 1065)) & ^0x3f) == 0 && ((int64(1) << (_la - 1065)) & 6149) != 0 {
 			{
 				p.SetState(10291)
 				p.Expr_list()
@@ -129456,7 +129456,7 @@ func (s *Aggregate_functionContext) COMMA() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserCOMMA, 0)
 }
 
-func (s *Aggregate_functionContext) String() IStringContext {
+func (s *Aggregate_functionContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -129648,7 +129648,7 @@ func (p *SnowflakeParser) Aggregate_function() (localctx IAggregate_functionCont
 			}
 			{
 				p.SetState(10330)
-				p.String()
+				p.String_()
 			}
 
 		}
@@ -130249,7 +130249,7 @@ func (p *SnowflakeParser) Full_column_name() (localctx IFull_column_nameContext)
 		_la = p.GetTokenStream().LA(1)
 
 
-		if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+		if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 			{
 				p.SetState(10359)
 
@@ -130269,7 +130269,7 @@ func (p *SnowflakeParser) Full_column_name() (localctx IFull_column_nameContext)
 		_la = p.GetTokenStream().LA(1)
 
 
-		if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+		if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 			{
 				p.SetState(10363)
 
@@ -130289,7 +130289,7 @@ func (p *SnowflakeParser) Full_column_name() (localctx IFull_column_nameContext)
 		_la = p.GetTokenStream().LA(1)
 
 
-		if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+		if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 			{
 				p.SetState(10367)
 
@@ -130321,7 +130321,7 @@ func (p *SnowflakeParser) Full_column_name() (localctx IFull_column_nameContext)
 		_la = p.GetTokenStream().LA(1)
 
 
-		if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+		if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 			{
 				p.SetState(10372)
 
@@ -130341,7 +130341,7 @@ func (p *SnowflakeParser) Full_column_name() (localctx IFull_column_nameContext)
 		_la = p.GetTokenStream().LA(1)
 
 
-		if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+		if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 			{
 				p.SetState(10376)
 
@@ -130373,7 +130373,7 @@ func (p *SnowflakeParser) Full_column_name() (localctx IFull_column_nameContext)
 		_la = p.GetTokenStream().LA(1)
 
 
-		if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+		if _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 			{
 				p.SetState(10381)
 
@@ -133768,7 +133768,7 @@ func (p *SnowflakeParser) Column_elem() (localctx IColumn_elemContext) {
 		_la = p.GetTokenStream().LA(1)
 
 
-		if _la == SnowflakeParserAS || _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+		if _la == SnowflakeParserAS || _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 			{
 				p.SetState(10555)
 				p.As_alias()
@@ -133814,7 +133814,7 @@ func (p *SnowflakeParser) Column_elem() (localctx IColumn_elemContext) {
 		_la = p.GetTokenStream().LA(1)
 
 
-		if _la == SnowflakeParserAS || _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+		if _la == SnowflakeParserAS || _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 			{
 				p.SetState(10566)
 				p.As_alias()
@@ -134109,7 +134109,7 @@ func (p *SnowflakeParser) Expression_elem() (localctx IExpression_elemContext) {
 	_la = p.GetTokenStream().LA(1)
 
 
-	if _la == SnowflakeParserAS || _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+	if _la == SnowflakeParserAS || _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 		{
 			p.SetState(10577)
 			p.As_alias()
@@ -134670,7 +134670,7 @@ func NewVar_listContext(parser antlr.Parser, parent antlr.ParserRuleContext, inv
 
 func (s *Var_listContext) GetParser() antlr.Parser { return s.parser }
 
-func (s *Var_listContext) AllVar() []IVarContext {
+func (s *Var_listContext) AllVar_() []IVarContext {
 	children := s.GetChildren()
 	len := 0
 	for _, ctx := range children {
@@ -134691,7 +134691,7 @@ func (s *Var_listContext) AllVar() []IVarContext {
 	return tst
 }
 
-func (s *Var_listContext) Var(i int) IVarContext {
+func (s *Var_listContext) Var_(i int) IVarContext {
 	var t antlr.RuleContext;
 	j := 0
 	for _, ctx := range s.GetChildren() {
@@ -134775,7 +134775,7 @@ func (p *SnowflakeParser) Var_list() (localctx IVar_listContext) {
 	p.EnterOuterAlt(localctx, 1)
 	{
 		p.SetState(10590)
-		p.Var()
+		p.Var_()
 	}
 
 	{
@@ -134784,7 +134784,7 @@ func (p *SnowflakeParser) Var_list() (localctx IVar_listContext) {
 	}
 	{
 		p.SetState(10592)
-		p.Var()
+		p.Var_()
 	}
 
 
@@ -134886,7 +134886,7 @@ func (s *VarContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 
 
 
-func (p *SnowflakeParser) Var() (localctx IVarContext) {
+func (p *SnowflakeParser) Var_() (localctx IVarContext) {
 	this := p
 	_ = this
 
@@ -135991,7 +135991,7 @@ func (p *SnowflakeParser) Object_ref() (localctx IObject_refContext) {
 		_la = p.GetTokenStream().LA(1)
 
 
-		if _la == SnowflakeParserAS || _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+		if _la == SnowflakeParserAS || _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 			{
 				p.SetState(10641)
 				p.As_alias()
@@ -136043,7 +136043,7 @@ func (p *SnowflakeParser) Object_ref() (localctx IObject_refContext) {
 		_la = p.GetTokenStream().LA(1)
 
 
-		if _la == SnowflakeParserINT || _la == SnowflakeParserPRIOR || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+		if _la == SnowflakeParserINT || _la == SnowflakeParserPRIOR || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 			{
 				p.SetState(10653)
 				p.Prior_list()
@@ -136099,7 +136099,7 @@ func (p *SnowflakeParser) Object_ref() (localctx IObject_refContext) {
 		_la = p.GetTokenStream().LA(1)
 
 
-		if _la == SnowflakeParserAS || _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+		if _la == SnowflakeParserAS || _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 			{
 				p.SetState(10666)
 				p.As_alias()
@@ -136179,7 +136179,7 @@ func (p *SnowflakeParser) Object_ref() (localctx IObject_refContext) {
 		_la = p.GetTokenStream().LA(1)
 
 
-		if _la == SnowflakeParserAS || _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+		if _la == SnowflakeParserAS || _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 			{
 				p.SetState(10684)
 				p.As_alias()
@@ -137250,7 +137250,7 @@ func (s *At_beforeContext) ARROW() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserARROW, 0)
 }
 
-func (s *At_beforeContext) String() IStringContext {
+func (s *At_beforeContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -137384,7 +137384,7 @@ func (p *SnowflakeParser) At_before() (localctx IAt_beforeContext) {
 			}
 			{
 				p.SetState(10748)
-				p.String()
+				p.String_()
 			}
 
 
@@ -137399,7 +137399,7 @@ func (p *SnowflakeParser) At_before() (localctx IAt_beforeContext) {
 			}
 			{
 				p.SetState(10751)
-				p.String()
+				p.String_()
 			}
 
 
@@ -137429,7 +137429,7 @@ func (p *SnowflakeParser) At_before() (localctx IAt_beforeContext) {
 			}
 			{
 				p.SetState(10757)
-				p.String()
+				p.String_()
 			}
 
 
@@ -137535,7 +137535,7 @@ func (s *EndContext) ARROW() antlr.TerminalNode {
 	return s.GetToken(SnowflakeParserARROW, 0)
 }
 
-func (s *EndContext) String() IStringContext {
+func (s *EndContext) String_() IStringContext {
 	var t antlr.RuleContext;
 	for _, ctx := range s.GetChildren() {
 		if _, ok := ctx.(IStringContext); ok {
@@ -137660,7 +137660,7 @@ func (p *SnowflakeParser) End() (localctx IEndContext) {
 		}
 		{
 			p.SetState(10775)
-			p.String()
+			p.String_()
 		}
 
 
@@ -137676,7 +137676,7 @@ func (p *SnowflakeParser) End() (localctx IEndContext) {
 		}
 		{
 			p.SetState(10778)
-			p.String()
+			p.String_()
 		}
 
 
@@ -141318,7 +141318,7 @@ func (p *SnowflakeParser) Values() (localctx IValuesContext) {
 	_la = p.GetTokenStream().LA(1)
 
 
-	if _la == SnowflakeParserAS || _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || _la == SnowflakeParserBIGINT || ((((_la - 1033)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1033))) & ((1 << (SnowflakeParserDOUBLE_QUOTE_ID - 1033)) | (1 << (SnowflakeParserDOUBLE_QUOTE_BLANK - 1033)) | (1 << (SnowflakeParserID - 1033)))) != 0) {
+	if _la == SnowflakeParserAS || _la == SnowflakeParserINT || _la == SnowflakeParserSTAGE || (int64((_la - 1001)) & ^0x3f) == 0 && ((int64(1) << (_la - 1001)) & 47244640257) != 0 {
 		{
 			p.SetState(10972)
 			p.As_alias()
@@ -142450,7 +142450,7 @@ func (p *SnowflakeParser) Comparison_operator() (localctx IComparison_operatorCo
 		p.SetState(11029)
 		_la = p.GetTokenStream().LA(1)
 
-		if !(((((_la - 1050)) & -(0x1f+1)) == 0 && ((1 << uint((_la - 1050))) & ((1 << (SnowflakeParserNE - 1050)) | (1 << (SnowflakeParserLTGT - 1050)) | (1 << (SnowflakeParserEQ - 1050)) | (1 << (SnowflakeParserGT - 1050)) | (1 << (SnowflakeParserGE - 1050)) | (1 << (SnowflakeParserLT - 1050)) | (1 << (SnowflakeParserLE - 1050)))) != 0)) {
+		if !((int64((_la - 1050)) & ^0x3f) == 0 && ((int64(1) << (_la - 1050)) & 127) != 0) {
 			p.GetErrorHandler().RecoverInline(p)
 		} else {
 			p.GetErrorHandler().ReportMatch(p)

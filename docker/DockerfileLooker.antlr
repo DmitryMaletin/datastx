@@ -1,4 +1,4 @@
-ARG ANTLR_VERSION="4.11.1"
+ARG ANTLR_VERSION="4.10.1"
 FROM adoptopenjdk/openjdk11 AS builder
 
 WORKDIR /usr/local/lib
@@ -7,7 +7,7 @@ ARG MAVEN_OPTS="-Xmx1G"
 
 RUN apt-get -y update
 RUN apt-get -y install curl
-RUN curl -O https://www.antlr.org/download/antlr-4.11.1-complete.jar
+RUN curl -O https://www.antlr.org/download/antlr-4.10.1-complete.jar
 
 
 FROM adoptopenjdk/openjdk11
@@ -26,9 +26,9 @@ RUN adduser \
     "${user}"
 
 
-COPY --from=builder /usr/local/lib/antlr-4.11.1-complete.jar /usr/local/lib/antlr-4.11.1-complete.jar
+COPY --from=builder /usr/local/lib/antlr-4.10.1-complete.jar /usr/local/lib/antlr-4.10.1-complete.jar
 
 
 
-ENTRYPOINT ["java", "-jar", "/usr/local/lib/antlr-4.11.1-complete.jar"]
+ENTRYPOINT ["java", "-jar", "/usr/local/lib/antlr-4.10.1-complete.jar"]
 
