@@ -1,0 +1,13 @@
+
+FROM datastx AS builder
+
+
+# Build
+RUN cd cmd && CGO_ENABLED=0 go build ./...
+
+# Create final image
+FROM alpine
+WORKDIR /datastx/cmd/
+COPY --from=builder /datastx/cmd .
+RUN chmod +x cmd
+CMD ["./cmd"]
