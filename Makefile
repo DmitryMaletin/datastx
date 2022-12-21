@@ -22,7 +22,7 @@ purge-branches:
 antlr-build:
 	echo "Building $(ANTLR_IMAGE) docker image"
 	echo "WORKDIR: $(WORKDIR)"
-	docker build -t antlr4 $(WORKDIR) -f $(DOCKER_DIR)/Dockerfile
+	docker build -t antlr4 $(WORKDIR) -f $(DOCKER_DIR)/Dockerfile.antlr
 
 antlr-snowflake: antlr-build
 	docker run -it -v $(PWD):/datastx antlr4 -Dlanguage=Go $(SNOWFLAKE_MOUNT_PARSER_DIR)/SnowflakeLexer.g4 $(PARSER_PATTERN) -o $(SNOWFLAKE_MOUNT_PARSER_DIR)
