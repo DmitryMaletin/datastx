@@ -3,13 +3,22 @@ package looker
 import (
 	"fmt"
 
-	"github.com/antlr/antlr4/runtime/Go/antlr"
-	help "github.com/antlr/antlr4/runtime/Go/antlr"
+	antlr "github.com/antlr/antlr4/runtime/Go/antlr"
 	lookml "github.com/datastx/datastx/internal/looker/looker-parser"
 )
 
+var lookmlReport = `
+include: "/simplified_views/*"
+# include: "/demo_vitals/*"
+
+view: realtime_observations {
+  sql_table_name: healthcare_demo_live.realtime_observation ;;
+  extends: [observation_vitals]
+}
+`
+
 func test() {
-	s := help.NewInputStream("SELECT * FROM `table`")
+	s := antlr.NewInputStream(lookmlReport)
 	// Create the Lexer
 	lexer := lookml.NewLookMLLexer(s)
 
