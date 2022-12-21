@@ -120,4 +120,7 @@ grammar Snowflake;
 //   ;
 
 // grant
-//   : 'GRANT' privilege
+//   : 'GRANT' privilege (',' privilege)* 'ON TABLE' table_name 'TO' role_name
+//   ;
+
+// revoke
