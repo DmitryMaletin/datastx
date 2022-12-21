@@ -39,6 +39,12 @@ func (s *BaseLookMLListener) EnterDimension(ctx *DimensionContext) {}
 // ExitDimension is called when production dimension is exited.
 func (s *BaseLookMLListener) ExitDimension(ctx *DimensionContext) {}
 
+// EnterDimension_group is called when production dimension_group is entered.
+func (s *BaseLookMLListener) EnterDimension_group(ctx *Dimension_groupContext) {}
+
+// ExitDimension_group is called when production dimension_group is exited.
+func (s *BaseLookMLListener) ExitDimension_group(ctx *Dimension_groupContext) {}
+
 // EnterMeasure is called when production measure is entered.
 func (s *BaseLookMLListener) EnterMeasure(ctx *MeasureContext) {}
 

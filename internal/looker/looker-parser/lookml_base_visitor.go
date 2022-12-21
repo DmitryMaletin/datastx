@@ -20,6 +20,10 @@ func (v *BaseLookMLVisitor) VisitDimension(ctx *DimensionContext) interface{} {
 	return v.VisitChildren(ctx)
 }
 
+func (v *BaseLookMLVisitor) VisitDimension_group(ctx *Dimension_groupContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
 func (v *BaseLookMLVisitor) VisitMeasure(ctx *MeasureContext) interface{} {
 	return v.VisitChildren(ctx)
 }

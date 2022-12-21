@@ -16,6 +16,9 @@ type LookMLVisitor interface {
 	// Visit a parse tree produced by LookMLParser#dimension.
 	VisitDimension(ctx *DimensionContext) interface{}
 
+	// Visit a parse tree produced by LookMLParser#dimension_group.
+	VisitDimension_group(ctx *Dimension_groupContext) interface{}
+
 	// Visit a parse tree produced by LookMLParser#measure.
 	VisitMeasure(ctx *MeasureContext) interface{}
 
