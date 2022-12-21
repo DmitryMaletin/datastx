@@ -1,4 +1,4 @@
-// Code generated from java-escape by ANTLR 4.11.1. DO NOT EDIT.
+// Code generated from /datastx/internal/looker/looker-parser/LookML.g4 by ANTLR 4.10.1. DO NOT EDIT.
 
 package parser // LookML
 
@@ -7,7 +7,7 @@ import (
 	"strconv"
   "sync"
 
-	"github.com/antlr/antlr4/runtime/Go/antlr/v4"
+	"github.com/antlr/antlr4/runtime/Go/antlr"
 )
 
 // Suppress unused import errors
@@ -111,7 +111,7 @@ func NewLookMLParser(input antlr.TokenStream) *LookMLParser {
 	this.RuleNames = staticData.ruleNames
 	this.LiteralNames = staticData.literalNames
 	this.SymbolicNames = staticData.symbolicNames
-	this.GrammarFileName = "java-escape"
+	this.GrammarFileName = "LookML.g4"
 
 	return this
 }
@@ -1099,7 +1099,7 @@ func (p *LookMLParser) Field() (localctx IFieldContext) {
 	_la = p.GetTokenStream().LA(1)
 
 
-	for ok := true; ok; ok = (int64(_la) & ^0x3f) == 0 && ((int64(1) << _la) & 3840) != 0 {
+	for ok := true; ok; ok = (((_la) & -(0x1f+1)) == 0 && ((1 << uint(_la)) & ((1 << LookMLParserT__7) | (1 << LookMLParserT__8) | (1 << LookMLParserT__9) | (1 << LookMLParserT__10))) != 0) {
 		{
 			p.SetState(62)
 			p.Field_property()
@@ -1399,7 +1399,7 @@ func (p *LookMLParser) Field_type() (localctx IField_typeContext) {
 		p.SetState(79)
 		_la = p.GetTokenStream().LA(1)
 
-		if !((int64(_la) & ^0x3f) == 0 && ((int64(1) << _la) & 520192) != 0) {
+		if !((((_la) & -(0x1f+1)) == 0 && ((1 << uint(_la)) & ((1 << LookMLParserT__11) | (1 << LookMLParserT__12) | (1 << LookMLParserT__13) | (1 << LookMLParserT__14) | (1 << LookMLParserT__15) | (1 << LookMLParserT__16) | (1 << LookMLParserT__17))) != 0)) {
 			p.GetErrorHandler().RecoverInline(p)
 		} else {
 			p.GetErrorHandler().ReportMatch(p)

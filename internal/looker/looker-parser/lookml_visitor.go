@@ -1,8 +1,8 @@
-// Code generated from java-escape by ANTLR 4.11.1. DO NOT EDIT.
+// Code generated from /datastx/internal/looker/looker-parser/LookML.g4 by ANTLR 4.10.1. DO NOT EDIT.
 
 package parser // LookML
 
-import "github.com/antlr/antlr4/runtime/Go/antlr/v4"
+import "github.com/antlr/antlr4/runtime/Go/antlr"
 // A complete Visitor for a parse tree produced by LookMLParser.
 type LookMLVisitor interface {
 	antlr.ParseTreeVisitor

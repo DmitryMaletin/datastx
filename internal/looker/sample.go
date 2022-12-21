@@ -1,22 +1,25 @@
 package looker
 
-// import (
-//     "fmt"
-//     "github.com/antlr/antlr4/runtime/Go/antlr"
-//     "path/to/generated/files"
-// )
+import (
+	"fmt"
 
-// func main() {
-//     // Create a new input stream from the LookML string
-//     input := antlr.NewInputStream(lookmlString)
+	"github.com/antlr/antlr4/runtime/Go/antlr"
+	help "github.com/antlr/antlr4/runtime/Go/antlr"
+	lookml "github.com/datastx/datastx/internal/looker/looker-parser"
+)
 
-//     // Create a new LookML lexer and parser
-//     lexer := lookml.NewLookMLLexer(input)
-//     parser := lookml.NewLookMLParser(antlr.NewCommonTokenStream(lexer, 0))
+func test() {
+	s := help.NewInputStream("SELECT * FROM `table`")
+	// Create the Lexer
+	lexer := lookml.NewLookMLLexer(s)
 
-//     // Parse the LookML and get the root node of the AST
-//     tree := parser.Model()
-
-//     // Print the AST as a string
-//     fmt.Println(tree.ToStringTree(nil, parser))
-// }
+	// Read all tokens
+	for {
+		t := lexer.NextToken()
+		if t.GetTokenType() == antlr.TokenEOF {
+			break
+		}
+		fmt.Printf("%s (%q)\n",
+			lexer.SymbolicNames[t.GetTokenType()], t.GetText())
+	}
+}
