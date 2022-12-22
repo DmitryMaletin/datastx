@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	antlr "github.com/antlr/antlr4/runtime/Go/antlr"
-	lookml "github.com/datastx/datastx/internal/looker/looker-parser"
+	lookml "github.com/datastx/datastx/internal/visual/looker/looker-parser"
 )
 
 var lookmlReport = `
