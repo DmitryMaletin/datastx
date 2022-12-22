@@ -2,3 +2,4 @@
 
 - Snowflake
 - Postgres
+- DuckDB

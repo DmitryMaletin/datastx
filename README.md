@@ -1,5 +1,9 @@
 # Goal
 **This all needs to sit on a kubecluster and have terraform**
+
+```text
+The real goal is you write SQL and it ships the data for you based on the config you provide in your model. At the end of the day everything has to be extracted initially from your database if you're a dataplatform engineer. Thus, we should build a tool that moves the data we need to us and can easily ship with total reiliablity.
+```
  - Replication system that real times from pg || msSQL -> snowflake, bigquery, msSQL or pg
    * add type 1 & type 2 features
    * performance partitioning features
@@ -47,6 +51,6 @@
 - For templating lets make a programming language the mimics python due to our end consumer
 
 
-# Import of data
-
-# Export of data
+# Utility
+This is a feature that exists for quality of life
+- offer a basic file uploader
